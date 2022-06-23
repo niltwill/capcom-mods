@@ -1,6 +1,6 @@
 # Ace Attorney mods
 
-Some mods and other little stuff for certain titles in the Ace Attorney game series.
+Some mods and other little stuff for certain titles in the Ace Attorney game series. For feedback or to report issues, go to the [discussions](https://github.com/niltwill/ace-attorney-mods/discussions) page.
 
 ## JTPaper
 * Phoenix Wright: Ace Attorney Trilogy - music mod for **PC (Steam)**<br>
