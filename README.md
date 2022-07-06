@@ -1,6 +1,6 @@
 # Ace Attorney mods
 
-Some mods and other little stuff for certain titles in the Ace Attorney game series. For feedback or to report issues, go to the [discussions](https://github.com/niltwill/ace-attorney-mods/discussions) page.
+Some mods and other little stuff for certain titles in the Ace Attorney game series. For feedback, go to the [Issues](https://github.com/niltwill/ace-attorney-mods/issues) section.
 
 ## JTPaper
 * _Phoenix Wright: Ace Attorney Trilogy_<br>
