@@ -15,7 +15,7 @@ Some mods and other little stuff for certain titles in the Ace Attorney game ser
 * _Apollo Justice: Ace Attorney_<br>
 ![Apollo Justice: Ace Attorney icon](/ajaa.ico)
    - **Android** music mod<br> 
-[Google Drive](https://drive.google.com/file/d/1pjNtXZ3CwpvIsL9CHsGJSi18VaYy7Hpu/view?usp=sharing)<br>
+[Google Drive](https://drive.google.com/file/d/1DQCXxW3U-S5rP3YLj9VzrybyWOQvFpLV/view?usp=sharing)[^1]<br>
 [MediaFire](https://www.mediafire.com/file/9oynjranf4w67rl/AJAA_JTPaper%2527s_MusicMod_%2528Android%2529.zip/file)
    - **Nintendo 3DS** music mod<br>
 [Google Drive](https://drive.google.com/file/d/1CMrFENf-IH_vAj1ayU53WyW8_aYxA-FQ/view?usp=sharing)<br>
@@ -49,12 +49,14 @@ Some mods and other little stuff for certain titles in the Ace Attorney game ser
 [MediaFire](https://www.mediafire.com/file/orierg60dkuonmc/PWAAT_jattello_MusicMod.exe/file)
 
 ## Zinle
-**TODO:** To be reviewed and make Nintendo 3DS mod of it.
-* _Phoenix Wright: Ace Attorney Trilogy_<br>
+* _Phoenix Wright: Ace Attorney Trilogy_ (Only AA and JFA, no T&T tracks)<br>
 ![Phoenix Wright: Ace Attorney Trilogy icon](/aat.ico)
    - **PC (Steam)** music mod<br>
 [Google Drive](https://drive.google.com/file/d/1l0kWXoL_hZhL-A3Swr_gNG95ivDoJypJ/view?usp=sharing)<br>
 [MediaFire](https://www.mediafire.com/file/l1fme47lc17jm1m/PWAAT_Zinle_MusicMod.exe/file)
+   - **Nintendo 3DS** music mod<br>
+[Google Drive](https://drive.google.com/file/d/15Elb5C4tU4iO9sptJDTiVe9QWUpKm-Oz/view?usp=sharing)<br>
+[MediaFire](https://www.mediafire.com/file/5lsd69gv7k9w7x4/PWAAT_Zinle%2527s_MusicMod_%2528Nintendo3DS%2529.zip/file)
 
 ## Others
 * _Phoenix Wright: Ace Attorney Trilogy_<br>
@@ -69,4 +71,4 @@ Some mods and other little stuff for certain titles in the Ace Attorney game ser
 [Google Drive](https://drive.google.com/file/d/1tTTFD53eHFTz-uxyvcQstc7uXBxbgJz2/view?usp=sharing)<br>
 [MediaFire](https://www.mediafire.com/file/k1u6ag7mlks03pk/tracklist.txt/file)
 
-[^1]: Note that this contains a self-extracting archive instead to evade the automatic virus-check that would flag the script's executable file as false positive. It should work on Windows, and can be easily extracted manually elsewhere too.
+[^1]: Note that this contains a self-extracting archive instead to evade the automatic virus-check that would flag the script's executable file as false positive. It should work on Windows, and can be easily extracted manually in other operating systems too, by using [7-Zip](https://www.7-zip.org/download.html).
