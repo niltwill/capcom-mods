@@ -41,12 +41,14 @@ Some mods and other little stuff for certain titles in the Ace Attorney game ser
 [MediaFire](https://www.mediafire.com/file/wlsc02sxjyyycsh/PWAAT_SaveEditor.zip/file)
 
 ## jattello
-**TODO:** To be reviewed and make Nintendo 3DS mod of it.
 * _Phoenix Wright: Ace Attorney Trilogy_<br>
 ![Phoenix Wright: Ace Attorney Trilogy icon](/aat.ico)
    - **PC (Steam)** music mod<br>
 [Google Drive](https://drive.google.com/file/d/1hdPJMB8ttUqWEHN7NjHOL5hLHRI2x5rG/view?usp=sharing)<br>
 [MediaFire](https://www.mediafire.com/file/orierg60dkuonmc/PWAAT_jattello_MusicMod.exe/file)
+   - **Nintendo 3DS** music mod<br>
+[Google Drive](https://drive.google.com/file/d/1ECHz3dbJGQ5FGer8Zwg-dWkRYdXO_n_T/view?usp=sharing)<br>
+[MediaFire](https://www.mediafire.com/file/oolk1l3sct1pxnb/PWAAT_jattello%2527s_MusicMod_%2528Nintendo3DS%2529.zip/file)
 
 ## Zinle
 * _Phoenix Wright: Ace Attorney Trilogy_ (Only AA and JFA, no T&T tracks)<br>
