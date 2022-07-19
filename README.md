@@ -25,6 +25,13 @@ Some mods and other little stuff for certain titles in the Ace Attorney game ser
 [MediaFire](https://www.mediafire.com/file/2tjhxgji5vd70fi/AJAA_JTPaper%2527s_MusicMod_%2528Nintendo3DS%2529.zip/file)<br>
 [OneDrive](https://1drv.ms/u/s!AioBpGMgtsWRb4-R4D5uEOCI0fA?e=cf2RCp)
 - - - -
+* _Ace Attorney Investigations_<br>
+![Ace Attorney Investigations icon](/aai.ico)
+   - **Android** music mod<br>
+[Google Drive](https://drive.google.com/file/d/1MT4UhY4hIo8vcet9_I-SrejaBmWgbo9e/view?usp=sharing)[^1]<br>
+[MediaFire](https://www.mediafire.com/file/aufygi8dskp55wx/AAI_JTPaper_MusicMod_%2528Android%2529.zip/file)<br>
+[OneDrive](https://1drv.ms/u/s!AioBpGMgtsWRfRXLjzPi9-uKvQg?e=s1ajQx)
+- - - -
 * _Ace Attorney Investigations 2_<br>
 ![Ace Attorney Investigations 2 icon](/aai2.ico)
    - **Android** music mod<br>
