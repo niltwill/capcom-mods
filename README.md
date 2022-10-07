@@ -13,6 +13,9 @@ Some mods and other little stuff for certain titles in the Ace Attorney game ser
 [Google Drive](https://drive.google.com/file/d/1ljzJ6gPfOEBqljka7OverlHkCW_xSFpY/view?usp=sharing)<br>
 [MediaFire](https://www.mediafire.com/file/eshpr4ntbp5axph/PWAAT_JTPaper%2527s_MusicMod_%2528Nintendo3DS%2529.zip/file)<br>
 [OneDrive](https://1drv.ms/u/s!AioBpGMgtsWReD0nA8ppk8zZzRg?e=ZQ71Ic)
+   - **Nintendo Switch** music mod<br>
+[IceDrive](https://icedrive.net/s/6AB31SYyVhBNuQfkjzxfF3tzViug)<br>
+[MediaFire](https://www.mediafire.com/file/7vrwc6qtgkv038w/PWAAT_JTPaper_MusicMod_NintendoSwitch.zip/file)<br>
 - - - -
 * _Apollo Justice: Ace Attorney_<br>
 ![Apollo Justice: Ace Attorney icon](/ajaa.ico)
@@ -50,6 +53,9 @@ Some mods and other little stuff for certain titles in the Ace Attorney game ser
 [Google Drive](https://drive.google.com/file/d/1eyACHrSfsB2S6Krter-8l0toeaoTVtfl/view?usp=sharing)<br>
 [MediaFire](https://www.mediafire.com/file/ny47ic94u4r2w6f/PWAAT_Benlinlin_MusicMod_%2528Nintendo_3DS%2529.zip/file)<br>
 [OneDrive](https://1drv.ms/u/s!AioBpGMgtsWRgQSe-JDfGxDFGb_M?e=2y7w8a)
+   - **Nintendo Switch** music mod<br>
+[IceDrive](https://icedrive.net/s/T3Tu9GCS5iaFDNgYXZuxk58fNwhb)<br>
+[MediaFire](https://www.mediafire.com/file/tb2r1s2vao28a14/PWAAT_Benlinlin_MusicMod_NintendoSwitch.zip/file)
 
 ## jattello
 * _Phoenix Wright: Ace Attorney Trilogy_<br>
@@ -62,6 +68,9 @@ Some mods and other little stuff for certain titles in the Ace Attorney game ser
 [Google Drive](https://drive.google.com/file/d/1ECHz3dbJGQ5FGer8Zwg-dWkRYdXO_n_T/view?usp=sharing)<br>
 [MediaFire](https://www.mediafire.com/file/oolk1l3sct1pxnb/PWAAT_jattello%2527s_MusicMod_%2528Nintendo3DS%2529.zip/file)<br>
 [OneDrive](https://1drv.ms/u/s!AioBpGMgtsWRd-WtKFn7DURQAGc?e=EUOtYg)
+   - **Nintendo Switch** music mod<br>
+[IceDrive](https://icedrive.net/s/YYT7T1VjPtGCWNgCaQQv3a3zjBTk)<br>
+[MediaFire](https://www.mediafire.com/file/9dyvg1m47ha3x8d/PWAAT_jattello_MusicMod_NintendoSwitch.zip/file)
 
 ## Zinle
 * _Phoenix Wright: Ace Attorney Trilogy_ (Only AA and JFA, no T&T tracks)<br>
@@ -74,6 +83,9 @@ Some mods and other little stuff for certain titles in the Ace Attorney game ser
 [Google Drive](https://drive.google.com/file/d/15Elb5C4tU4iO9sptJDTiVe9QWUpKm-Oz/view?usp=sharing)<br>
 [MediaFire](https://www.mediafire.com/file/5lsd69gv7k9w7x4/PWAAT_Zinle%2527s_MusicMod_%2528Nintendo3DS%2529.zip/file)<br>
 [OneDrive](https://1drv.ms/u/s!AioBpGMgtsWRdpT9Q9iSvBbdNr0?e=RROVJI)
+   - **Nintendo Switch** music mod<br>
+[IceDrive](https://icedrive.net/s/6TaAaSNNGaDibP25aSj7zzNgTaTz)<br>
+[MediaFire](https://www.mediafire.com/file/1nccbqtvxk4mvuw/PWAAT_Zinle_MusicMod_NintendoSwitch.zip/file)
 
 ## niltwill
 * _Phoenix Wright: Ace Attorney Trilogy_<br>
@@ -86,6 +98,9 @@ Some mods and other little stuff for certain titles in the Ace Attorney game ser
 [Google Drive](https://drive.google.com/file/d/1me3D8qP96KZ6fky6zO0XG970jp_UYaqt/view?usp=sharing)<br>
 [MediaFire](https://www.mediafire.com/file/k3bd57llj4c31dj/PWAAT_Nokia_Ringtones_%2528Nintendo3DS%2529.zip/file)<br>
 [OneDrive](https://1drv.ms/u/s!AioBpGMgtsWRa-ikMbBCwG345nI?e=dBJMEE)
+   - **Nintendo Switch** Nokia Ringtones (music mod)<br>
+[IceDrive](https://icedrive.net/s/B3ZZC33zG3bf5CVNZxttwj5vii53)<br>
+[MediaFire](https://www.mediafire.com/file/pqusk0htckp7rj0/PWAAT_Nokia_Ringtones_NintendoSwitch.zip/file)
    - **PC (Steam, Windows)** Save Editor (only tested on PC version)<br>
 [Google Drive](https://drive.google.com/file/d/10THldkydMM9AZ13LyP_TS7ttHC1pQSDS/view?usp=sharing)<br>
 [MediaFire](https://www.mediafire.com/file/wlsc02sxjyyycsh/PWAAT_SaveEditor.zip/file)<br>
