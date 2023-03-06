@@ -111,10 +111,16 @@ Some mods and other little stuff for certain titles in the Ace Attorney game ser
 ## Others
 * _Phoenix Wright: Ace Attorney Trilogy_<br>
 ![Phoenix Wright: Ace Attorney Trilogy icon](/aat.ico)
+   - **PC (Steam)** AdPro's HD Japanese Voices (shouts/exclamations)[^2]<br>
+[Google Drive](https://drive.google.com/file/d/1nJtiiGyQfSGkClr4b5Ri0Kvpw8Bn03i3/view?usp=sharing)<br>
+[MediaFire](https://www.mediafire.com/file/4q4yd5wa2q3vi0x/PWAAT-GS123NS_JPN_HD_Audio_Mod.zip/file)<br>
+[IceDrive](https://icedrive.net/s/ATRjzyAXNR7WYjt9jgv3Gh1uDVy3)
    - **PC (Steam)** FUSIONROCKER's music mod (only few tracks)<br>
 [Google Drive](https://drive.google.com/file/d/1RH1gu9dcoA5hPs_xxWEQOTGnNADlc6AO/view?usp=sharing)<br>
 [MediaFire](https://www.mediafire.com/file/ibjikv5ndu0jr90/PWAAT_FUSIONROCKER_MusicMod.exe/file)<br>
 [OneDrive](https://1drv.ms/u/s!AioBpGMgtsWRad1Ym6nWdT3_fYc?e=8lAoTg)
+   - **Mobile port** JTPaper's music mod (***this does not work!***)[^3]<br>
+[IceDrive](https://icedrive.net/s/ZYhAgDV4g3Qjf4VzXaQ72f5ThfYu)
    - Music / sound modding tutorial<br>
 [Google Drive](https://drive.google.com/file/d/1wdr5Hk9LxmNGa1-V1putStDrFQdxiqnM/view?usp=sharing)<br>
 [MediaFire](https://www.mediafire.com/file/unlm3sa03v732jx/PWAAT_MusicEditingTutorial.pdf/file)<br>
@@ -129,3 +135,5 @@ Some mods and other little stuff for certain titles in the Ace Attorney game ser
 [OneDrive](https://1drv.ms/t/s!AioBpGMgtsWRe_LbGH0b6DX4Akk?e=hwC17d)
 
 [^1]: Note that this contains a self-extracting archive instead to evade the automatic virus-check that would flag the script's executable file as false positive. It should work on Windows, and can be easily extracted manually in other operating systems too, by using [7-Zip](https://www.7-zip.org/download.html).
+[^2]: Higher quality Japanese voice clips (audio), sounds such as "Objection!", "Hold it!", "Take that!", as the game uses GBA quality for these.
+[^3]: Unless one is advanced enough to be able to hack the game (but can you even recompile the code after that?) and remove the integrity check for the files (my hunch is that it's a server-based authentication with Google Play Services, and purging that would likely also remove the cloud data, thus the save/load function, as well as the settings and would require an offline based implementation), it remains unusable. So this is only here in case one extremely talented *Android hacker* wants to try going going further with it. For most, it's of no interest. I confirmed that it does not work at all. Trying to apply the music mod will only result in a black screen, as the game is never going to load.
