@@ -111,7 +111,7 @@ Some mods and other little stuff for certain titles in the Ace Attorney game ser
 ## Others
 * _Phoenix Wright: Ace Attorney Trilogy_<br>
 ![Phoenix Wright: Ace Attorney Trilogy icon](/aat.ico)
-   - **PC (Steam)** AdPro's HD Japanese Voices (shouts/exclamations)[^2]<br>
+   - **PC (Steam)** AdPro's HD Japanese audio mod (shouts/exclamations)[^2]<br>
 [Google Drive](https://drive.google.com/file/d/1nJtiiGyQfSGkClr4b5Ri0Kvpw8Bn03i3/view?usp=sharing)<br>
 [MediaFire](https://www.mediafire.com/file/4q4yd5wa2q3vi0x/PWAAT-GS123NS_JPN_HD_Audio_Mod.zip/file)<br>
 [IceDrive](https://icedrive.net/s/ATRjzyAXNR7WYjt9jgv3Gh1uDVy3)
