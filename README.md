@@ -115,6 +115,9 @@ Some mods and other little stuff for certain titles in the Ace Attorney game ser
 [Google Drive](https://drive.google.com/file/d/1nJtiiGyQfSGkClr4b5Ri0Kvpw8Bn03i3/view?usp=sharing)<br>
 [MediaFire](https://www.mediafire.com/file/4q4yd5wa2q3vi0x/PWAAT-GS123NS_JPN_HD_Audio_Mod.zip/file)<br>
 [IceDrive](https://icedrive.net/s/ATRjzyAXNR7WYjt9jgv3Gh1uDVy3)
+   - **PC (Steam)** Gyakuten Saiban Sound BOX - music mod<br>
+[IceDrive](https://icedrive.net/s/TXS3DxWySFyg92D4gFCQCxGRRwRV)<br>
+[MediaFire](https://www.mediafire.com/file/rktzlkbjzvuvwwp/PWAAT_GyakutenSaibanSoundBOX_MusicMod.exe/file)
    - **PC (Steam)** FUSIONROCKER's music mod (only few tracks)<br>
 [Google Drive](https://drive.google.com/file/d/1RH1gu9dcoA5hPs_xxWEQOTGnNADlc6AO/view?usp=sharing)<br>
 [MediaFire](https://www.mediafire.com/file/ibjikv5ndu0jr90/PWAAT_FUSIONROCKER_MusicMod.exe/file)<br>
