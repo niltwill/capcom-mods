@@ -12,7 +12,7 @@ Some mods and other little stuff for certain titles in the Ace Attorney game ser
    - **Nintendo 3DS** music mod<br>
 [Google Drive](https://drive.google.com/file/d/1ljzJ6gPfOEBqljka7OverlHkCW_xSFpY/view?usp=sharing)<br>
 [MediaFire](https://www.mediafire.com/file/eshpr4ntbp5axph/PWAAT_JTPaper%2527s_MusicMod_%2528Nintendo3DS%2529.zip/file)<br>
-[OneDrive](https://1drv.ms/u/s!AioBpGMgtsWReD0nA8ppk8zZzRg?e=ZQ71Ic)
+[OneDrive](https://1drv.ms/u/s!AioBpGMgtsWRgWzYdrx5fAu9rDvL?e=jJIfMO)
    - **Nintendo Switch** music mod<br>
 [IceDrive](https://icedrive.net/s/6AB31SYyVhBNuQfkjzxfF3tzViug)<br>
 [MediaFire](https://www.mediafire.com/file/7vrwc6qtgkv038w/PWAAT_JTPaper_MusicMod_NintendoSwitch.zip/file)<br>
@@ -99,7 +99,7 @@ Some mods and other little stuff for certain titles in the Ace Attorney game ser
    - **Nintendo 3DS** Nokia Ringtones (music mod)<br>
 [Google Drive](https://drive.google.com/file/d/1me3D8qP96KZ6fky6zO0XG970jp_UYaqt/view?usp=sharing)<br>
 [MediaFire](https://www.mediafire.com/file/k3bd57llj4c31dj/PWAAT_Nokia_Ringtones_%2528Nintendo3DS%2529.zip/file)<br>
-[OneDrive](https://1drv.ms/u/s!AioBpGMgtsWRa-ikMbBCwG345nI?e=dBJMEE)
+[OneDrive](https://1drv.ms/u/s!AioBpGMgtsWRgW7ffmwC4tt8tMuD?e=FXUhhN)
    - **Nintendo Switch** Nokia Ringtones (music mod)<br>
 [IceDrive](https://icedrive.net/s/B3ZZC33zG3bf5CVNZxttwj5vii53)<br>
 [MediaFire](https://www.mediafire.com/file/pqusk0htckp7rj0/PWAAT_Nokia_Ringtones_NintendoSwitch.zip/file)
