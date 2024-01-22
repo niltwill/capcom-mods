@@ -1,5 +1,5 @@
 # Ghost Trick: Phantom Detective
-![Ghost Trick: Phantom Detective icon](/ghost-trick-pd.ico.ico)
+![Ghost Trick: Phantom Detective icon](/ghost-trick-pd.ico)
 
 ## JTPaper's Remastered OST - Music Mod
    - **PC (Steam)** (suitable to replace both the arranged and/or original OST)<br>
