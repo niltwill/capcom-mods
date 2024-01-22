@@ -1,4 +1,18 @@
-# Ace Attorney mods
+# Ghost Trick: Phantom Detective
+![Ghost Trick: Phantom Detective icon](/ghost-trick-pd.ico.ico)
+
+## JTPaper's Remastered OST - Music Mod
+   - **PC (Steam)** (suitable to replace both the arranged and/or original OST)<br>
+[Mega.nz](https://mega.nz/file/NftnBBwK#PYePTQIQfe4H-5blT2H1mWdF3XeZPOuquIjJRg8pu50)<br>
+[IceDrive](https://icedrive.net/s/YFt8GYP6gxY9227NTbSRaCAP1X6Y)<br>
+   - **Nintendo Switch** (suitable to replace both the arranged and/or original OST)<br>
+[Mega.nz](https://mega.nz/file/4S9gxB7a#QLWnTyn8CSNHaPCx2KGadrY-8LvL11Y2BjeJjEYVn6U)<br>
+[IceDrive](https://icedrive.net/s/f4hZ8NCVXaBFyk2Rk39G7zZhP53Y)<br>
+   - BGM modding helper files<br>
+[Mega.nz](https://mega.nz/file/IXsQkKwI#09oraovjZ_HLXMZwATmvnH8_HfGFxiBK63UO512Cfpk)<br>
+[IceDrive](https://icedrive.net/s/ktCCxAv8QTukhPZYF2fk7aygW644)<br>
+
+# Ace Attorney
 
 Some mods and other little stuff for certain titles in the Ace Attorney game series.
 
