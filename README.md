@@ -12,11 +12,9 @@
 [IceDrive](https://icedrive.net/s/ktCCxAv8QTukhPZYF2fk7aygW644)<br>
 - - - -
 
-# Ace Attorney
+# ![Phoenix Wright: Ace Attorney Trilogy icon](/aat.ico) Phoenix Wright: Ace Attorney Trilogy
 
-## JTPaper
-* _Phoenix Wright: Ace Attorney Trilogy_<br>
-![Phoenix Wright: Ace Attorney Trilogy icon](/aat.ico)
+## JTPaper's Remastered OST
    - **PC (Steam)** music mod<br>
 [Google Drive](https://drive.google.com/file/d/1fo0W7YuWbfkBedBq41sRWUAw0SXvc4wi/view?usp=sharing)<br>
 [MediaFire](https://www.mediafire.com/file/lxeho950lri23na/PWAAT_JTPaper_MusicMod.exe/file)<br>
@@ -28,37 +26,8 @@
    - **Nintendo Switch** music mod<br>
 [IceDrive](https://icedrive.net/s/6AB31SYyVhBNuQfkjzxfF3tzViug)<br>
 [MediaFire](https://www.mediafire.com/file/7vrwc6qtgkv038w/PWAAT_JTPaper_MusicMod_NintendoSwitch.zip/file)<br>
-- - - -
-* _Apollo Justice: Ace Attorney_<br>
-![Apollo Justice: Ace Attorney icon](/ajaa.ico)
-   - **Android** music mod<br> 
-[Google Drive](https://drive.google.com/file/d/1DQCXxW3U-S5rP3YLj9VzrybyWOQvFpLV/view?usp=sharing)[^1]<br>
-[MediaFire](https://www.mediafire.com/file/9oynjranf4w67rl/AJAA_JTPaper%2527s_MusicMod_%2528Android%2529.zip/file)<br>
-[OneDrive](https://1drv.ms/u/s!AioBpGMgtsWRcCz-xc09hgrs9XM?e=roD4ZV)
-   - **Nintendo 3DS** music mod<br>
-[Google Drive](https://drive.google.com/file/d/1CMrFENf-IH_vAj1ayU53WyW8_aYxA-FQ/view?usp=sharing)<br>
-[MediaFire](https://www.mediafire.com/file/2tjhxgji5vd70fi/AJAA_JTPaper%2527s_MusicMod_%2528Nintendo3DS%2529.zip/file)<br>
-[OneDrive](https://1drv.ms/u/s!AioBpGMgtsWRb4-R4D5uEOCI0fA?e=cf2RCp)
-- - - -
-* _Ace Attorney Investigations_<br>
-![Ace Attorney Investigations icon](/aai.ico)
-   - **Android** music mod<br>
-~~Google Drive~~<br>
-[IceDrive](https://icedrive.net/s/5tv4SRCbXRQSyGC6uPuywv9PvfFP)<br>
-[MediaFire](https://www.mediafire.com/file/aufygi8dskp55wx/AAI_JTPaper_MusicMod_%2528Android%2529.zip/file)<br>
-[OneDrive](https://1drv.ms/u/s!AioBpGMgtsWRfRXLjzPi9-uKvQg?e=s1ajQx)
-- - - -
-* _Ace Attorney Investigations 2_<br>
-![Ace Attorney Investigations 2 icon](/aai2.ico)
-   - **Android** music mod<br>
-~~Google Drive~~<br>
-[IceDrive](https://icedrive.net/s/NXuFXk72thTBtvBtN13Y5ZZSjG4t)<br>
-[MediaFire](https://www.mediafire.com/file/ifot2zk8gj62kf3/AAI2_JTPaper%2527s_Music_Mod_%2528Android%2529.zip/file)<br>
-[OneDrive](https://1drv.ms/u/s!AioBpGMgtsWRdWxz6Kc9Slfxg-M?e=jrVjpb)
 
-## Benlinlin
-* _Phoenix Wright: Ace Attorney Trilogy_<br>
-![Phoenix Wright: Ace Attorney Trilogy icon](/aat.ico)
+## Benlinlin's Remastered OST
    - **PC (Steam)** music mod<br>
 [Google Drive](https://drive.google.com/file/d/1TUGpBzxmRd30ZZ_tcJYVtZrovGp27a-u/view?usp=sharing)<br>
 [MediaFire](https://www.mediafire.com/file/jnl67jlvg4k7mb5/PWAAT_Benlinlin_MusicMod.exe/file)<br>
@@ -71,9 +40,7 @@
 [IceDrive](https://icedrive.net/s/T3Tu9GCS5iaFDNgYXZuxk58fNwhb)<br>
 [MediaFire](https://www.mediafire.com/file/tb2r1s2vao28a14/PWAAT_Benlinlin_MusicMod_NintendoSwitch.zip/file)
 
-## jattello
-* _Phoenix Wright: Ace Attorney Trilogy_<br>
-![Phoenix Wright: Ace Attorney Trilogy icon](/aat.ico)
+## jattello's Remastered OST
    - **PC (Steam)** music mod<br>
 [Google Drive](https://drive.google.com/file/d/1hdPJMB8ttUqWEHN7NjHOL5hLHRI2x5rG/view?usp=sharing)<br>
 [MediaFire](https://www.mediafire.com/file/orierg60dkuonmc/PWAAT_jattello_MusicMod.exe/file)<br>
@@ -86,9 +53,7 @@
 [IceDrive](https://icedrive.net/s/YYT7T1VjPtGCWNgCaQQv3a3zjBTk)<br>
 [MediaFire](https://www.mediafire.com/file/9dyvg1m47ha3x8d/PWAAT_jattello_MusicMod_NintendoSwitch.zip/file)
 
-## Zinle
-* _Phoenix Wright: Ace Attorney Trilogy_ (Only AA and JFA, no T&T tracks)<br>
-![Phoenix Wright: Ace Attorney Trilogy icon](/aat.ico)
+## Zinle's Remastered OST
    - **PC (Steam)** music mod<br>
 [Google Drive](https://drive.google.com/file/d/1l0kWXoL_hZhL-A3Swr_gNG95ivDoJypJ/view?usp=sharing)<br>
 [MediaFire](https://www.mediafire.com/file/l1fme47lc17jm1m/PWAAT_Zinle_MusicMod.exe/file)<br>
@@ -101,9 +66,7 @@
 [IceDrive](https://icedrive.net/s/6TaAaSNNGaDibP25aSj7zzNgTaTz)<br>
 [MediaFire](https://www.mediafire.com/file/1nccbqtvxk4mvuw/PWAAT_Zinle_MusicMod_NintendoSwitch.zip/file)
 
-## niltwill
-* _Phoenix Wright: Ace Attorney Trilogy_<br>
-![Phoenix Wright: Ace Attorney Trilogy icon](/aat.ico)
+## niltwill's resources
    - **PC (Steam)** Nokia Ringtones (music mod)<br>
 [Google Drive](https://drive.google.com/file/d/1woAUzDFPRTrvup1pO5k9ugvCek5kqeOl/view?usp=sharing)<br>
 [MediaFire](https://www.mediafire.com/file/jzplly1qqonbe1l/PWAAT_NokiaRingtones_MusicMod.exe/file)<br>
@@ -121,8 +84,6 @@
 [OneDrive](https://1drv.ms/u/s!AioBpGMgtsWRfCFzInqCJYi5w0w?e=1Adba4)
 
 ## Others
-* _Phoenix Wright: Ace Attorney Trilogy_<br>
-![Phoenix Wright: Ace Attorney Trilogy icon](/aat.ico)
    - **PC (Steam)** AdPro's HD Japanese audio mod (shouts/exclamations)[^2]<br>
 [Google Drive](https://drive.google.com/file/d/1nJtiiGyQfSGkClr4b5Ri0Kvpw8Bn03i3/view?usp=sharing)<br>
 [MediaFire](https://www.mediafire.com/file/4q4yd5wa2q3vi0x/PWAAT-GS123NS_JPN_HD_Audio_Mod.zip/file)<br>
@@ -148,6 +109,36 @@
 [Google Drive](https://drive.google.com/file/d/1tTTFD53eHFTz-uxyvcQstc7uXBxbgJz2/view?usp=sharing)<br>
 [MediaFire](https://www.mediafire.com/file/k1u6ag7mlks03pk/tracklist.txt/file)<br>
 [OneDrive](https://1drv.ms/t/s!AioBpGMgtsWRe_LbGH0b6DX4Akk?e=hwC17d)
+- - - -
+
+# ![Apollo Justice: Ace Attorney icon](/ajaa.ico) Apollo Justice: Ace Attorney
+## JTPaper's Remastered OST
+   - **Android** music mod<br> 
+[Google Drive](https://drive.google.com/file/d/1DQCXxW3U-S5rP3YLj9VzrybyWOQvFpLV/view?usp=sharing)[^1]<br>
+[MediaFire](https://www.mediafire.com/file/9oynjranf4w67rl/AJAA_JTPaper%2527s_MusicMod_%2528Android%2529.zip/file)<br>
+[OneDrive](https://1drv.ms/u/s!AioBpGMgtsWRcCz-xc09hgrs9XM?e=roD4ZV)
+   - **Nintendo 3DS** music mod<br>
+[Google Drive](https://drive.google.com/file/d/1CMrFENf-IH_vAj1ayU53WyW8_aYxA-FQ/view?usp=sharing)<br>
+[MediaFire](https://www.mediafire.com/file/2tjhxgji5vd70fi/AJAA_JTPaper%2527s_MusicMod_%2528Nintendo3DS%2529.zip/file)<br>
+[OneDrive](https://1drv.ms/u/s!AioBpGMgtsWRb4-R4D5uEOCI0fA?e=cf2RCp)
+- - - -
+
+# ![Ace Attorney Investigations icon](/aai.ico) Ace Attorney Investigations
+## JTPaper's Remastered OST
+   - **Android** music mod<br>
+~~Google Drive~~<br>
+[IceDrive](https://icedrive.net/s/5tv4SRCbXRQSyGC6uPuywv9PvfFP)<br>
+[MediaFire](https://www.mediafire.com/file/aufygi8dskp55wx/AAI_JTPaper_MusicMod_%2528Android%2529.zip/file)<br>
+[OneDrive](https://1drv.ms/u/s!AioBpGMgtsWRfRXLjzPi9-uKvQg?e=s1ajQx)
+- - - -
+
+# ![Ace Attorney Investigations 2 icon](/aai2.ico) Ace Attorney Investigations 2
+## JTPaper's Remastered OST
+   - **Android** music mod<br>
+~~Google Drive~~<br>
+[IceDrive](https://icedrive.net/s/NXuFXk72thTBtvBtN13Y5ZZSjG4t)<br>
+[MediaFire](https://www.mediafire.com/file/ifot2zk8gj62kf3/AAI2_JTPaper%2527s_Music_Mod_%2528Android%2529.zip/file)<br>
+[OneDrive](https://1drv.ms/u/s!AioBpGMgtsWRdWxz6Kc9Slfxg-M?e=jrVjpb)
 
 [^1]: Note that this contains a self-extracting archive instead to evade the automatic virus-check that would flag the script's executable file as false positive. It should work on Windows, and can be easily extracted manually in other operating systems too, by using [7-Zip](https://www.7-zip.org/download.html).
 [^2]: Higher quality Japanese voice clips (audio), sounds such as "Objection!", "Hold it!", "Take that!", as the game uses GBA quality for these.
