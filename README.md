@@ -10,6 +10,18 @@
    - BGM modding helper files<br>
 [Mega.nz](https://mega.nz/file/IXsQkKwI#09oraovjZ_HLXMZwATmvnH8_HfGFxiBK63UO512Cfpk)<br>
 [IceDrive](https://icedrive.net/s/ktCCxAv8QTukhPZYF2fk7aygW644)<br>
+
+## niltwill's texture mods (PC only)
+   - **Black Background Bars** (replace the left and right background bars with black color)<br>
+[Mega.nz](https://mega.nz/file/kD10hRAR#Wk81VQ5RNe8bPV9Wm1ewZx9xMBC5UlwVysdE9LJwvso)<br>
+[IceDrive](https://icedrive.net/s/kV63B9jkf6j11j3uD21fZhNb5WVa)<br>
+   - **Transparent UI [Low]** (make the message boxes and balloons a little transparent)<br>
+[Mega.nz](https://mega.nz/file/cLkxlRKY#zDFAUu5cFefpgN-oQE2-obGI8Oy9sHdFXUyUoiBHVSc)<br>
+[IceDrive](https://icedrive.net/s/bGx9XhSGi273yQ2zBzQ6CxuzRNCS)<br>
+   - **Transparent UI [High]** (make the message boxes and balloons more transparent)<br>
+[Mega.nz](https://mega.nz/file/IOUxBKwS#M2aidZLMnOk_v7dfpYtKiWlNpAdJQ2ICtBa7la1B1K0)<br>
+[IceDrive](https://icedrive.net/s/5Yg13t5TG5Gi47GjTRaSuGi64G7S)<br>
+
 - - - -
 
 # ![Phoenix Wright: Ace Attorney Trilogy icon](/aat.ico) Phoenix Wright: Ace Attorney Trilogy
