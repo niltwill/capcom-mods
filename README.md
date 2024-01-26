@@ -2,7 +2,7 @@
 
 ## JTPaper's Remastered OST
    - **PC (Steam)** music mod (suitable to replace both the arranged and/or original OST)<br>
-[Mega.nz](https://mega.nz/file/NftnBBwK#PYePTQIQfe4H-5blT2H1mWdF3XeZPOuquIjJRg8pu50)<br>
+[Mega.nz](https://mega.nz/file/EXkmxAaQ#L2mt4XoydGrZ2a6VdGOHvSHm-_Zm-5zf6Kk2TKg2LK8)<br>
 [IceDrive](https://icedrive.net/s/YFt8GYP6gxY9227NTbSRaCAP1X6Y)<br>
    - **Nintendo Switch** music mod (suitable to replace both the arranged and/or original OST)<br>
 [Mega.nz](https://mega.nz/file/4S9gxB7a#QLWnTyn8CSNHaPCx2KGadrY-8LvL11Y2BjeJjEYVn6U)<br>
