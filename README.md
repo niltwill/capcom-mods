@@ -1,7 +1,7 @@
 # ![Apollo Justice: Ace Attorney Trilogy icon](/ajaa-trilogy.ico) Apollo Justice: Ace Attorney Trilogy
 
 ## niltwill's mods
-	- **GS456_Hacks** (to apply memory hacks with a DLL, inspired by [this thread](https://steamcommunity.com/app/2187220/discussions/0/5829413623761932020/))<br>
+   - **GS456_Hacks** (to apply memory hacks with a DLL, inspired by [this thread](https://steamcommunity.com/app/2187220/discussions/0/5829413623761932020/))<br>
 [Mega.nz](https://mega.nz/file/lbUi3LRR#PEb5u4RWH6czlvyFYjJ4Db9CLYeCKGOqZf4A1h3gC-8)<br>
 [IceDrive](https://icedrive.net/s/AQhvSjkAG2tP91Y9Zx9ZR4f3t5YG)
 
