@@ -1,3 +1,12 @@
+# ![Apollo Justice: Ace Attorney Trilogy icon](/ajaa-trilogy.ico) Apollo Justice: Ace Attorney Trilogy
+
+## niltwill's mods
+	- **GS456_Hacks** (to apply memory hacks with a DLL, inspired by [this thread](https://steamcommunity.com/app/2187220/discussions/0/5829413623761932020/))<br>
+[Mega.nz](https://mega.nz/file/lbUi3LRR#PEb5u4RWH6czlvyFYjJ4Db9CLYeCKGOqZf4A1h3gC-8)<br>
+[IceDrive](https://icedrive.net/s/AQhvSjkAG2tP91Y9Zx9ZR4f3t5YG)
+
+- - - -
+
 # ![Ghost Trick: Phantom Detective icon](/ghost-trick-pd.ico) Ghost Trick: Phantom Detective
 
 ## JTPaper's Remastered OST
@@ -9,7 +18,7 @@
 [IceDrive](https://icedrive.net/s/f4hZ8NCVXaBFyk2Rk39G7zZhP53Y)<br>
    - BGM modding helper files<br>
 [Mega.nz](https://mega.nz/file/IXsQkKwI#09oraovjZ_HLXMZwATmvnH8_HfGFxiBK63UO512Cfpk)<br>
-[IceDrive](https://icedrive.net/s/ktCCxAv8QTukhPZYF2fk7aygW644)<br>
+[IceDrive](https://icedrive.net/s/ktCCxAv8QTukhPZYF2fk7aygW644)
 
 ## niltwill's texture mods (PC only)
    - **Black Background Bars** (replace the left and right background bars with black color)<br>
@@ -20,7 +29,7 @@
 [IceDrive](https://icedrive.net/s/bGx9XhSGi273yQ2zBzQ6CxuzRNCS)<br>
    - **Transparent UI [High]** (make the message boxes and balloons more transparent)<br>
 [Mega.nz](https://mega.nz/file/IOUxBKwS#M2aidZLMnOk_v7dfpYtKiWlNpAdJQ2ICtBa7la1B1K0)<br>
-[IceDrive](https://icedrive.net/s/5Yg13t5TG5Gi47GjTRaSuGi64G7S)<br>
+[IceDrive](https://icedrive.net/s/5Yg13t5TG5Gi47GjTRaSuGi64G7S)
 
 - - - -
 
@@ -37,7 +46,7 @@
 [OneDrive](https://1drv.ms/u/s!AioBpGMgtsWRgWzYdrx5fAu9rDvL?e=jJIfMO)
    - **Nintendo Switch** music mod<br>
 [IceDrive](https://icedrive.net/s/6AB31SYyVhBNuQfkjzxfF3tzViug)<br>
-[MediaFire](https://www.mediafire.com/file/7vrwc6qtgkv038w/PWAAT_JTPaper_MusicMod_NintendoSwitch.zip/file)<br>
+[MediaFire](https://www.mediafire.com/file/7vrwc6qtgkv038w/PWAAT_JTPaper_MusicMod_NintendoSwitch.zip/file)
 
 ## Benlinlin's Remastered OST
    - **PC (Steam)** music mod<br>
