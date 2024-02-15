@@ -1,9 +1,21 @@
 # ![Apollo Justice: Ace Attorney Trilogy icon](/ajaa-trilogy.ico) Apollo Justice: Ace Attorney Trilogy
 
-## niltwill's mods
-   - **GS456_Hacks** (memory hacks with a DLL)<br>
-[Mega.nz](https://mega.nz/file/tTtnGIpZ#VrrINPNcD0wQh9qfCr1iijUY1n36n_7caoxk4hqKX58)<br>
-[IceDrive](https://icedrive.net/s/AQhvSjkAG2tP91Y9Zx9ZR4f3t5YG)
+## PC mods
+   - **GS456_Hacks** (memory hacks with a DLL - a framerate mod)<br>
+[Mega.nz](https://mega.nz/file/QXNkmTgT#muN70gzbVc1tr8vgiHJTHbxt47BMnBXCxAlxcTIbVmY)<br>
+[IceDrive](https://icedrive.net/s/AQhvSjkAG2tP91Y9Zx9ZR4f3t5YG)<br>
+   - **AA:AJ - Gyakuten Saiban Sound BOX** music mod (to replace the reused PW:AA tracks in AA:AJ)<br>
+[Mega.nz](https://mega.nz/file/1HVhgTwA#jIg7F0ItHcKI00lX5LAfqNPVhV9igqhkoAjRERkXTh8)<br>
+[IceDrive](https://icedrive.net/s/tT5yXj6xBZ9DbAC16WaR34yuYNBa)<br>
+   - **AA:AJ - JTPaper's Music Mod (AA:AJ)** (for remastered AA:AJ tracks)<br>
+[Mega.nz](https://mega.nz/file/kPM1jBbT#sho92p8RquIqXJW5-l8FpXrYl2DncC5voVQyTMzCd2U)<br>
+[IceDrive](https://icedrive.net/s/C4ADkbZ5zy14f7CX7RkkSkxQh4aN)<br>
+   - **AA:AJ - JTPaper's Music Mod (PW:AA)** (for remastered PW:AA tracks in AA:AJ)<br>
+[Mega.nz](https://mega.nz/file/BOdmBZAB#QZolPnujvsBPm_STyMBEzzPowO5n3NT6466RVv-9CNM)<br>
+[IceDrive](https://icedrive.net/s/Bt2VTZZz1tajPFA2vt1Qk8xg2VxC)<br>
+   - **AA:AJ - Phoenix Wright Original (English) Voice** SE mod (to use the original three court voice lines for Phoenix Wright in AA:AJ)<br>
+[Mega.nz](https://mega.nz/file/oHkWSaDL#gdikN7AKLubmYmPjLSyu_Xk4ckMkt_YyjlJDhfhTkDA)<br>
+[IceDrive](https://icedrive.net/s/wx5kTGziNYhYYZv5kiu92Cu4f313)
 
 - - - -
 
@@ -15,13 +27,10 @@
 [IceDrive](https://icedrive.net/s/YFt8GYP6gxY9227NTbSRaCAP1X6Y)<br>
    - **Nintendo Switch** music mod (suitable to replace both the arranged and/or original OST)<br>
 [Mega.nz](https://mega.nz/file/4S9gxB7a#QLWnTyn8CSNHaPCx2KGadrY-8LvL11Y2BjeJjEYVn6U)<br>
-[IceDrive](https://icedrive.net/s/f4hZ8NCVXaBFyk2Rk39G7zZhP53Y)<br>
-   - BGM modding helper files<br>
-[Mega.nz](https://mega.nz/file/IXsQkKwI#09oraovjZ_HLXMZwATmvnH8_HfGFxiBK63UO512Cfpk)<br>
-[IceDrive](https://icedrive.net/s/ktCCxAv8QTukhPZYF2fk7aygW644)
+[IceDrive](https://icedrive.net/s/f4hZ8NCVXaBFyk2Rk39G7zZhP53Y)
 
 ## niltwill's texture mods (PC only)
-   - **Black Background Bars** (replace the left and right background bars with black color)<br>
+   - **Black Background Bars** (replace the left and right background bars with the black color)<br>
 [Mega.nz](https://mega.nz/file/kD10hRAR#Wk81VQ5RNe8bPV9Wm1ewZx9xMBC5UlwVysdE9LJwvso)<br>
 [IceDrive](https://icedrive.net/s/kV63B9jkf6j11j3uD21fZhNb5WVa)<br>
    - **Transparent UI [Low]** (make the message boxes and balloons a little transparent)<br>
@@ -31,9 +40,26 @@
 [Mega.nz](https://mega.nz/file/IOUxBKwS#M2aidZLMnOk_v7dfpYtKiWlNpAdJQ2ICtBa7la1B1K0)<br>
 [IceDrive](https://icedrive.net/s/5Yg13t5TG5Gi47GjTRaSuGi64G7S)
 
+## Others
+   - BGM modding helper files<br>
+[Mega.nz](https://mega.nz/file/IXsQkKwI#09oraovjZ_HLXMZwATmvnH8_HfGFxiBK63UO512Cfpk)<br>
+[IceDrive](https://icedrive.net/s/ktCCxAv8QTukhPZYF2fk7aygW644)
+
 - - - -
 
 # ![Phoenix Wright: Ace Attorney Trilogy icon](/aat.ico) Phoenix Wright: Ace Attorney Trilogy
+
+## Gyakuten Saiban Sound BOX
+   - **PC (Steam)** Gyakuten Saiban Sound BOX - music mod<br>
+[Mega.nz](https://mega.nz/file/kHNwUb6T#os7a_YaD7sML9j2Hb0c8H_-WZj4kPCBU0o4gyNLxx5s)<br>
+[IceDrive](https://icedrive.net/s/TXS3DxWySFyg92D4gFCQCxGRRwRV)<br>
+[MediaFire](https://www.mediafire.com/file/rktzlkbjzvuvwwp/PWAAT_GyakutenSaibanSoundBOX_MusicMod.exe/file)
+   - **Nintendo 3DS** music mod<br>
+[Mega.nz](https://mega.nz/file/Ne8hDSwK#g7gK2xMKL3iWJE_hLbls4gEMSALc0aS0YbInUOyvxT8)<br>
+[IceDrive](https://icedrive.net/s/gyST6ZWXFvSY7266zFF1Ph4axwwS)
+   - **Nintendo Switch** music mod<br>
+[Mega.nz](https://mega.nz/file/Fe1HiRQa#0l8oMpPlfajOoApMM0HW2dSCHXm4QnSTIgAkMmUooCY)<br>
+[IceDrive](https://icedrive.net/s/4WazvfANjPxTA97B1zy7YS93thXN)
 
 ## JTPaper's Remastered OST
    - **PC (Steam)** music mod<br>
@@ -109,15 +135,10 @@
 [Google Drive](https://drive.google.com/file/d/1nJtiiGyQfSGkClr4b5Ri0Kvpw8Bn03i3/view?usp=sharing)<br>
 [MediaFire](https://www.mediafire.com/file/4q4yd5wa2q3vi0x/PWAAT-GS123NS_JPN_HD_Audio_Mod.zip/file)<br>
 [IceDrive](https://icedrive.net/s/ATRjzyAXNR7WYjt9jgv3Gh1uDVy3)
-   - **PC (Steam)** Gyakuten Saiban Sound BOX - music mod<br>
-[IceDrive](https://icedrive.net/s/TXS3DxWySFyg92D4gFCQCxGRRwRV)<br>
-[MediaFire](https://www.mediafire.com/file/rktzlkbjzvuvwwp/PWAAT_GyakutenSaibanSoundBOX_MusicMod.exe/file)
    - **PC (Steam)** FUSIONROCKER's music mod (only few tracks)<br>
 [Google Drive](https://drive.google.com/file/d/1RH1gu9dcoA5hPs_xxWEQOTGnNADlc6AO/view?usp=sharing)<br>
 [MediaFire](https://www.mediafire.com/file/ibjikv5ndu0jr90/PWAAT_FUSIONROCKER_MusicMod.exe/file)<br>
 [OneDrive](https://1drv.ms/u/s!AioBpGMgtsWRad1Ym6nWdT3_fYc?e=8lAoTg)
-   - **Mobile port** JTPaper's music mod (***this does not work!***)[^3]<br>
-[IceDrive](https://icedrive.net/s/ZYhAgDV4g3Qjf4VzXaQ72f5ThfYu)
    - Music / sound modding tutorial<br>
 [Google Drive](https://drive.google.com/file/d/1wdr5Hk9LxmNGa1-V1putStDrFQdxiqnM/view?usp=sharing)<br>
 [MediaFire](https://www.mediafire.com/file/unlm3sa03v732jx/PWAAT_MusicEditingTutorial.pdf/file)<br>
@@ -134,14 +155,15 @@
 
 # ![Apollo Justice: Ace Attorney icon](/ajaa.ico) Apollo Justice: Ace Attorney
 ## JTPaper's Remastered OST
-   - **Android** music mod<br> 
-[Google Drive](https://drive.google.com/file/d/1DQCXxW3U-S5rP3YLj9VzrybyWOQvFpLV/view?usp=sharing)[^1]<br>
-[MediaFire](https://www.mediafire.com/file/9oynjranf4w67rl/AJAA_JTPaper%2527s_MusicMod_%2528Android%2529.zip/file)<br>
-[OneDrive](https://1drv.ms/u/s!AioBpGMgtsWRcCz-xc09hgrs9XM?e=roD4ZV)
+   - **Android** music mod<br>
+[Mega.nz](https://mega.nz/file/BCEXFLRA#RynqxqOD1Z1tp7AZBHQRShhkakbSIrsm4F-mlq0Uj50)<br>
+[IceDrive](https://icedrive.net/s/FbjxwFh85StP7vbYik8PQtQZY8tX)<br>
+[Google Drive](https://drive.google.com/file/d/1DQCXxW3U-S5rP3YLj9VzrybyWOQvFpLV/view?usp=sharing)[^1]
    - **Nintendo 3DS** music mod<br>
-[Google Drive](https://drive.google.com/file/d/1CMrFENf-IH_vAj1ayU53WyW8_aYxA-FQ/view?usp=sharing)<br>
-[MediaFire](https://www.mediafire.com/file/2tjhxgji5vd70fi/AJAA_JTPaper%2527s_MusicMod_%2528Nintendo3DS%2529.zip/file)<br>
-[OneDrive](https://1drv.ms/u/s!AioBpGMgtsWRb4-R4D5uEOCI0fA?e=cf2RCp)
+[Mega.nz](https://mega.nz/file/BbMjiBaT#RbfATFfwD8I-z4Ja3gXN153LSp1tbaaUWKAVVLURAbo)<br>
+[IceDrive](https://icedrive.net/s/zfgYDR6xG8Dh8Saa2SQ33tggzbBb)<br>
+[Google Drive](https://drive.google.com/file/d/1CMrFENf-IH_vAj1ayU53WyW8_aYxA-FQ/view?usp=sharing)
+
 - - - -
 
 # ![Ace Attorney Investigations icon](/aai.ico) Ace Attorney Investigations
@@ -163,4 +185,3 @@
 
 [^1]: Note that this contains a self-extracting archive instead to evade the automatic virus-check that would flag the script's executable file as false positive. It should work on Windows, and can be easily extracted manually in other operating systems too, by using [7-Zip](https://www.7-zip.org/download.html).
 [^2]: Higher quality Japanese voice clips (audio), sounds such as "Objection!", "Hold it!", "Take that!", as the game uses GBA quality for these.
-[^3]: Unless one is advanced enough to be able to hack the game (but can you even recompile the code after that?) and remove the integrity check for the files (my hunch is that it's a server-based authentication with Google Play Services), it remains unusable. So this is only here in case one extremely talented *Android hacker* wants to try going going further with it. For most, it's of no interest. I confirmed that it does not work at all. Trying to apply the music mod will only result in a black screen, as the game is never going to load.
