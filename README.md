@@ -18,10 +18,10 @@
 [IceDrive](https://icedrive.net/s/wx5kTGziNYhYYZv5kiu92Cu4f313)
 
 ## Nintendo Switch mods
-> Remember, that this port's RomFS has a patch PAK file already (**re_chunk_000.pak.patch_001.pak**), so you should use a modded (custom) PAK starting from the number 002: **re_chunk_000.pak.patch_002.pak**
-> You may need to change the numbering depending on what mods you install. They may clash, like the *Gyakuten Saiban Sound BOX* and *JTPaper's Music Mod (PW:AA)* (use one or the other)
-> For information on how to apply these modded PAK files, [check this wiki page](https://github.com/mhvuze/MonsterHunterRiseModding/wiki/Using-Custom-Files#using-a-custom-pak-patch-on-nintendo-switch).
-> The title ID for AJ: AAT is probably *010020D01B890000* (although this might change depending on region, so this may not always be the case)
+> Remember, that this port's RomFS has a patch PAK file already (**re_chunk_000.pak.patch_001.pak**), so you should use a modded (custom) PAK starting from the number 002: **re_chunk_000.pak.patch_002.pak**<br>
+> You may need to change the numbering depending on what mods you install. They may clash, like the *Gyakuten Saiban Sound BOX* and *JTPaper's Music Mod (PW:AA)* (use one or the other)<br>
+> For information on how to apply these modded PAK files, [check this wiki page](https://github.com/mhvuze/MonsterHunterRiseModding/wiki/Using-Custom-Files#using-a-custom-pak-patch-on-nintendo-switch).<br>
+> The title ID for AJ: AAT is probably *010020D01B890000* (although this might change depending on region, so this may not always be the case)<br>
 > Ryujinx is better for emulating this title over Yuzu (I could observe graphical glitches with Yuzu).
    - **WAV Leftover Fix** (there are 39 files still using a WAV source instead of OGG, this mod fixes that)<br>
 [Mega.nz](https://mega.nz/file/MHURDRAQ#-fixf2JaWN-FSP9Fw5SUndjpKHQqOTMBuCGuUHT5_XY)<br>
