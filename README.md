@@ -4,16 +4,16 @@
    - **GS456_Hacks** (memory hacks with a DLL - currently a framerate mod)<br>
 [IceDrive](https://icedrive.net/s/AQhvSjkAG2tP91Y9Zx9ZR4f3t5YG)<br>
 [Mega.nz](https://mega.nz/file/pHFShRJC#gTMIuxpRhFasDKIkUnZ5FCz5XA80EMCi2r6TiHUkjAs)
-   - **AA:AJ - Gyakuten Saiban Sound BOX** music mod (to replace the reused PW:AA tracks in AJ:AA)<br>
+   - **AJ:AA - Gyakuten Saiban Sound BOX** music mod (to replace the reused PW:AA tracks in AJ:AA)<br>
 [IceDrive](https://icedrive.net/s/tT5yXj6xBZ9DbAC16WaR34yuYNBa)<br>
 [Mega.nz](https://mega.nz/file/1HVhgTwA#jIg7F0ItHcKI00lX5LAfqNPVhV9igqhkoAjRERkXTh8)
-   - **AA:AJ - JTPaper's Music Mod (AJ:AA)** (for remastered AJ:AA tracks)<br>
+   - **AJ:AA - JTPaper's Music Mod (AJ:AA)** (for remastered AJ:AA tracks)<br>
 [IceDrive](https://icedrive.net/s/FthS6P4bD7R8fkZjCwz9TTBw2haT)<br>
 [Mega.nz](https://mega.nz/file/QC1SQYKT#t-d4z_ZdHAgr5AQBLFSuJdiHHvo7L0yViwulgeTsPGY)
-   - **AA:AJ - JTPaper's Music Mod (PW:AA)** (for remastered PW:AA tracks in AJ:AA)<br>
+   - **AJ:AA - JTPaper's Music Mod (PW:AA)** (for remastered PW:AA tracks in AJ:AA)<br>
 [IceDrive](https://icedrive.net/s/Bt2VTZZz1tajPFA2vt1Qk8xg2VxC)<br>
 [Mega.nz](https://mega.nz/file/BOdmBZAB#QZolPnujvsBPm_STyMBEzzPowO5n3NT6466RVv-9CNM)
-   - **AA:AJ - Phoenix Wright Original (English) Voice** SE mod (to use the original three court voice lines for Phoenix Wright in AA:AJ)<br>
+   - **AJ:AA - Phoenix Wright Original (English) Voice** SE mod (to use the original three court voice lines for Phoenix Wright in AJ:AA)<br>
 [IceDrive](https://icedrive.net/s/wx5kTGziNYhYYZv5kiu92Cu4f313)<br>
 [Mega.nz](https://mega.nz/file/oHkWSaDL#gdikN7AKLubmYmPjLSyu_Xk4ckMkt_YyjlJDhfhTkDA)
 
@@ -26,16 +26,16 @@
    - **WAV Leftover Fix** (there are 39 files still using a WAV source instead of OGG, this mod fixes that)<br>
 [IceDrive](https://icedrive.net/s/Zj7D6Xa7YT3hGybWaTy9TbQk1P6h)<br>
 [Mega.nz](https://mega.nz/file/MHURDRAQ#-fixf2JaWN-FSP9Fw5SUndjpKHQqOTMBuCGuUHT5_XY)
-   - **AA:AJ - Gyakuten Saiban Sound BOX** music mod (to replace the reused PW:AA tracks in AA:AJ)<br>
+   - **AJ:AA - Gyakuten Saiban Sound BOX** music mod (to replace the reused PW:AA tracks in AJ:AA)<br>
 [IceDrive](https://icedrive.net/s/2PwC6GgQF3vTWtX8Z3DGz58D1A1C)<br>
 [Mega.nz](https://mega.nz/file/9HFClCZY#HiK0qAH7LqBYEALla2x2tFGuTHJGS964wl3C9PFy1vk)
-   - **AA:AJ - JTPaper's Music Mod (AJ:AA)** (for remastered AJ:AA tracks)<br>
+   - **AJ:AA - JTPaper's Music Mod (AJ:AA)** (for remastered AJ:AA tracks)<br>
 [IceDrive](https://icedrive.net/s/yyaDxZ6SAY4k2263QAF6vh2F2SWk)<br>
 [Mega.nz](https://mega.nz/file/haM10Lia#4dwEK3iYvDlGLf4sA82dqwoOB71ySRT-dSG8jXtbeJ4)
-   - **AA:AJ - JTPaper's Music Mod (PW:AA)** (for remastered PW:AA tracks in AJ:AA)<br>
+   - **AJ:AA - JTPaper's Music Mod (PW:AA)** (for remastered PW:AA tracks in AJ:AA)<br>
 [IceDrive](https://icedrive.net/s/SBRaTy31yvvkzZGY8XtRX7kjChfT)<br>
 [Mega.nz](https://mega.nz/file/oLNxEArQ#BuEvHeFK4MrVYsumc1fncTL5LBBqIQmE5biAYKGVY30)
-   - **AA:AJ - Phoenix Wright Original (English) Voice** SE mod (to use the original three court voice lines for Phoenix Wright in AJ:AA)<br>
+   - **AJ:AA - Phoenix Wright Original (English) Voice** SE mod (to use the original three court voice lines for Phoenix Wright in AJ:AA)<br>
 [IceDrive](https://icedrive.net/s/P52Q4fuY48g57ihSb1QaB7Xb7xwf)<br>
 [Mega.nz](https://mega.nz/file/gTNWxaib#ewS06C-D3C1eUJM7w58TCma6REGVVC2DkV_H2se6Nlw)
 
