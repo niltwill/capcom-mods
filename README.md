@@ -1,21 +1,43 @@
 # ![Apollo Justice: Ace Attorney Trilogy icon](/ajaa-trilogy.ico) Apollo Justice: Ace Attorney Trilogy
 
 ## PC mods
-   - **GS456_Hacks** (memory hacks with a DLL - a framerate mod)<br>
-[Mega.nz](https://mega.nz/file/QXNkmTgT#muN70gzbVc1tr8vgiHJTHbxt47BMnBXCxAlxcTIbVmY)<br>
+   - **GS456_Hacks** (memory hacks with a DLL - currently a framerate mod)<br>
+[Mega.nz](https://mega.nz/file/pHFShRJC#gTMIuxpRhFasDKIkUnZ5FCz5XA80EMCi2r6TiHUkjAs)<br>
 [IceDrive](https://icedrive.net/s/AQhvSjkAG2tP91Y9Zx9ZR4f3t5YG)<br>
-   - **AA:AJ - Gyakuten Saiban Sound BOX** music mod (to replace the reused PW:AA tracks in AA:AJ)<br>
+   - **AA:AJ - Gyakuten Saiban Sound BOX** music mod (to replace the reused PW:AA tracks in AJ:AA)<br>
 [Mega.nz](https://mega.nz/file/1HVhgTwA#jIg7F0ItHcKI00lX5LAfqNPVhV9igqhkoAjRERkXTh8)<br>
 [IceDrive](https://icedrive.net/s/tT5yXj6xBZ9DbAC16WaR34yuYNBa)<br>
-   - **AA:AJ - JTPaper's Music Mod (AA:AJ)** (for remastered AA:AJ tracks)<br>
+   - **AA:AJ - JTPaper's Music Mod (AJ:AA)** (for remastered AJ:AA tracks)<br>
 [Mega.nz](https://mega.nz/file/kPM1jBbT#sho92p8RquIqXJW5-l8FpXrYl2DncC5voVQyTMzCd2U)<br>
 [IceDrive](https://icedrive.net/s/C4ADkbZ5zy14f7CX7RkkSkxQh4aN)<br>
-   - **AA:AJ - JTPaper's Music Mod (PW:AA)** (for remastered PW:AA tracks in AA:AJ)<br>
+   - **AA:AJ - JTPaper's Music Mod (PW:AA)** (for remastered PW:AA tracks in AJ:AA)<br>
 [Mega.nz](https://mega.nz/file/BOdmBZAB#QZolPnujvsBPm_STyMBEzzPowO5n3NT6466RVv-9CNM)<br>
 [IceDrive](https://icedrive.net/s/Bt2VTZZz1tajPFA2vt1Qk8xg2VxC)<br>
    - **AA:AJ - Phoenix Wright Original (English) Voice** SE mod (to use the original three court voice lines for Phoenix Wright in AA:AJ)<br>
 [Mega.nz](https://mega.nz/file/oHkWSaDL#gdikN7AKLubmYmPjLSyu_Xk4ckMkt_YyjlJDhfhTkDA)<br>
 [IceDrive](https://icedrive.net/s/wx5kTGziNYhYYZv5kiu92Cu4f313)
+
+## Nintendo Switch mods
+> Remember, that this port's RomFS has a patch PAK file already (**re_chunk_000.pak.patch_001.pak**), so you should use a modded (custom) PAK starting from the number 002: **re_chunk_000.pak.patch_002.pak**
+> You may need to change the numbering depending on what mods you install. They may clash, like the *Gyakuten Saiban Sound BOX* and *JTPaper's Music Mod (PW:AA)* (use one or the other)
+> For information on how to apply these modded PAK files, [check this wiki page](https://github.com/mhvuze/MonsterHunterRiseModding/wiki/Using-Custom-Files#using-a-custom-pak-patch-on-nintendo-switch).
+> The title ID for AJ: AAT is probably *010020D01B890000* (although this might change depending on region, so this may not always be the case)
+> Ryujinx is better for emulating this title over Yuzu (I could observe graphical glitches with Yuzu).
+   - **WAV Leftover Fix** (there are 39 files still using a WAV source instead of OGG, this mod fixes that)<br>
+[Mega.nz](https://mega.nz/file/MHURDRAQ#-fixf2JaWN-FSP9Fw5SUndjpKHQqOTMBuCGuUHT5_XY)<br>
+[IceDrive](https://icedrive.net/s/Zj7D6Xa7YT3hGybWaTy9TbQk1P6h)<br>
+   - **AA:AJ - Gyakuten Saiban Sound BOX** music mod (to replace the reused PW:AA tracks in AA:AJ)<br>
+[Mega.nz](https://mega.nz/file/9HFClCZY#HiK0qAH7LqBYEALla2x2tFGuTHJGS964wl3C9PFy1vk)<br>
+[IceDrive](https://icedrive.net/s/2PwC6GgQF3vTWtX8Z3DGz58D1A1C)<br>
+   - **AA:AJ - JTPaper's Music Mod (AJ:AA)** (for remastered AJ:AA tracks)<br>
+[Mega.nz](https://mega.nz/file/haM10Lia#4dwEK3iYvDlGLf4sA82dqwoOB71ySRT-dSG8jXtbeJ4)<br>
+[IceDrive](https://icedrive.net/s/yyaDxZ6SAY4k2263QAF6vh2F2SWk)<br>
+   - **AA:AJ - JTPaper's Music Mod (PW:AA)** (for remastered PW:AA tracks in AJ:AA)<br>
+[Mega.nz](https://mega.nz/file/oLNxEArQ#BuEvHeFK4MrVYsumc1fncTL5LBBqIQmE5biAYKGVY30)<br>
+[IceDrive](https://icedrive.net/s/SBRaTy31yvvkzZGY8XtRX7kjChfT)<br>
+   - **AA:AJ - Phoenix Wright Original (English) Voice** SE mod (to use the original three court voice lines for Phoenix Wright in AJ:AA)<br>
+[Mega.nz](https://mega.nz/file/gTNWxaib#ewS06C-D3C1eUJM7w58TCma6REGVVC2DkV_H2se6Nlw)<br>
+[IceDrive](https://icedrive.net/s/P52Q4fuY48g57ihSb1QaB7Xb7xwf)
 
 - - - -
 
