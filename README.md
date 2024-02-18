@@ -197,7 +197,6 @@
 # ![Ace Attorney Investigations 2 icon](/aai2.ico) Ace Attorney Investigations 2
 ## JTPaper's Remastered OST
    - **Android** music mod<br>
-~~Google Drive~~<br>
 [IceDrive](https://icedrive.net/s/NXuFXk72thTBtvBtN13Y5ZZSjG4t)<br>
 [MediaFire](https://www.mediafire.com/file/ifot2zk8gj62kf3/AAI2_JTPaper%2527s_Music_Mod_%2528Android%2529.zip/file)<br>
 [OneDrive](https://1drv.ms/u/s!AioBpGMgtsWRdWxz6Kc9Slfxg-M?e=jrVjpb)
