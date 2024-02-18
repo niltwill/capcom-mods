@@ -2,20 +2,20 @@
 
 ## PC mods
    - **GS456_Hacks** (memory hacks with a DLL - currently a framerate mod)<br>
-[Mega.nz](https://mega.nz/file/pHFShRJC#gTMIuxpRhFasDKIkUnZ5FCz5XA80EMCi2r6TiHUkjAs)<br>
 [IceDrive](https://icedrive.net/s/AQhvSjkAG2tP91Y9Zx9ZR4f3t5YG)<br>
+[Mega.nz](https://mega.nz/file/pHFShRJC#gTMIuxpRhFasDKIkUnZ5FCz5XA80EMCi2r6TiHUkjAs)
    - **AA:AJ - Gyakuten Saiban Sound BOX** music mod (to replace the reused PW:AA tracks in AJ:AA)<br>
-[Mega.nz](https://mega.nz/file/1HVhgTwA#jIg7F0ItHcKI00lX5LAfqNPVhV9igqhkoAjRERkXTh8)<br>
 [IceDrive](https://icedrive.net/s/tT5yXj6xBZ9DbAC16WaR34yuYNBa)<br>
+[Mega.nz](https://mega.nz/file/1HVhgTwA#jIg7F0ItHcKI00lX5LAfqNPVhV9igqhkoAjRERkXTh8)
    - **AA:AJ - JTPaper's Music Mod (AJ:AA)** (for remastered AJ:AA tracks)<br>
-[Mega.nz](https://mega.nz/file/QC1SQYKT#t-d4z_ZdHAgr5AQBLFSuJdiHHvo7L0yViwulgeTsPGY)<br>
 [IceDrive](https://icedrive.net/s/FthS6P4bD7R8fkZjCwz9TTBw2haT)<br>
+[Mega.nz](https://mega.nz/file/QC1SQYKT#t-d4z_ZdHAgr5AQBLFSuJdiHHvo7L0yViwulgeTsPGY)
    - **AA:AJ - JTPaper's Music Mod (PW:AA)** (for remastered PW:AA tracks in AJ:AA)<br>
-[Mega.nz](https://mega.nz/file/BOdmBZAB#QZolPnujvsBPm_STyMBEzzPowO5n3NT6466RVv-9CNM)<br>
 [IceDrive](https://icedrive.net/s/Bt2VTZZz1tajPFA2vt1Qk8xg2VxC)<br>
+[Mega.nz](https://mega.nz/file/BOdmBZAB#QZolPnujvsBPm_STyMBEzzPowO5n3NT6466RVv-9CNM)
    - **AA:AJ - Phoenix Wright Original (English) Voice** SE mod (to use the original three court voice lines for Phoenix Wright in AA:AJ)<br>
-[Mega.nz](https://mega.nz/file/oHkWSaDL#gdikN7AKLubmYmPjLSyu_Xk4ckMkt_YyjlJDhfhTkDA)<br>
-[IceDrive](https://icedrive.net/s/wx5kTGziNYhYYZv5kiu92Cu4f313)
+[IceDrive](https://icedrive.net/s/wx5kTGziNYhYYZv5kiu92Cu4f313)<br>
+[Mega.nz](https://mega.nz/file/oHkWSaDL#gdikN7AKLubmYmPjLSyu_Xk4ckMkt_YyjlJDhfhTkDA)
 
 ## Nintendo Switch mods
 > - Remember, that this port's RomFS has a patch PAK file already (**re_chunk_000.pak.patch_001.pak**), so you should use a modded (custom) PAK starting from the number 002: **re_chunk_000.pak.patch_002.pak**
@@ -24,20 +24,20 @@
 > - The title ID for AJ: AAT is probably *010020D01B890000* (although this might change depending on region, so this may not always be the case)
 > - Ryujinx is better for emulating this title over Yuzu (I could observe graphical glitches with Yuzu)
    - **WAV Leftover Fix** (there are 39 files still using a WAV source instead of OGG, this mod fixes that)<br>
-[Mega.nz](https://mega.nz/file/MHURDRAQ#-fixf2JaWN-FSP9Fw5SUndjpKHQqOTMBuCGuUHT5_XY)<br>
 [IceDrive](https://icedrive.net/s/Zj7D6Xa7YT3hGybWaTy9TbQk1P6h)<br>
+[Mega.nz](https://mega.nz/file/MHURDRAQ#-fixf2JaWN-FSP9Fw5SUndjpKHQqOTMBuCGuUHT5_XY)
    - **AA:AJ - Gyakuten Saiban Sound BOX** music mod (to replace the reused PW:AA tracks in AA:AJ)<br>
-[Mega.nz](https://mega.nz/file/9HFClCZY#HiK0qAH7LqBYEALla2x2tFGuTHJGS964wl3C9PFy1vk)<br>
 [IceDrive](https://icedrive.net/s/2PwC6GgQF3vTWtX8Z3DGz58D1A1C)<br>
+[Mega.nz](https://mega.nz/file/9HFClCZY#HiK0qAH7LqBYEALla2x2tFGuTHJGS964wl3C9PFy1vk)
    - **AA:AJ - JTPaper's Music Mod (AJ:AA)** (for remastered AJ:AA tracks)<br>
-[Mega.nz](https://mega.nz/file/haM10Lia#4dwEK3iYvDlGLf4sA82dqwoOB71ySRT-dSG8jXtbeJ4)<br>
 [IceDrive](https://icedrive.net/s/yyaDxZ6SAY4k2263QAF6vh2F2SWk)<br>
+[Mega.nz](https://mega.nz/file/haM10Lia#4dwEK3iYvDlGLf4sA82dqwoOB71ySRT-dSG8jXtbeJ4)
    - **AA:AJ - JTPaper's Music Mod (PW:AA)** (for remastered PW:AA tracks in AJ:AA)<br>
-[Mega.nz](https://mega.nz/file/oLNxEArQ#BuEvHeFK4MrVYsumc1fncTL5LBBqIQmE5biAYKGVY30)<br>
 [IceDrive](https://icedrive.net/s/SBRaTy31yvvkzZGY8XtRX7kjChfT)<br>
+[Mega.nz](https://mega.nz/file/oLNxEArQ#BuEvHeFK4MrVYsumc1fncTL5LBBqIQmE5biAYKGVY30)
    - **AA:AJ - Phoenix Wright Original (English) Voice** SE mod (to use the original three court voice lines for Phoenix Wright in AJ:AA)<br>
-[Mega.nz](https://mega.nz/file/gTNWxaib#ewS06C-D3C1eUJM7w58TCma6REGVVC2DkV_H2se6Nlw)<br>
-[IceDrive](https://icedrive.net/s/P52Q4fuY48g57ihSb1QaB7Xb7xwf)
+[IceDrive](https://icedrive.net/s/P52Q4fuY48g57ihSb1QaB7Xb7xwf)<br>
+[Mega.nz](https://mega.nz/file/gTNWxaib#ewS06C-D3C1eUJM7w58TCma6REGVVC2DkV_H2se6Nlw)
 
 - - - -
 
@@ -45,27 +45,27 @@
 
 ## JTPaper's Remastered OST
    - **PC (Steam)** music mod (suitable to replace both the arranged and/or original OST)<br>
-[Mega.nz](https://mega.nz/file/EXkmxAaQ#L2mt4XoydGrZ2a6VdGOHvSHm-_Zm-5zf6Kk2TKg2LK8)<br>
 [IceDrive](https://icedrive.net/s/YFt8GYP6gxY9227NTbSRaCAP1X6Y)<br>
+[Mega.nz](https://mega.nz/file/EXkmxAaQ#L2mt4XoydGrZ2a6VdGOHvSHm-_Zm-5zf6Kk2TKg2LK8)
    - **Nintendo Switch** music mod (suitable to replace both the arranged and/or original OST)<br>
-[Mega.nz](https://mega.nz/file/4S9gxB7a#QLWnTyn8CSNHaPCx2KGadrY-8LvL11Y2BjeJjEYVn6U)<br>
-[IceDrive](https://icedrive.net/s/f4hZ8NCVXaBFyk2Rk39G7zZhP53Y)
+[IceDrive](https://icedrive.net/s/f4hZ8NCVXaBFyk2Rk39G7zZhP53Y)<br>
+[Mega.nz](https://mega.nz/file/4S9gxB7a#QLWnTyn8CSNHaPCx2KGadrY-8LvL11Y2BjeJjEYVn6U)
 
-## niltwill's texture mods (PC only)
+## PC mods
    - **Black Background Bars** (replace the left and right background bars with the black color)<br>
-[Mega.nz](https://mega.nz/file/kD10hRAR#Wk81VQ5RNe8bPV9Wm1ewZx9xMBC5UlwVysdE9LJwvso)<br>
 [IceDrive](https://icedrive.net/s/kV63B9jkf6j11j3uD21fZhNb5WVa)<br>
+[Mega.nz](https://mega.nz/file/kD10hRAR#Wk81VQ5RNe8bPV9Wm1ewZx9xMBC5UlwVysdE9LJwvso)
    - **Transparent UI [Low]** (make the message boxes and balloons a little transparent)<br>
-[Mega.nz](https://mega.nz/file/cLkxlRKY#zDFAUu5cFefpgN-oQE2-obGI8Oy9sHdFXUyUoiBHVSc)<br>
 [IceDrive](https://icedrive.net/s/bGx9XhSGi273yQ2zBzQ6CxuzRNCS)<br>
+[Mega.nz](https://mega.nz/file/cLkxlRKY#zDFAUu5cFefpgN-oQE2-obGI8Oy9sHdFXUyUoiBHVSc)
    - **Transparent UI [High]** (make the message boxes and balloons more transparent)<br>
-[Mega.nz](https://mega.nz/file/IOUxBKwS#M2aidZLMnOk_v7dfpYtKiWlNpAdJQ2ICtBa7la1B1K0)<br>
-[IceDrive](https://icedrive.net/s/5Yg13t5TG5Gi47GjTRaSuGi64G7S)
+[IceDrive](https://icedrive.net/s/5Yg13t5TG5Gi47GjTRaSuGi64G7S)<br>
+[Mega.nz](https://mega.nz/file/IOUxBKwS#M2aidZLMnOk_v7dfpYtKiWlNpAdJQ2ICtBa7la1B1K0)
 
 ## Others
    - BGM modding helper files<br>
-[Mega.nz](https://mega.nz/file/IXsQkKwI#09oraovjZ_HLXMZwATmvnH8_HfGFxiBK63UO512Cfpk)<br>
-[IceDrive](https://icedrive.net/s/ktCCxAv8QTukhPZYF2fk7aygW644)
+[IceDrive](https://icedrive.net/s/ktCCxAv8QTukhPZYF2fk7aygW644)<br>
+[Mega.nz](https://mega.nz/file/IXsQkKwI#09oraovjZ_HLXMZwATmvnH8_HfGFxiBK63UO512Cfpk)
 
 - - - -
 
@@ -73,15 +73,15 @@
 
 ## Gyakuten Saiban Sound BOX
    - **PC (Steam)** Gyakuten Saiban Sound BOX - music mod<br>
-[Mega.nz](https://mega.nz/file/kHNwUb6T#os7a_YaD7sML9j2Hb0c8H_-WZj4kPCBU0o4gyNLxx5s)<br>
 [IceDrive](https://icedrive.net/s/TXS3DxWySFyg92D4gFCQCxGRRwRV)<br>
+[Mega.nz](https://mega.nz/file/kHNwUb6T#os7a_YaD7sML9j2Hb0c8H_-WZj4kPCBU0o4gyNLxx5s)<br>
 [MediaFire](https://www.mediafire.com/file/rktzlkbjzvuvwwp/PWAAT_GyakutenSaibanSoundBOX_MusicMod.exe/file)
    - **Nintendo 3DS** music mod<br>
-[Mega.nz](https://mega.nz/file/Ne8hDSwK#g7gK2xMKL3iWJE_hLbls4gEMSALc0aS0YbInUOyvxT8)<br>
-[IceDrive](https://icedrive.net/s/gyST6ZWXFvSY7266zFF1Ph4axwwS)
+[IceDrive](https://icedrive.net/s/gyST6ZWXFvSY7266zFF1Ph4axwwS)<br>
+[Mega.nz](https://mega.nz/file/Ne8hDSwK#g7gK2xMKL3iWJE_hLbls4gEMSALc0aS0YbInUOyvxT8)
    - **Nintendo Switch** music mod<br>
-[Mega.nz](https://mega.nz/file/Fe1HiRQa#0l8oMpPlfajOoApMM0HW2dSCHXm4QnSTIgAkMmUooCY)<br>
-[IceDrive](https://icedrive.net/s/4WazvfANjPxTA97B1zy7YS93thXN)
+[IceDrive](https://icedrive.net/s/4WazvfANjPxTA97B1zy7YS93thXN)<br>
+[Mega.nz](https://mega.nz/file/Fe1HiRQa#0l8oMpPlfajOoApMM0HW2dSCHXm4QnSTIgAkMmUooCY)
 
 ## JTPaper's Remastered OST
    - **PC (Steam)** music mod<br>
@@ -153,7 +153,7 @@
 [OneDrive](https://1drv.ms/u/s!AioBpGMgtsWRfCFzInqCJYi5w0w?e=1Adba4)
 
 ## Others
-   - **PC (Steam)** AdPro's HD Japanese audio mod (shouts/exclamations)[^2]<br>
+   - **PC (Steam)** AdPro's HD Japanese audio mod (shouts/exclamations)[^1]<br>
 [Google Drive](https://drive.google.com/file/d/1nJtiiGyQfSGkClr4b5Ri0Kvpw8Bn03i3/view?usp=sharing)<br>
 [MediaFire](https://www.mediafire.com/file/4q4yd5wa2q3vi0x/PWAAT-GS123NS_JPN_HD_Audio_Mod.zip/file)<br>
 [IceDrive](https://icedrive.net/s/ATRjzyAXNR7WYjt9jgv3Gh1uDVy3)
@@ -178,20 +178,17 @@
 # ![Apollo Justice: Ace Attorney icon](/ajaa.ico) Apollo Justice: Ace Attorney
 ## JTPaper's Remastered OST
    - **Android** music mod<br>
-[Mega.nz](https://mega.nz/file/BCEXFLRA#RynqxqOD1Z1tp7AZBHQRShhkakbSIrsm4F-mlq0Uj50)<br>
-[IceDrive](https://icedrive.net/s/FbjxwFh85StP7vbYik8PQtQZY8tX)<br>
-[Google Drive](https://drive.google.com/file/d/1DQCXxW3U-S5rP3YLj9VzrybyWOQvFpLV/view?usp=sharing)[^1]
+[Mega.nz](https://mega.nz/file/RfdnQQhb#N1pbQbptcdGigu57d6K36xhdIow7yuaTBsTNkHSPWGM)<br>
+[IceDrive](https://icedrive.net/s/FbjxwFh85StP7vbYik8PQtQZY8tX)
    - **Nintendo 3DS** music mod<br>
 [Mega.nz](https://mega.nz/file/BbMjiBaT#RbfATFfwD8I-z4Ja3gXN153LSp1tbaaUWKAVVLURAbo)<br>
-[IceDrive](https://icedrive.net/s/zfgYDR6xG8Dh8Saa2SQ33tggzbBb)<br>
-[Google Drive](https://drive.google.com/file/d/1CMrFENf-IH_vAj1ayU53WyW8_aYxA-FQ/view?usp=sharing)
+[IceDrive](https://icedrive.net/s/zfgYDR6xG8Dh8Saa2SQ33tggzbBb)
 
 - - - -
 
 # ![Ace Attorney Investigations icon](/aai.ico) Ace Attorney Investigations
 ## JTPaper's Remastered OST
    - **Android** music mod<br>
-~~Google Drive~~<br>
 [IceDrive](https://icedrive.net/s/5tv4SRCbXRQSyGC6uPuywv9PvfFP)<br>
 [MediaFire](https://www.mediafire.com/file/aufygi8dskp55wx/AAI_JTPaper_MusicMod_%2528Android%2529.zip/file)<br>
 [OneDrive](https://1drv.ms/u/s!AioBpGMgtsWRfRXLjzPi9-uKvQg?e=s1ajQx)
@@ -205,5 +202,4 @@
 [MediaFire](https://www.mediafire.com/file/ifot2zk8gj62kf3/AAI2_JTPaper%2527s_Music_Mod_%2528Android%2529.zip/file)<br>
 [OneDrive](https://1drv.ms/u/s!AioBpGMgtsWRdWxz6Kc9Slfxg-M?e=jrVjpb)
 
-[^1]: Note that this contains a self-extracting archive instead to evade the automatic virus-check that would flag the script's executable file as false positive. It should work on Windows, and can be easily extracted manually in other operating systems too, by using [7-Zip](https://www.7-zip.org/download.html).
-[^2]: Higher quality Japanese voice clips (audio), sounds such as "Objection!", "Hold it!", "Take that!", as the game uses GBA quality for these.
+[^1]: Higher quality Japanese voice clips (audio), sounds such as "Objection!", "Hold it!", "Take that!", as the game uses GBA quality for these.
