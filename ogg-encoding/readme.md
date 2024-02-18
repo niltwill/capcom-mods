@@ -1,6 +1,6 @@
-This is my compiled version of *libvorbis 1.3.6* ("libvorbis I 20180316") on Windows. As you can imagine, it's [https://deltaepsilon.ca/posts/compiling-libogg-libvorbis-for-dummies](not as straightforward) to get it compiled.
-This version is a [https://www.linuxfromscratch.org/blfs/view/9.1/multimedia/vorbistools.html](lot) easier to compile on a Linux distro from scratch, locally
-(to not pollute your existing system, keep the prefix to `/usr/local`, and you don't need to install the docs).
+This is my compiled version of *libvorbis 1.3.6* ("libvorbis I 20180316") on Windows. As you can imagine, it's [not as straightforward](https://deltaepsilon.ca/posts/compiling-libogg-libvorbis-for-dummies) to get it compiled.
+This version is a [lot](https://www.linuxfromscratch.org/blfs/view/9.1/multimedia/vorbistools.html) easier to compile on a Linux distro from scratch, locally
+(to not pollute your existing system, you should keep the prefix to `/usr/local`, and you don't need to install the docs).
 Or you can just try installing your distro's `vorbis-tools` package if you don't care about using the exact same version as the games. The newest works as well.
 
 > Note: My commands below assume you're on a Windows system.
