@@ -22,7 +22,7 @@
 > - You may need to change the numbering depending on what mods you install. They may clash, like the *Gyakuten Saiban Sound BOX* and *JTPaper's Music Mod (PW:AA)* (use one or the other)
 > - For information on how to apply these modded PAK files, [check this wiki page](https://github.com/mhvuze/MonsterHunterRiseModding/wiki/Using-Custom-Files#using-a-custom-pak-patch-on-nintendo-switch)
 > - The title ID for AJ: AAT is probably *010020D01B890000* (although this might change depending on region, so this may not always be the case)
-> - Ryujinx is better for emulating this title over Yuzu (I could observe graphical glitches with Yuzu).
+> - Ryujinx is better for emulating this title over Yuzu (I could observe graphical glitches with Yuzu)
    - **WAV Leftover Fix** (there are 39 files still using a WAV source instead of OGG, this mod fixes that)<br>
 [Mega.nz](https://mega.nz/file/MHURDRAQ#-fixf2JaWN-FSP9Fw5SUndjpKHQqOTMBuCGuUHT5_XY)<br>
 [IceDrive](https://icedrive.net/s/Zj7D6Xa7YT3hGybWaTy9TbQk1P6h)<br>
