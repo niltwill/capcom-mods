@@ -8,8 +8,8 @@
 [Mega.nz](https://mega.nz/file/1HVhgTwA#jIg7F0ItHcKI00lX5LAfqNPVhV9igqhkoAjRERkXTh8)<br>
 [IceDrive](https://icedrive.net/s/tT5yXj6xBZ9DbAC16WaR34yuYNBa)<br>
    - **AA:AJ - JTPaper's Music Mod (AJ:AA)** (for remastered AJ:AA tracks)<br>
-[Mega.nz](https://mega.nz/file/kPM1jBbT#sho92p8RquIqXJW5-l8FpXrYl2DncC5voVQyTMzCd2U)<br>
-[IceDrive](https://icedrive.net/s/C4ADkbZ5zy14f7CX7RkkSkxQh4aN)<br>
+[Mega.nz](https://mega.nz/file/QC1SQYKT#t-d4z_ZdHAgr5AQBLFSuJdiHHvo7L0yViwulgeTsPGY)<br>
+[IceDrive](https://icedrive.net/s/FthS6P4bD7R8fkZjCwz9TTBw2haT)<br>
    - **AA:AJ - JTPaper's Music Mod (PW:AA)** (for remastered PW:AA tracks in AJ:AA)<br>
 [Mega.nz](https://mega.nz/file/BOdmBZAB#QZolPnujvsBPm_STyMBEzzPowO5n3NT6466RVv-9CNM)<br>
 [IceDrive](https://icedrive.net/s/Bt2VTZZz1tajPFA2vt1Qk8xg2VxC)<br>
