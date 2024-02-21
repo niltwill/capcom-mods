@@ -22,7 +22,7 @@
 > - You may need to change the numbering depending on what mods you install. They may clash, like the *Gyakuten Saiban Sound BOX* and *JTPaper's Music Mod (PW:AA)* (use one or the other)
 > - For information on how to apply these modded PAK files, [check this wiki page](https://github.com/mhvuze/MonsterHunterRiseModding/wiki/Using-Custom-Files#using-a-custom-pak-patch-on-nintendo-switch)
 > - The title ID for AJ: AAT is probably *010020D01B890000* (although this might change depending on region, so this may not always be the case)
-> - Ryujinx is better for emulating this title over Yuzu (I could observe graphical glitches with Yuzu). I also figured out [ajaat-nsw-emulator-fps-change.txt](how to manually change the FPS) using this emulator and Cheat Engine.
+> - Ryujinx is better for emulating this title over Yuzu (I could observe graphical glitches with Yuzu). I also figured out [https://github.com/niltwill/capcom-mods/blob/130ee039a8b0d0612c062b3d565c9039542361d8/ajaat-nsw-emulator-fps-change.txt](how to manually change the FPS) using this emulator and Cheat Engine.
    - **WAV Leftover Fix** (there are 39 files still using a WAV source instead of OGG, this mod fixes that)<br>
 [IceDrive](https://icedrive.net/s/Zj7D6Xa7YT3hGybWaTy9TbQk1P6h)<br>
 [Mega.nz](https://mega.nz/file/MHURDRAQ#-fixf2JaWN-FSP9Fw5SUndjpKHQqOTMBuCGuUHT5_XY)
