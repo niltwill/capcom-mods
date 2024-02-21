@@ -1,0 +1,52 @@
+Apollo Justice: Ace Attorney Trilogy (Nintendo Switch)
+--> How to change FPS (using Ryujinx emulator + Cheat Engine)
+
+Warning: This is unreliable! The memory addresses you get for these in Cheat Engine will always be different, and they don't have a permanent (reliable) pointer. So you have to redo this procedure every time you launch the game.
+
+---
+
+1. Use Cheat Engine and attach it to the Ryujinx process itself (after you launched the game, and the game loaded).
+
+2. Do a search with these settings (choose "Float" before writing the value):
+
+- Search for value: 30,00000
+- Value Type: Float
+
+After you started the game, quickly do a search, then, scroll/go down to the very bottom of the list. It should be the last address, with "1D0" at the end. Ignore any addresses that do not end with "1D0". If it's not the very last address, try loading a saved game and scan for the same address again. You know you have the right address by trying to change it, and it reverts back to 30 immediately. If it doesn't do that, it's not the right address. It may also be around more at the top starting with 2..
+
+3. Copy that whole memory address (with the "1D0" at the end), then click on "add address manually".
+Change the address at the end of it from "1D0" to "1F0" (D -> F), keep it "float".
+If you got it right, this should give you a value of "1".
+
+4. Right-click on this new "1F0" address, go to "find out what writes to this address (F6)". Confirm the attachment of the debugger.
+
+5. You can wait for a bit, then click on Stop. You can click on the "Count" column to see what writes to this address the most.
+
+6. Choose all these addresses with Ctrl+A or with the mouse.
+
+7. Right-click on an address, choose "Replace with code that does nothing (NOP)", click Close.
+
+8. Now you can finally change the value of this address ending with "1F0". The default "1" is 30 FPS. Change the float value to 0.5 for 60 FPS, 0.75 for 40 FPS, 0.6 for ~50 FPS...
+
+This one is for testing and it may break some things ingame to do this.
+
+Bear in mind that you still get the same speedup issues as what my framerate mod showed on PC, so AJ:AA is mostly somewhat bearable with 40 FPS (any higher and it gets too fast), DD may run with 60 (or 45/50, if there's issues with that), but SoJ should be 50 highest, to avoid slow character animations. If that's too much, 45.
+
+---
+
+As an alternative, you could also just do the same thing with the "1D0" address too, and leave "1F0" alone (which is probably a better choice).
+
+So for this, find what opcodes write to the "1D0" address instead.
+You should search for this instruction: "vmodqu [rax+000001D0],xmm0"
+Around middle part, try to disable that and then try changing the FPS to 15 (for 60).
+This will speed up the text speaking sound too, unlike the other value.
+It may need some tries to find the right instruction. Go for about the 8th xmm0 instruction (you click on "count" first to sort it and put highest at the top).
+
+Some recommended values:
+* 22.5 for 40 FPS might be a slight improvement for all three games from 30.
+* For DD and SoJ, 18 for 50 FPS could be great, or try finding a value around 40-45. 60 FPS may speed other aspects of the game up too much.
+
+---
+
+For the "1F0" address, some other interest:
+- An address (vmovdqu [rbp+000001F0],xmm2 may be the one related to character sprite updates, so changing that bit may resolve the anim speed issue in AJ:AA, but not the other speedups
