@@ -3,7 +3,7 @@
 ## PC mods
    - **GS456_Hacks** (memory hacks with a DLL - currently a framerate mod)<br>
 [IceDrive](https://icedrive.net/s/AQhvSjkAG2tP91Y9Zx9ZR4f3t5YG)<br>
-[Mega.nz](https://mega.nz/file/pHFShRJC#gTMIuxpRhFasDKIkUnZ5FCz5XA80EMCi2r6TiHUkjAs)
+[Mega.nz](https://mega.nz/file/seMQzbDZ#nnJ_yTkLVDjT2voko7YkoRaFyeiONpTgYkG_y5nNg34)
    - **Leftovers Fix** (to fix any remaining typos/mistakes, currently this is only for some typos)<br>
 [IceDrive](https://icedrive.net/s/GkPRZ85C3861A39TWDDW145ZXSPg)<br>
 [Mega.nz](https://mega.nz/file/8ftjwS5S#dxP3A-e340UK4jfwhdlx1mL_2diK9Lp8F4IHJBgK2Sc)
