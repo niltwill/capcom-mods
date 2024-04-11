@@ -48,8 +48,8 @@ def convert_gs4_script(input_file, output_file):
 
     output_lines = []
     for char in text:
-      # Check if character is within the basic ASCII range (0-127)
-      if 0 <= ord(char) <= 127:
+      # Check if character is within the basic ASCII range without control characters (0-31, 127)
+      if 32 <= ord(char) <= 126:
         output_lines.append(char)
       elif unicodedata.category(char)[0] == 'C':
         #output_lines.append("\\{:02o}".format(ord(char))) # convert control characters to octal values
@@ -142,16 +142,17 @@ def compare_files(input_file, output_file):
     with open(input_file, 'rb') as f_input, open(output_file, 'rb+') as f_output:
         input_data = f_input.read()
         output_data = f_output.read()
+        num = 0
 
         print('')
-        print(f'Checking binary file differences: "{input_file}" compared with "{output_file}"')
+        print(f'Checking binary file differences: "{input_file}" compared with "{output_file}"...')
         
         # Check for byte differences
         for i, (input_byte, output_byte) in enumerate(zip(input_data, output_data)):
             if input_byte != output_byte:
                 print('')
-                print(f"Byte mismatch at position {i}.")
-                print(f"Input (original) byte: {input_byte}, Output byte: {output_byte}")
+                print(f'Byte mismatch at position {i}.')
+                print(f'Input (original) byte: {input_byte}, Output byte: {output_byte}')
                 
                 if(input_byte == 13):
                     print('NOTE: This byte is 13, which means it could be a newline in Windows format. Unix-based systems have 10.')
@@ -160,9 +161,14 @@ def compare_files(input_file, output_file):
                 #f_output.seek(i)
                 #f_output.write(input_byte.to_bytes(1, byteorder='little'))
                 #print(f'Fixed misaligned byte at position {i} in "{output_file}".')
+                
+                num = num + 1
 
         print('')
-        print(f'After you recode the file, please fix the "{output_file}" with a hex editor.')
+        if num > 0:
+            print(f'After you encode the file, please fix the {num} error(s) in the "{output_file}" with a hex editor.')
+        else:
+            print('No discrepancies were found.')
 
 
 def rename_decoded_file(output_file):
