@@ -113,7 +113,7 @@ def encode_gs4_script(input_file, output_file, target_encoding="utf-16le"):
           # If decoding fails, replace with a placeholder (e.g., "?")
           return "?"
 
-    # Replace hex annotations with their corresponding characters
+    # Replace annotations with their corresponding characters
     text_without_dec = re.sub(controlchar_pattern, replace_decimal, text)
     text_without_hex = re.sub(hex_pattern, replace_hex, text_without_dec)
     
@@ -170,7 +170,7 @@ def compare_files(input_file, output_file, fix=False):
 
 
 def rename_decoded_file(output_file):
-  final_name = os.path.splitext(output_file)[0]  # Get the filename without extension
+  final_name = os.path.splitext(output_file)[0]
   os.rename(output_file, final_name)
 
 
@@ -189,7 +189,7 @@ def main():
     encode_parser.add_argument("input_file", type=str, help="Path to the input text file or wildcard pattern (mandatory)")
     encode_parser.add_argument("output_file", type=str, nargs='?', default=None, help="Path to the output binary file (optional)")
 
-    # Subparser for comparison (separate subparser recommended)
+    # Subparser for comparison
     compare_parser = subparsers.add_parser("compare", help="Compare the original and modified binary (only do this with the original and unmodified binary)")
     compare_parser.add_argument("file1", type=str, help="Path to the one (original or edited) of the binary file (mandatory)")
     compare_parser.add_argument("file2", type=str, help="Path to the other (original or edited) binary file (mandatory)")
@@ -215,7 +215,7 @@ def main():
             decode_gs4_script(input_file, output_file)
             swap_hex_in_file(output_file, f"{output_file}.2") # make hex characters 4 bytes
 
-            # remove temporary file if it exists
+            # remove temporary output file if it exists
             try:
                 os.remove(output_file)
             except FileNotFoundError:
