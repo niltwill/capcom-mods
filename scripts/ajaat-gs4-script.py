@@ -52,8 +52,8 @@ def convert_gs4_script(input_file, output_file):
       if 32 <= ord(char) <= 126:
         output_lines.append(char)
       elif unicodedata.category(char)[0] == 'C':
-        #output_lines.append("\\{:02o}".format(ord(char))) # convert control characters to octal values
-        output_lines.append("[U+{:02x}]".format(ord(char))) # convert control characters to hexadecimal values
+        #output_lines.append("\\{:02o}".format(ord(char)))) # convert control characters to octal values
+        output_lines.append("\\x{:02x}|".format(ord(char))) # convert control characters to hexadecimal values
         #output_lines.append("\\{:d}".format(ord(char))) # convert control characters to decimal values
       else:
         # Convert non-ASCII character to its hex representation (without prefix)
@@ -110,8 +110,11 @@ def convert_back(input_file, output_file, target_encoding="utf-16le"):
   with open(input_file, "r") as f_in, open(output_file, "wb") as f_out:
     text = f_in.read()
     
+    # Define a regular expression to match control characters
+    controlchar_pattern = r"\\x([0-9a-fA-F]{2,4})\|"
+    
     # Define a regular expression to match hex annotations (within square brackets)
-    hex_pattern = r"\[U\+([0-9a-fA-F]{3,4})\]"
+    hex_pattern = r"\[U\+([0-9a-fA-F]{4,})\]"
     
     def replace_hex(match):
       # Extract the hex code from the match object (group 1)
@@ -126,11 +129,12 @@ def convert_back(input_file, output_file, target_encoding="utf-16le"):
         return "?"
     
     # Replace hex annotations with their corresponding characters
-    text_without_hex = re.sub(hex_pattern, replace_hex, text)
+    text_without_hex = re.sub(controlchar_pattern, replace_hex, text)
+    text_without_hex2 = re.sub(hex_pattern, replace_hex, text_without_hex)
     
     try:
       # Encode the text without hex annotations back to the target encoding
-      encoded_data = text_without_hex.encode(target_encoding)
+      encoded_data = text_without_hex2.encode(target_encoding)
     except UnicodeEncodeError:
       print(f"Error: Encoding back to {target_encoding} failed. Consider a different encoding.")
       return
