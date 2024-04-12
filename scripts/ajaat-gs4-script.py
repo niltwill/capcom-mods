@@ -4,9 +4,19 @@ import re
 import os
 import unicodedata
 
+
 """
-WARNING: This script is experimental! It is not able to handle all GS4 script files correctly/perfectly yet.
-Here are the problematic files that don't yet work, as they don't even get decoded correctly (I only tested the English script binaries):
+- Script to convert AJ:AA Trilogy's GS4 (Apollo Justice) script binary files
+
+So far, only the English GS4 script binaries were tested.
+
+* You can simply convert every file in the same directory by using commands:
+ajaat-gs4-script.py decode *.bin
+
+* To convert back to binary:
+ajaat-gs4-script.py encode *.txt
+
+* There are 9 problematic files in English, where you need some manual byte replacement:
 * sc0_1_h02.user.2.en.bin
 * sc1_0_000.user.2.en.bin
 * sc1_3_h03.user.2.en.bin
@@ -16,35 +26,29 @@ Here are the problematic files that don't yet work, as they don't even get decod
 * sc3_0_00a.user.2.en.bin
 * sc3_3_00c.user.2.en.bin
 * sc3_3_010.user.2.en.bin
+
+For this, you can use the command:
+ajaat-gs4-script.py compare --fix sc0_1_h02.user.2.en.bin sc0_1_h02.user.2.en.encoded.bin
+
+And so on for the rest. (Make sure to put the original binary file first, then your modified one!)
+This should only fix those few different bytes and ignore the rest of your modifications.
+
+Alternatively, simply run the batch script: "ajaat-gs4-script_comparefix.bat" (which should only fix those files that have this byte issue).
+This assumes that every script binary file is in the same directory and that you did not rename the encoded files.
+Then you can check if everything is fine by running "ajaat-gs4-script_compare.bat" afterwards.
 """
 
-def convert_gs4_script(input_file, output_file):
-  """
-  Args:
-      input_file: Path to the input file.
-      output_file: Path to the output file (will contain UTF-8 text with annotations).
-  """
+
+def decode_gs4_script(input_file, output_file):
   with open(input_file, "rb") as f_in, open(output_file, "w") as f_out:
     data = f_in.read()
-    
-    # some problematic files seem to work better with some characters replaced?
-    #data = data.replace(b'\x00', b'')
 
     try:
-      # Attempt decoding with UTF-16LE first (common for GS4 scripts)
-      text = data.decode("utf-16le")
+      # Attempt decoding with UTF-16LE (utf-16le) - alternative would be MacRoman (macroman)
+      text = data.decode("utf-16le", errors="replace")
     except UnicodeDecodeError:
-      # If UTF-16LE fails, try common encodings for legacy files
-      encodings_to_try = ["macroman", "latin-1"]
-      for encoding in encodings_to_try:
-        try:
-          text = data.decode(encoding, errors="replace")
-          break  # Exit the loop if decoding succeeds
-        except UnicodeDecodeError:
-          pass  # If decoding fails, continue trying other encodings
-      else:
-        print(f"Warning: Decoding failed with all attempted encodings. Using 'utf-8' with replacements.")
-        text = data.decode("utf-8", errors="replace")
+      print("Warning: Decoding failed with the UTF-16LE encoding.")
+      return 1
 
     output_lines = []
     for char in text:
@@ -52,11 +56,11 @@ def convert_gs4_script(input_file, output_file):
       if 32 <= ord(char) <= 126:
         output_lines.append(char)
       elif unicodedata.category(char)[0] == 'C':
-        #output_lines.append("\\{:02o}".format(ord(char)))) # convert control characters to octal values
-        output_lines.append("\\x{:02x}|".format(ord(char))) # convert control characters to hexadecimal values
-        #output_lines.append("\\{:d}".format(ord(char))) # convert control characters to decimal values
+        #output_lines.append("\\x{:02o}|".format(ord(char))) # convert control characters to octal values
+        #output_lines.append("\\x{:02x}|".format(ord(char))) # convert control characters to hexadecimal values
+        output_lines.append("\\{:d}|".format(ord(char))) # convert control characters to decimal values
       else:
-        # Convert non-ASCII character to its hex representation (without prefix)
+        # Convert non-ASCII character to its hex representation (with Unicode codepoint ID)
         hex_char = hex(ord(char))[2:].zfill(2)
         output_lines.append(f"[U+{hex_char}]")
 
@@ -64,25 +68,11 @@ def convert_gs4_script(input_file, output_file):
     f_out.write("".join(output_lines))
 
 
-
 def swap_hex_in_file(annotated_file, output_file):
-  """
-  Args:
-      annotated_file: Path to the file containing annotated text.
-  """
   #pattern = r"\[U\+(?![eE])([0-9a-fA-F]{1,4})\b\]"
   pattern = r"\[U\+([0-9a-fA-F]{1,4})\b\]"
 
-  def swap_hex(matchobj):
-    """
-    hex_str = matchobj.group(1)
-    bytes_list = [hex_str[i:i + 2] for i in range(0, len(hex_str), 2)]
-    if len(bytes_list) == 2:
-        if bytes_list[0] != '0':
-            bytes_list = bytes_list[::-1]
-    return "".join(bytes_list)
-    """
-    
+  def swap_hex(matchobj):   
     hex_str = matchobj.group(1)
     # Convert hexadecimal string to Unicode character
     unicode_char = chr(int(hex_str, 16))
@@ -97,44 +87,40 @@ def swap_hex_in_file(annotated_file, output_file):
     f_out.write(swapped_text)
 
 
-def convert_back(input_file, output_file, target_encoding="utf-16le"):
-  """
-  Args:
-      input_file: Path to the UTF-8 decoded text file with hex annotations.
-      output_file: Path to the output file after re-encoding and replacing hex.
-      target_encoding: The desired encoding for the output file (e.g., "utf-16le", "macroman", "latin-1").
-      
-  Note: Always do a comparison check with the "compare" command
-        and fix any wrong bytes manually with a hex editor.
-  """
+def encode_gs4_script(input_file, output_file, target_encoding="utf-16le"):
   with open(input_file, "r") as f_in, open(output_file, "wb") as f_out:
     text = f_in.read()
     
     # Define a regular expression to match control characters
-    controlchar_pattern = r"\\x([0-9a-fA-F]{2,4})\|"
+    #controlchar_pattern = r"\\x([0-9a-fA-F]{2,4})\|"
+    controlchar_pattern = r"\\(\d+)\|"
+    
+    def replace_decimal(match):
+      decimal_value = int(match.group(1))
+      hex_code = format(decimal_value, '04X')
+      return f"[U+{hex_code}]"
     
     # Define a regular expression to match hex annotations (within square brackets)
-    hex_pattern = r"\[U\+([0-9a-fA-F]{4,})\]"
+    hex_pattern = r"\[U\+([0-9a-fA-F]{4})\]"
     
     def replace_hex(match):
       # Extract the hex code from the match object (group 1)
       hex_code = match.group(1)
-      # Convert the hex code to integer (base 16)
       char_code = int(hex_code, 16)
-      # Try decoding the character code using the target encoding
+      
       try:
-        return chr(char_code)
-      except UnicodeDecodeError:
-        # If decoding fails, replace with a placeholder (e.g., "?")
-        return "?"
-    
+          return chr(char_code)
+      except UnicodeEncodeError:
+          # If decoding fails, replace with a placeholder (e.g., "?")
+          return "?"
+
     # Replace hex annotations with their corresponding characters
-    text_without_hex = re.sub(controlchar_pattern, replace_hex, text)
-    text_without_hex2 = re.sub(hex_pattern, replace_hex, text_without_hex)
+    text_without_dec = re.sub(controlchar_pattern, replace_decimal, text)
+    text_without_hex = re.sub(hex_pattern, replace_hex, text_without_dec)
     
     try:
       # Encode the text without hex annotations back to the target encoding
-      encoded_data = text_without_hex2.encode(target_encoding)
+      encoded_data = text_without_hex.encode(target_encoding)
     except UnicodeEncodeError:
       print(f"Error: Encoding back to {target_encoding} failed. Consider a different encoding.")
       return
@@ -142,44 +128,49 @@ def convert_back(input_file, output_file, target_encoding="utf-16le"):
     f_out.write(encoded_data)
 
 
-def compare_files(input_file, output_file):
+def compare_files(input_file, output_file, fix=False):
     with open(input_file, 'rb') as f_input, open(output_file, 'rb+') as f_output:
         input_data = f_input.read()
         output_data = f_output.read()
         num = 0
+        prior_byte = 0
 
         print('')
         print(f'Checking binary file differences: "{input_file}" compared with "{output_file}"...')
-        
+
         # Check for byte differences
         for i, (input_byte, output_byte) in enumerate(zip(input_data, output_data)):
             if input_byte != output_byte:
-                print('')
-                print(f'Byte mismatch at position {i}.')
-                print(f'Input (original) byte: {input_byte}, Output byte: {output_byte}')
-                
-                if(input_byte == 13):
-                    print('NOTE: This byte is 13, which means it could be a newline in Windows format. Unix-based systems have 10.')
-                
-                # Auto-fix the misaligned byte in the output file (only works with original file as is, you should do this after you edit the file yourself)
-                #f_output.seek(i)
-                #f_output.write(input_byte.to_bytes(1, byteorder='little'))
-                #print(f'Fixed misaligned byte at position {i} in "{output_file}".')
-                
-                num = num + 1
+                if not fix:
+                    print('')
+                    print(f'Byte mismatch at position {i}.')
+                    print(f'Input (original) byte: {input_byte}, Output byte: {output_byte}')
 
-        print('')
-        if num > 0:
+                if fix:
+                    try:
+                        # Replace 253 followed by 255 with corresponding bytes from input file
+                        if output_byte == 253 and i + 1 < len(output_data) and output_data[i + 1] == 255:
+                            f_output.seek(i)
+                            f_output.write(input_byte.to_bytes(1, byteorder='little'))
+                            f_output.write(input_data[i + 1:i + 2])
+                            prior_byte = 0  # Reset prior_byte since both bytes are replaced
+                            print(f'Fixed bytes at decimal offset {i}-{i+1} in "{output_file}"')
+                        else:
+                            prior_byte = output_byte  # Update prior_byte if not part of 253-255 pair
+                    except (IOError, OSError) as e:
+                        print(f"Error fixing byte at position {i}: {e}")
+
+                num += 1
+
+        if num > 0 and not fix:
+            print('')
             print(f'After you encode the file, please fix the {num} error(s) in the "{output_file}" with a hex editor.')
-        else:
+        elif not fix:
+            print('')
             print('No discrepancies were found.')
 
 
 def rename_decoded_file(output_file):
-  """
-  Args:
-      output_file: Path to the decoded file.
-  """
   final_name = os.path.splitext(output_file)[0]  # Get the filename without extension
   os.rename(output_file, final_name)
 
@@ -200,9 +191,10 @@ def main():
     encode_parser.add_argument("output_file", type=str, nargs='?', default=None, help="Path to the output binary file (optional)")
 
     # Subparser for comparison (separate subparser recommended)
-    compare_parser = subparsers.add_parser("compare", help="Compare the original and modified binary")
+    compare_parser = subparsers.add_parser("compare", help="Compare the original and modified binary (only do this with the original and unmodified binary)")
     compare_parser.add_argument("file1", type=str, help="Path to the one (original or edited) of the binary file (mandatory)")
     compare_parser.add_argument("file2", type=str, help="Path to the other (original or edited) binary file (mandatory)")
+    compare_parser.add_argument("--fix", action="store_true", help="Attempt to fix some MacRoman(?) byte differences, always use the original file first (optional)")
 
     args = parser.parse_args()
 
@@ -221,8 +213,8 @@ def main():
         input_files = glob.glob(args.input_file)
         for input_file in input_files:
             output_file = args.output_file if args.output_file else f"{os.path.splitext(input_file)[0]}.txt"
-            convert_gs4_script(input_file, output_file)
-            swap_hex_in_file(output_file, f"{output_file}.2")
+            decode_gs4_script(input_file, output_file)
+            swap_hex_in_file(output_file, f"{output_file}.2") # make hex characters 4 bytes
 
             # remove temporary file if it exists
             try:
@@ -239,13 +231,12 @@ def main():
         input_files = glob.glob(args.input_file)
         for input_file in input_files:
             output_file = args.output_file if args.output_file else f"{os.path.splitext(input_file)[0]}.encoded.bin"
-            convert_back(input_file, output_file, target_encoding="utf-16le")
+            encode_gs4_script(input_file, output_file)
             print(f'Converted "{input_file}" back to binary format: "{output_file}"')
 
     # Compare argument
     elif args.command == "compare":
-        compare_files(args.file1, args.file2)
-
+        compare_files(args.file1, args.file2, fix=args.fix)
 
 if __name__ == "__main__":
   main()
