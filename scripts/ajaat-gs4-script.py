@@ -10,7 +10,7 @@ import unicodedata
 
 So far, only the English GS4 script binaries were tested.
 
-* You can simply convert every file in the same directory by using commands:
+* You can simply convert every file in the same directory by using the command:
 ajaat-gs4-script.py decode *.bin
 
 * To convert back to binary:
@@ -35,7 +35,6 @@ This should only fix those few different bytes and ignore the rest of your modif
 
 Alternatively, simply run the batch script: "ajaat-gs4-script_comparefix.bat" (which should only fix those files that have this byte issue).
 This assumes that every script binary file is in the same directory and that you did not rename the encoded files.
-Then you can check if everything is fine by running "ajaat-gs4-script_compare.bat" afterwards.
 """
 
 
