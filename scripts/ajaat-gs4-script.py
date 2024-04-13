@@ -6,9 +6,7 @@ import unicodedata
 
 
 """
-- Script to convert AJ:AA Trilogy's GS4 (Apollo Justice) script binary files
-
-So far, only the English GS4 script binaries were tested.
+Script to convert AJ:AA Trilogy's GS4 (Apollo Justice) script binary files
 
 * You can simply convert every file in the same directory by using the command:
 ajaat-gs4-script.py decode *.bin
@@ -16,25 +14,15 @@ ajaat-gs4-script.py decode *.bin
 * To convert back to binary:
 ajaat-gs4-script.py encode *.txt
 
-* There are 9 problematic files in English, where you need some manual byte replacement:
-* sc0_1_h02.user.2.en.bin
-* sc1_0_000.user.2.en.bin
-* sc1_3_h03.user.2.en.bin
-* sc2_0_013.user.2.en.bin
-* sc2_0_016.user.2.en.bin
-* sc2_3_h00.user.2.en.bin
-* sc3_0_00a.user.2.en.bin
-* sc3_3_00c.user.2.en.bin
-* sc3_3_010.user.2.en.bin
-
+Different languages have different problematic files which need some byte correction.
 For this, you can use the command:
-ajaat-gs4-script.py compare --fix sc0_1_h02.user.2.en.bin sc0_1_h02.user.2.en.encoded.bin
+ajaat-gs4-script.py compare --fix [original].bin [name].encoded.bin
 
-And so on for the rest. (Make sure to put the original binary file first, then your modified one!)
+Make sure to put the original binary file first, then your modified one!
 This should only fix those few different bytes and ignore the rest of your modifications.
 
-Alternatively, simply run the batch script: "ajaat-gs4-script_comparefix.bat" (which should only fix those files that have this byte issue).
-This assumes that every script binary file is in the same directory and that you did not rename the encoded files.
+To do it all in one go, simply edit and run the batch script: "ajaat-gs4-script_comparefix.bat" (which should only fix those files that have this byte issue).
+Replace "en" with the language you need in that file. It assumes that every script binary file is in the same directory and that you did not rename the encoded files.
 """
 
 
