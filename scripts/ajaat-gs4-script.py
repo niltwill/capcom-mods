@@ -45,7 +45,12 @@ def decode_gs4_script(input_file, output_file):
       elif unicodedata.category(char)[0] == 'C':
         #output_lines.append("\\x{:02o}|".format(ord(char))) # convert control characters to octal values
         #output_lines.append("\\x{:02x}|".format(ord(char))) # convert control characters to hexadecimal values
-        output_lines.append("\\{:d}|".format(ord(char))) # convert control characters to decimal values
+        string = "{:d}|".format(ord(char))
+        if string.startswith("5") and 5 <= len(string) <= 6:
+            output_lines.append("\n\\{:d}|".format(ord(char))) # convert control characters to decimal values
+        else:
+            output_lines.append("\\{:d}|".format(ord(char))) # convert control characters to decimal values
+        #output_lines.append("\\{:d}|".format(ord(char))) # convert control characters to decimal values
       else:
         # Convert non-ASCII character to its hex representation (with Unicode codepoint ID)
         hex_char = hex(ord(char))[2:].zfill(2)
@@ -72,6 +77,20 @@ def swap_hex_in_file(annotated_file, output_file):
     annotated_text = f_in.read()
     swapped_text = re.sub(pattern, swap_hex, annotated_text)
     f_out.write(swapped_text)
+
+
+def remove_newlines_inplace(filename):
+    temp_filename = filename + ".temp" # Create a temporary filename
+
+    # Read the original file character by character
+    with open(filename, 'r') as infile, open(temp_filename, 'w') as outfile:
+        for char in infile.read():
+            # Write the character unless it's a newline
+            if char != '\n':
+                outfile.write(char)
+
+    # Replace the original file with the temporary file (atomic operation)
+    os.replace(temp_filename, filename)
 
 
 def encode_gs4_script(input_file, output_file, target_encoding="utf-16le"):
@@ -218,6 +237,7 @@ def main():
         input_files = glob.glob(args.input_file)
         for input_file in input_files:
             output_file = args.output_file if args.output_file else f"{os.path.splitext(input_file)[0]}.encoded.bin"
+            remove_newlines_inplace(input_file)
             encode_gs4_script(input_file, output_file)
             print(f'Converted "{input_file}" back to binary format: "{output_file}"')
 
