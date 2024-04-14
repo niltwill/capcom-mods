@@ -26,6 +26,15 @@ Replace "en" with the language you need in that file. It assumes that every scri
 """
 
 
+# TODO: Convert all or the majority of the mapping of numeric character sequences to strings (actual function)
+replacement_mapping = {
+    "\\57345|": "\\linebreak|",
+    "\\57346|": "\\nextdialogue|",
+    "\\57356|": "\\wait|",
+    "\\57383|": "\\shakescreen|"
+}
+
+
 def decode_gs4_script(input_file, output_file):
   with open(input_file, "rb") as f_in, open(output_file, "w") as f_out:
     data = f_in.read()
@@ -50,11 +59,16 @@ def decode_gs4_script(input_file, output_file):
             output_lines.append("\n\\{:d}|".format(ord(char))) # convert control characters to decimal values
         else:
             output_lines.append("\\{:d}|".format(ord(char))) # convert control characters to decimal values
-        #output_lines.append("\\{:d}|".format(ord(char))) # convert control characters to decimal values
       else:
         # Convert non-ASCII character to its hex representation (with Unicode codepoint ID)
         hex_char = hex(ord(char))[2:].zfill(2)
         output_lines.append(f"[U+{hex_char}]")
+
+    # Apply replacements
+    for numeric_sequence, replacement_string in replacement_mapping.items():
+        output_string = "".join(output_lines)
+        output_string = output_string.replace(numeric_sequence, replacement_string)
+        output_lines = output_string.splitlines(keepends=True)
 
     # Write the converted text with annotations to the temporary output file
     f_out.write("".join(output_lines))
@@ -79,15 +93,23 @@ def swap_hex_in_file(annotated_file, output_file):
     f_out.write(swapped_text)
 
 
-def remove_newlines_inplace(filename):
+def remove_newlines_and_replace_inplace(filename):
     temp_filename = filename + ".temp" # Create a temporary filename
 
-    # Read the original file character by character
+    # Define a regular expression to match replacement strings
+    replacement_string_pattern = "|".join(map(re.escape, replacement_mapping.values()))
+
+    # Define a function to replace replacement strings with their corresponding numeric sequences
+    def replace_replacement_string(match):
+        matched_string = match.group(0)
+        return next(key for key, value in replacement_mapping.items() if value == matched_string)
+
+    # Read the original file, apply replacements, and remove newlines
     with open(filename, 'r') as infile, open(temp_filename, 'w') as outfile:
-        for char in infile.read():
-            # Write the character unless it's a newline
-            if char != '\n':
-                outfile.write(char)
+        content = infile.read()
+        modified_content = re.sub(replacement_string_pattern, replace_replacement_string, content)
+        modified_content_without_newlines = modified_content.replace('\n', '')
+        outfile.write(modified_content_without_newlines)
 
     # Replace the original file with the temporary file (atomic operation)
     os.replace(temp_filename, filename)
@@ -237,7 +259,7 @@ def main():
         input_files = glob.glob(args.input_file)
         for input_file in input_files:
             output_file = args.output_file if args.output_file else f"{os.path.splitext(input_file)[0]}.encoded.bin"
-            remove_newlines_inplace(input_file)
+            remove_newlines_and_replace_inplace(input_file)
             encode_gs4_script(input_file, output_file)
             print(f'Converted "{input_file}" back to binary format: "{output_file}"')
 
