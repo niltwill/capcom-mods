@@ -1,36 +1,46 @@
+import os
+import re
 import sys
 
-def convert_to_unicode_special_chars(text):
-    result = ''
-    for char in text:
-        if ord(char) > 127:
-            # Character is non-ASCII, convert it to Unicode representation
-            unicode_hex = hex(ord(char))[2:].upper()  # Get hexadecimal Unicode code point
-            result += f"[U+{unicode_hex.zfill(4)}]"
-        else:
-            # Character is ASCII, keep it unchanged
-            result += char
+def convert_unicode_special_chars_to_chars(text):
+    def replace_unicode(match):
+        unicode_hex = match.group(1)
+        return chr(int(unicode_hex, 16))
+
+    unicode_pattern = r"\[U\+([0-9a-fA-F]{4})\]"
+    result = re.sub(unicode_pattern, replace_unicode, text)
     return result
 
-if __name__ == "__main__":
-    if len(sys.argv) != 3:
-        print("Usage: python convert-unicode-file.py input_file output_file")
-        sys.exit(1)
-
-    input_file = sys.argv[1]
-    output_file = sys.argv[2]
+def process_file(file_path):
+    base, ext = os.path.splitext(file_path)
+    output_file = f"{base}_utf8{ext}"
 
     try:
-        with open(input_file, "r", encoding="utf-8") as f_in:
+        with open(file_path, "r", encoding="utf-8") as f_in:
             input_text = f_in.read()
-
-        output_text = convert_to_unicode_special_chars(input_text)
-
+        output_text = convert_unicode_special_chars_to_chars(input_text)
         with open(output_file, "w", encoding="utf-8") as f_out:
             f_out.write(output_text)
-
-        print(f"Conversion completed. Result written to {output_file}")
-
+        print(f"Conversion completed for: {output_file}")
     except FileNotFoundError:
-        print("Error: Input file not found.")
+        print(f"Error: File not found - {file_path}")
+    except Exception as e:
+        print(f"Error processing file {file_path}: {str(e)}")
+
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Usage: python script.py <input_path>")
         sys.exit(1)
+
+    input_path = sys.argv[1]
+
+    if os.path.isdir(input_path):
+        for root, dirs, files in os.walk(input_path):
+            for file in files:
+                if file.endswith(".txt"):
+                    file_path = os.path.join(root, file)
+                    process_file(file_path)
+    elif os.path.isfile(input_path) and input_path.endswith('.txt'):
+        process_file(input_path)
+    else:
+        print("Provided path is neither a directory nor a text file.")
