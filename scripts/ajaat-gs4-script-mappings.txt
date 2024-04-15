@@ -1,0 +1,199 @@
+# TODO: Figure out the remaining opcodes, if they have any meaning (maybe some of these could only mean something when game is in debug mode?)
+# \57488: possibly progress marker - to save/store what you achieved, so you can advance further in the game, sort of like "you triggered this and that"?
+
+# These are all the 141 commands or opcodes that are being used in the scripts
+\57344|=\cmd001|
+\57345|=\linebreak|
+\57346|=\nextdialogue|
+\57347|=\color|
+\57349|=\music|
+\57350|=\sound|
+\57351|=\fullscreen_text|
+\57352|=\finger_choice_2args_jmp|
+\57353|=\finger_choice_3args_jmp|
+\57354|=\rejmp|
+\57355|=\speed|
+\57356|=\wait|
+\57357|=\endjmp|
+\57358|=\name|
+\57359|=\testimony_box|
+\57360|=\cmd016|
+\57362|=\bgcolor|
+\57363|=\showphoto|
+\57364|=\removephoto|
+\57365|=\special_jmp|
+\57366|=\savegame|
+\57367|=\newevidence|
+\57368|=\cmd023|
+\57369|=\cmd024|
+\57370|=\swoosh|
+\57371|=\bg|
+\57372|=\hidetextbox|
+\57373|=\cmd028|
+\57374|=\person|
+\57375|=\hideperson|
+\57377|=\evidence_window_lifebar|
+\57378|=\fademusic|
+\57379|=\cmd033|
+\57380|=\reset|
+\57381|=\cmd035|
+\57382|=\cmd036|
+\57383|=\shake|
+\57384|=\testimony_animation|
+\57385|=\cmd039|
+\57386|=\cmd040|
+\57387|=\cmd041|
+\57388|=\jmp|
+\57389|=\nextpage_button|
+\57390|=\nextpage_nobutton|
+\57391|=\animation|
+\57392|=\cmd046|
+\57393|=\personvanish|
+\57394|=\cmd048|
+\57395|=\open_new_location|
+\57396|=\fadetoblack|
+\57397|=\cmd051|
+\57399|=\cmd052|
+\57400|=\cmd053|
+\57401|=\littlesprite|
+\57402|=\cmd055|
+\57403|=\cmd056|
+\57404|=\cmd057|
+\57405|=\cmd058|
+\57406|=\cmd059|
+\57407|=\cmd060|
+\57409|=\cmd061|
+\57410|=\soundtoggle|
+\57411|=\lifebar|
+\57412|=\guilty|
+\57414|=\bgtile|
+\57416|=\cmd066|
+\57417|=\wingame|
+\57418|=\cmd068|
+\57420|=\cmd069|
+\57421|=\cmd070|
+\57422|=\wait_noanim|
+\57423|=\cmd072|
+\57424|=\cmd073|
+\57425|=\cmd074|
+\57426|=\cmd075|
+\57427|=\cmd076|
+\57428|=\lifebarset|
+\57430|=\cmd078|
+\57431|=\psycholock|
+\57433|=\cmd080|
+\57434|=\cmd081|
+\57435|=\cmd082|
+\57437|=\center|
+\57438|=\cmd084|
+\57439|=\cmd085|
+\57440|=\cmd086|
+\57441|=\cmd087|
+\57442|=\cmd088|
+\57443|=\cmd089|
+\57444|=\cmd090|
+\57446|=\cmd091|
+\57447|=\cmd092|
+\57448|=\cmd093|
+\57449|=\bganim|
+\57451|=\cmd095|
+\57452|=\cmd096|
+\57453|=\cmd097|
+\57454|=\cmd098|
+\57455|=\cmd099|
+\57457|=\cmd100|
+\57458|=\cmd101|
+\57459|=\cmd102|
+\57460|=\cmd103|
+\57461|=\cmd104|
+\57462|=\person_face|
+\57468|=\cmd106|
+\57469|=\cmd107|
+\57470|=\cmd108|
+\57471|=\cmd109|
+\57472|=\cmd110|
+\57474|=\cmd111|
+\57475|=\cmd112|
+\57476|=\cmd113|
+\57478|=\cmd114|
+\57480|=\cmd115|
+\57481|=\cmd116|
+\57484|=\cmd117|
+\57485|=\cmd118|
+\57486|=\cmd119|
+\57487|=\cmd120|
+\57488|=\cmd121|
+\57489|=\codeblock|
+\57490|=\cmd123|
+\57491|=\cmd124|
+\57492|=\cmd125|
+\57493|=\cmd126|
+\57600|=\sprayarea_button|
+\57602|=\bracelet_button|
+\57604|=\presswitness_button|
+\57605|=\courtrecord_button|
+\57606|=\slider_button1|
+\57607|=\slider_button2|
+\57608|=\switchpart_button1|
+\57609|=\switchpart_button2|
+\57610|=\rsup_button|
+\57611|=\rsleft_button|
+\57612|=\rsdown_button|
+\57613|=\rsright_button|
+\57624|=\zoomin_button|
+\57625|=\zoomout_button|
+\57857|=\cmd141|
+
+# These opcodes can be found at the top of some scripts
+# No idea what these are for, maybe for noop jumps?
+# \43206
+# \57490
+# \57722
+# \57728
+# \57732
+# \57748
+# \57844
+# \57890
+# \57892
+# \58028
+# \58072
+# \58166
+# \58352
+# \58444
+# \58462
+# \58498
+# \58504
+# \58682
+# \58692
+# \58724
+# \58820
+# \58846
+# \58848
+# \58850
+# \58894
+# \58960
+# \58972
+# \59288
+# \59422
+# \59636
+# \59750
+# \59808
+# \59866
+# \59878
+# \59920
+# \60200
+# \60376
+# \60834
+# \60886
+# \60960
+# \61048
+# \61204
+# \61516
+# \61520
+# \61612
+# \61984
+# \62020
+# \62212
+# \62628
+# \62542
+# \63542

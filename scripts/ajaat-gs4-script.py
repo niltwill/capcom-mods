@@ -2,11 +2,40 @@ import argparse
 import glob
 import re
 import os
+import sys
 import unicodedata
 
 
 """
 Script to convert AJ:AA Trilogy's GS4 (Apollo Justice) script binary files
+
+---
+
+***IMPORTANT: For the mappings to work, also download this file and place it in the same directory to the script:
+https://github.com/niltwill/capcom-mods/blob/main/scripts/ajaat-gs4-script-mappings.txt
+
+Now you get decimal values and often more meaningful command names. The "L" prefix before a decimal number means "Language",
+indicating that it's possibly a language character. This letter can be ignored.
+It is only an indicator letter to convert only these characters into unicode when using a different helper script.
+There may be a method eventually to add only all of your own language's (non-Latin) characters later into a list or so,
+making sure that no other numeric values get modified.
+
+One annoying issue is that certain numeric values are ASCII symbols, which can be confusing.
+E.g.: \wait|x
+Means: \wait|\120
+
+An example with three parameters:
+\person|\5|HE
+
+Which is:
+\person|\5|\72|\69|
+
+Sometimes you also get a "|...." - where that means: "|\46..." (so there isn't an additional "." character there, only three dots).
+You have to keep these as ASCII symbols, depending on the numeric value you want to use.
+The ASCII symbol is only needed from 32 (" ") [space] to 126 ("~") [tilde]
+Use an ASCII table for reference until I figure out how to deal with this.
+
+---
 
 * You can simply convert every file in the same directory by using the command:
 ajaat-gs4-script.py decode *.bin
@@ -26,16 +55,48 @@ Replace "en" with the language you need in that file. It assumes that every scri
 """
 
 
-# TODO: Convert all or the majority of the mapping of numeric character sequences to strings (actual function)
-replacement_mapping = {
-    "\\57345|": "\\linebreak|",
-    "\\57346|": "\\nextdialogue|",
-    "\\57356|": "\\wait|",
-    "\\57383|": "\\shakescreen|"
-}
+def load_mappings(filename):
+    # Get the directory path of the script
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    
+    # Construct the full path to the mappings file
+    mappings_file_path = os.path.join(script_dir, filename)
+    
+    replacement_mapping = {}
+    try:
+        with open(mappings_file_path, 'r') as file:
+            for line in file:
+                # Skip empty lines and lines starting with '#'
+                if line.strip() == '' or line.strip().startswith('#'):
+                    continue
+                
+                # Split the line by '='
+                parts = line.split('=')
+                if len(parts) != 2:
+                    # Skip lines that do not contain exactly one '=' sign
+                    continue
+                
+                numeric_sequence, replacement_string = parts
+                replacement_mapping[numeric_sequence.strip()] = replacement_string.strip()
+    except FileNotFoundError:
+        print(f"Error: Mapping file '{filename}' not found.")
+        print("Download it from here and place it into the script's directory: https://github.com/niltwill/capcom-mods/blob/main/scripts/ajaat-gs4-script-mappings.txt")
+        sys.exit(1)
+
+    return replacement_mapping
 
 
-def decode_gs4_script(input_file, output_file):
+def is_language_related(char):
+    # Get the general category of the character
+    category = unicodedata.category(char)
+    # Check if the character belongs to a script commonly used in languages
+    if category.startswith('L') is not None:
+        return True
+    else:
+        return False
+
+
+def decode_gs4_script(input_file, output_file, mappings_file):
   with open(input_file, "rb") as f_in, open(output_file, "w") as f_out:
     data = f_in.read()
 
@@ -44,7 +105,7 @@ def decode_gs4_script(input_file, output_file):
       text = data.decode("utf-16le", errors="replace")
     except UnicodeDecodeError:
       print("Warning: Decoding failed with the UTF-16LE encoding.")
-      return 1
+      sys.exit(1)
 
     output_lines = []
     for char in text:
@@ -55,14 +116,26 @@ def decode_gs4_script(input_file, output_file):
         #output_lines.append("\\x{:02o}|".format(ord(char))) # convert control characters to octal values
         #output_lines.append("\\x{:02x}|".format(ord(char))) # convert control characters to hexadecimal values
         string = "{:d}|".format(ord(char))
-        if string.startswith("5") and 5 <= len(string) <= 6:
-            output_lines.append("\n\\{:d}|".format(ord(char))) # convert control characters to decimal values
+        if (string.startswith("5") or string.startswith("6")) and 6 <= len(string):
+            output_lines.append("\n\\{:d}|".format(ord(char))) # add newline for the \57... control characters
         else:
             output_lines.append("\\{:d}|".format(ord(char))) # convert control characters to decimal values
       else:
-        # Convert non-ASCII character to its hex representation (with Unicode codepoint ID)
-        hex_char = hex(ord(char))[2:].zfill(2)
-        output_lines.append(f"[U+{hex_char}]")
+        # Convert non-ASCII character to its hex representation with languages (with Unicode codepoint ID)
+        # otherwise use decimals
+        if is_language_related(char):
+            dec_char = ord(char)
+            output_lines.append(f"\\L{dec_char}|")
+        else:
+            try:
+                dec_char = ord(char)
+                output_lines.append(f"\\{dec_char}|")
+            except:
+                hex_char = hex(ord(char))[2:].zfill(2)
+                output_lines.append(f"[U+{hex_char}]")
+
+    # Load mappings from the mappings file
+    replacement_mapping = load_mappings(mappings_file)
 
     # Apply replacements
     for numeric_sequence, replacement_string in replacement_mapping.items():
@@ -93,8 +166,11 @@ def swap_hex_in_file(annotated_file, output_file):
     f_out.write(swapped_text)
 
 
-def remove_newlines_and_replace_inplace(filename):
+def remove_newlines_and_replace_inplace(filename, mappings_file):
     temp_filename = filename + ".temp" # Create a temporary filename
+
+    # Load mappings from the mappings file
+    replacement_mapping = load_mappings(mappings_file)
 
     # Define a regular expression to match replacement strings
     replacement_string_pattern = "|".join(map(re.escape, replacement_mapping.values()))
@@ -121,7 +197,7 @@ def encode_gs4_script(input_file, output_file, target_encoding="utf-16le"):
     
     # Define a regular expression to match control characters
     #controlchar_pattern = r"\\x([0-9a-fA-F]{2,4})\|"
-    controlchar_pattern = r"\\(\d+)\|"
+    controlchar_pattern = r"\\L?(\d+)\|"
     
     def replace_decimal(match):
       decimal_value = int(match.group(1))
@@ -204,6 +280,9 @@ def rename_decoded_file(output_file):
 
 
 def main():
+    # Define the mappings text file
+    mappings = "ajaat-gs4-script-mappings.txt"
+
     # Parse command-line arguments
     parser = argparse.ArgumentParser(description="Convert GS4 scripts")
     subparsers = parser.add_subparsers(title="Main Commands", dest="command")
@@ -241,7 +320,7 @@ def main():
         input_files = glob.glob(args.input_file)
         for input_file in input_files:
             output_file = args.output_file if args.output_file else f"{os.path.splitext(input_file)[0]}.txt"
-            decode_gs4_script(input_file, output_file)
+            decode_gs4_script(input_file, output_file, mappings)
             swap_hex_in_file(output_file, f"{output_file}.2") # make hex characters 4 bytes
 
             # remove temporary output file if it exists
@@ -259,7 +338,7 @@ def main():
         input_files = glob.glob(args.input_file)
         for input_file in input_files:
             output_file = args.output_file if args.output_file else f"{os.path.splitext(input_file)[0]}.encoded.bin"
-            remove_newlines_and_replace_inplace(input_file)
+            remove_newlines_and_replace_inplace(input_file, mappings)
             encode_gs4_script(input_file, output_file)
             print(f'Converted "{input_file}" back to binary format: "{output_file}"')
 
