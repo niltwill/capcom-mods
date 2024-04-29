@@ -559,26 +559,10 @@ def ascii_convert_prevalues(ascii_part, num):
     cmd_count = ascii_part.count('\\', 0)
     cmd_left = num - cmd_count
 
-    # Return language-specific exceptions here (that I didn't want to bother with to make exceptions for)
+    # Return language-specific exceptions here (add your own ones if needed)
     # -de-
     if ascii_part == r'\6|\0|\0|\0|h\L228|tte er so stehen m\L252|ssen,':
         return r'\6|\0|\0|\0|h\L228|tte er so stehen m\L252|ssen,'
-
-    # -ja-
-    if ascii_part == r'\5|T$\L12388|\L12356|\L12395|\L12459|\L12458|\L12434|\L20986|\L12375|\L12383|\L12424|\L12358|\L12391|\L12377|\L12290|':
-        return r'\5|\84|\36|\L12388|\L12356|\L12395|\L12459|\L12458|\L12434|\L20986|\L12375|\L12383|\L12424|\L12358|\L12391|\L12377|\L12290|'
-
-    # -ko-
-    if ascii_part == r'\5|T$\L47560|\L52840|\L45236| \L46300|\L47084|\L45212| \L46319|\L54633|\L45768|\L45796|.':
-        return r'\5|\84|\36|\L47560|\L52840|\L45236| \L46300|\L47084|\L45212| \L46319|\L54633|\L45768|\L45796|.'
-
-    # -zhcn-
-    if ascii_part == r'\5|T$\L24635|\L31639|\L38706|\L20986|\L20102|\L39532|\L33050|\L12290|':
-        return r'\5|\84|\36|\L24635|\L31639|\L38706|\L20986|\L20102|\L39532|\L33050|\L12290|'
-
-    # -zhtw-
-    if ascii_part == r'\5|T$\L32317|\L31639|\L21628|\L20043|\L27442|\L20986|\L20102|\L12290|':
-        return r'\5|\84|\36|\L32317|\L31639|\L21628|\L20043|\L27442|\L20986|\L20102|\L12290|'
 
     # Convert two or triple pipes before splitting
     if "|||" in ascii_part:
@@ -594,8 +578,9 @@ def ascii_convert_prevalues(ascii_part, num):
     remaining_string = []
     #converted_num = cmd_count
     converted_num = 0
-    split_pattern = r".{2,3}(\d+)" # Match only the values before numbers
+    split_pattern = r".{2,}(\d+)" # Match only the values before numbers
     string_split = ascii_part.split('|')
+    firstOnly = False
     if converted_num <= 4: # Maximum parameter number for all the commands involved
         for text in string_split:
             match = re.search(split_pattern, text)
@@ -605,7 +590,7 @@ def ascii_convert_prevalues(ascii_part, num):
                 firstChar = False
                 secondChar = False
                 if length >= 3:
-                    if not string[0] == "\\":
+                    if not string[0] == "\\" and not firstOnly:
                         # Convert first char
                         decimal_value = convert_ascii_to_decimal(string[0])
                         converted_chars.append("\\" + str(decimal_value) + "|")
@@ -617,6 +602,10 @@ def ascii_convert_prevalues(ascii_part, num):
                             converted_chars.append("\\" + str(decimal_value) + "|")
                             converted_num += 1
                             secondChar = True
+                            firstOnly = True
+                    elif string[0] == " " and firstOnly:
+                        # Don't convert spaces at this point
+                        converted_chars.append(" " + string[1:] + "|")
                     else:
                         converted_chars.append("\\" + string[1:] + "|")
                     if firstChar and not secondChar:
@@ -645,12 +634,12 @@ def ascii_convert_prevalues(ascii_part, num):
 def ascii_convert_aftervalues(ascii_part, num):
     #cmd_count = ascii_part.count('\\', 0)
     #cmd_left = num - cmd_count
-    
+
     # Do not proceed if there is a pipe at the end (that means it's a command end)
     if ascii_part.endswith('|'):
         return ascii_part
 
-    # Return language-specific exceptions here (that I didn't want to bother with to make exceptions for)
+    # Return language-specific exceptions here (add your own ones if needed)
     # -ko-
     if ascii_part == r'\5|\84|\36|\L47560|\L52840|\L45236| \L46300|\L47084|\L45212| \L46319|\L54633|\L45768|\L45796|.':
         return ascii_part
@@ -668,10 +657,15 @@ def ascii_convert_aftervalues(ascii_part, num):
 
     converted_chars = []
     starting_string = []
+    space_text = []
     non_matches = 0
     split_pattern = r"\\L?(\d+).*" # values after numbers
     string_split = ascii_part.split('|')
     for text in string_split:
+        # If language text has space, do not convert that
+        if " \L" in text:
+            space_text.append(text + "|")
+
         match = re.search(split_pattern, text)
         if not match:
             # Text at the end
@@ -703,6 +697,13 @@ def ascii_convert_aftervalues(ascii_part, num):
             # Matching numbers come first
             string = match.group()
             starting_string.append(string + "|")
+
+    # Add original spaces back to strings with \L numbers, if they contain them
+    for i, space_element in enumerate(space_text):
+        for j, orig_element in enumerate(starting_string):
+            if space_element.strip() == orig_element:
+                starting_string[j] = space_element
+                break
 
     return "".join(starting_string + converted_chars)
 
@@ -842,8 +843,14 @@ def fix_first_line(annotated_file, output_file):
         # Split the line in case of extra newlines
         lines = first_line.splitlines()
 
-        # Remove the "L" from first line
+        # Remove the "L" from first line, as that's needed for the regex to work
         modified_line = re.sub(r'\\L(\d+)', r'\\\1', lines[0])
+
+        # Manually catch and convert any "\\" sign (regex is not going to find this)
+        if "\\\\" in modified_line:
+            changed_line = modified_line
+            changed_line = changed_line.replace('\\\\', '\\92|\\')
+            modified_line = changed_line
 
         # Match two patterns with regex
         #pattern_before = r'(?<=\|)([^|\\]*)'  # Pattern to capture text before \number
@@ -860,6 +867,7 @@ def fix_first_line(annotated_file, output_file):
         final_line = ""
 
         # Manually add the very first byte if the second byte starts with "\"
+        # (As the regex fails to catch this one)
         second_byte = modified_line[1]
         if second_byte == '\\':
             first_byte = modified_line[0]
@@ -874,20 +882,17 @@ def fix_first_line(annotated_file, output_file):
             # Capture the text after \number
             text_after = match_after.group(2)
 
+            if number:
+                final_line += "\\" + str(number) + "|"
             if text_before:
                 for char in text_before:
                     replaced_char = convert_ascii_to_decimal(char)
                     final_line += "\\" + str(replaced_char) + "|"
-            if number:
-                final_line += "\\" + str(number) + "|"
             if text_after:
                 for char in text_after:
                     replaced_char = convert_ascii_to_decimal(char)
                     final_line += "\\" + str(replaced_char) + "|"
 
-        # Add a "\" if it exists (in three files)
-        #i = modified_line.rfind('\\\\')
-        #final_line = modified_line[:i] + "" + modified_line[i:]
         modified_line = final_line
 
         f_out.write(modified_line + '\n' + f_in.read())
@@ -1062,16 +1067,16 @@ def main():
             decode_gs4_script(input_file, output_file, mappings)
 
             # Fix the first line of the file (removing the L chars and converting ASCII symbols to decimals)
-            #fix_first_line(output_file, f"{output_file}.2")
+            fix_first_line(output_file, f"{output_file}.2")
 
             # Remove temporary output file if it exists
-            #try:
-            #    os.remove(output_file)
-            #except FileNotFoundError:
-            #    pass
+            try:
+                os.remove(output_file)
+            except FileNotFoundError:
+                pass
 
             # Rename the final file to the original output file
-            #rename_decoded_file(f"{output_file}.2")
+            rename_decoded_file(f"{output_file}.2")
             
             print(f'Converted "{input_file}" to readable format: "{output_file}"')
 
