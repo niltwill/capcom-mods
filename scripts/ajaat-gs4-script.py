@@ -753,7 +753,7 @@ def decode_gs4_script(input_file, output_file, mappings_file):
     data = f_in.read()
 
     try:
-      # Attempt decoding with UTF-16LE (utf-16le) - alternative would be ISO-8859-1 (latin-1)
+      # Attempt decoding with UTF-16LE (utf-16le) - alternative might be ISO-8859-1 (latin-1)
       text = data.decode("utf-16le", errors="replace")
     except UnicodeDecodeError:
       print("Warning: Decoding failed with the UTF-16LE encoding.")
@@ -832,8 +832,7 @@ def decode_gs4_script(input_file, output_file, mappings_file):
     f_out.write("".join(output_lines))
 
 
-# The first line is problematic due to different positions of certain chars in various files,
-# so it's not really handled (as of yet)
+# Also convert the ASCII symbols to decimals on first line
 def fix_first_line(annotated_file, output_file):
   with open(annotated_file, "r") as f_in, open(output_file, "w") as f_out:
     try:
@@ -973,6 +972,7 @@ def encode_gs4_script(input_file, output_file, target_encoding="utf-16le"):
       print(f"Error: Encoding back to {target_encoding} failed. Consider a different encoding.")
       return
 
+    # Write to output file
     f_out.write(encoded_data)
 
 
@@ -1016,6 +1016,45 @@ def compare_files(input_file, output_file, fix=False):
         elif not fix:
             print('')
             print('No discrepancies were found.')
+
+
+# Read position values
+def find_position_values(filename, codeblock_value, endjmp_value):
+    positions = []
+    firstCmdFound = False
+    with open(filename, 'rb') as file:
+        chunk_size = 1024 # As the files are small, this should be enough
+        offset = 0 # Start from beginning of the file
+        while True:
+            chunk = file.read(chunk_size)
+            if not chunk:
+                break
+            # Iterate over the chunk by 2 bytes (UInt16)
+            for i in range(0, len(chunk), 2):
+                # Read two bytes and convert to UInt16
+                uint16_value = int.from_bytes(chunk[i:i+2], byteorder='little')
+                if uint16_value == codeblock_value and not firstCmdFound:
+                    positions.append(offset + i) # Append the first command's number (start of section 1)
+                    firstCmdFound = True # Only need the first match of this
+                elif uint16_value == endjmp_value:
+                    positions.append(offset + i + 2)  # Append endjmp position + 2 (to refer to the next command)
+            offset += len(chunk)
+    return positions
+
+
+# Edit position values to new ones
+def modify_position_values(filename, positions):
+    with open(filename, 'r+b') as file:
+        file.seek(0)
+        for value in positions:
+            # Convert the new value to bytes
+            inserted_bytes = value.to_bytes(2, byteorder='little')
+            # Write the new value at the current position
+            file.write(inserted_bytes)
+            # Go to next byte
+            file.seek(1, 1)
+            # Add a zero byte too, as 2 bytes are required
+            file.write(b'\x00')
 
 
 def rename_decoded_file(output_file):
@@ -1087,6 +1126,15 @@ def main():
             output_file = args.output_file if args.output_file else f"{os.path.splitext(input_file)[0]}.encoded.bin"
             remove_newlines_and_replace_inplace(input_file, mappings)
             encode_gs4_script(input_file, output_file)
+            
+            # Correct the position offsets
+            positions = find_position_values(output_file, 57489, 57357) # 57489 -> first command, 57357 -> endjmp (section marker)
+            if positions:
+                del positions[-1] # Last section (endjmp) does not need to be counted
+                position_counter = len(positions)
+                positions.insert(0, position_counter) # Add the position counter to the list too
+                modify_position_values(output_file, positions) # Add new position values
+
             print(f'Converted "{input_file}" back to binary format: "{output_file}"')
 
     # Compare argument
