@@ -991,12 +991,17 @@ def remove_newlines_and_replace_inplace(filename, mappings_file):
 
     # Read the original file, apply replacements, and remove newlines
     with open(filename, 'r') as infile, open(temp_filename, 'w') as outfile:
-        content = infile.read()
-        modified_content = re.sub(replacement_string_pattern, replace_replacement_string, content)
-        modified_content_with_sections = re.sub(r"\{SECTION[^}]*\}", "|SECTION|", modified_content)
-        modified_content_with_sections2 = re.sub(r"\{REF[^}]*\}", "|REF|", modified_content_with_sections)
-        modified_content_without_newlines = modified_content_with_sections2.replace('\n', '')
-        outfile.write(modified_content_without_newlines)
+        try:
+            content = infile.read()
+            modified_content = re.sub(replacement_string_pattern, replace_replacement_string, content)
+            modified_content_with_sections = re.sub(r"\{SECTION[^}]*\}", "|SECTION|", modified_content)
+            modified_content_with_sections2 = re.sub(r"\{REF[^}]*\}", "|REF|", modified_content_with_sections)
+            modified_content_without_newlines = modified_content_with_sections2.replace('\n', '')
+            outfile.write(modified_content_without_newlines)
+        except UnicodeDecodeError as e:
+            print(f"The '{filename}' cannot be encoded.")
+            print(f"Error message: {e}")
+            sys.exit(1)
 
     # Replace the original file with the temporary file (atomic operation)
     os.replace(temp_filename, filename)
