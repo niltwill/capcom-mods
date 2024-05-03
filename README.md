@@ -6,7 +6,7 @@
 [Mega.nz](https://mega.nz/file/seMQzbDZ#nnJ_yTkLVDjT2voko7YkoRaFyeiONpTgYkG_y5nNg34)
    - **Leftovers Fix** (to fix any remaining typos/mistakes, currently this is only for some typos)<br>
 [IceDrive](https://icedrive.net/s/GkPRZ85C3861A39TWDDW145ZXSPg)<br>
-[Mega.nz](https://mega.nz/file/8ftjwS5S#dxP3A-e340UK4jfwhdlx1mL_2diK9Lp8F4IHJBgK2Sc)
+[Mega.nz](https://mega.nz/file/VWVCgSBS#-GfMtuFCYykNBq4uPWg-MF8waGxtAPWPRGuV8GXWcXg)
    - **AJ:AA - Gyakuten Saiban Sound BOX** music mod (to replace the reused PW:AA tracks in AJ:AA)<br>
 [IceDrive](https://icedrive.net/s/tT5yXj6xBZ9DbAC16WaR34yuYNBa)<br>
 [Mega.nz](https://mega.nz/file/1HVhgTwA#jIg7F0ItHcKI00lX5LAfqNPVhV9igqhkoAjRERkXTh8)
@@ -31,7 +31,7 @@
 [Mega.nz](https://mega.nz/file/MHURDRAQ#-fixf2JaWN-FSP9Fw5SUndjpKHQqOTMBuCGuUHT5_XY)
    - **Leftovers fix** (to fix any remaining typos/mistakes, currently this is only for some typos)<br>
 [IceDrive](https://icedrive.net/s/BZCajb32uTXjaF7zAxwvA8Tx159a)<br>
-[Mega.nz](https://mega.nz/file/UX8xFS5R#fNILw25s6a-LvpaVb3PrwQPIBrnd5p9MZIUggZg0R60)
+[Mega.nz](https://mega.nz/file/NPlWhZyS#AKMut92nVi4Ss9Sqrr0YAUvar71WWiDJ2E2hAEIS6D0)
    - **AJ:AA - Gyakuten Saiban Sound BOX** music mod (to replace the reused PW:AA tracks in AJ:AA)<br>
 [IceDrive](https://icedrive.net/s/2PwC6GgQF3vTWtX8Z3DGz58D1A1C)<br>
 [Mega.nz](https://mega.nz/file/9HFClCZY#HiK0qAH7LqBYEALla2x2tFGuTHJGS964wl3C9PFy1vk)
