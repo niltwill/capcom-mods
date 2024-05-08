@@ -4,6 +4,7 @@ import argparse
 import glob
 import re
 import os
+import pickle
 import sys
 import unicodedata
 
@@ -73,20 +74,23 @@ def load_mappings(filename, separator):
     return replacement_mapping
 
 
-# Global variable
-reverse_mapping = None
-
 # Preprocess mappings, because it does not change, to have a static reverse mapping dictionary
-# This is necessary for faster speed, or it slows down to a crawl
+# This should be faster, and it only seems to work with a pickle file, so here it is
+pickle_file = "reverse_mapping.pickle"
+
 def preprocess_mappings(mappings_file, delimiter='|'):
     replacement_mapping = load_mappings(mappings_file, delimiter)
     reverse_mapping = {value[0]: key for key, value in replacement_mapping.items()}
+    with open(pickle_file, 'wb') as f:
+        pickle.dump(reverse_mapping, f)
 
 
 # Function to return the command number based on the text string
 def get_command_number(command_name):
-    if reverse_mapping is not None:
-        return reverse_mapping.get(command_name)
+    # Load the pre-processed dictionary from the file
+    with open(pickle_file, 'rb') as f:
+        reverse_mapping = pickle.load(f)
+    return reverse_mapping.get(command_name)
 
 
 # Function to convert the decimal ASCII to symbol representation
@@ -1263,7 +1267,7 @@ def remove_initial_values(filename):
             file.truncate()
 
 
-# Get position offsts
+# Get position offsets
 def find_offsets(binary_file, search_string):
     offsets = []
     with open(binary_file, 'rb') as file:
@@ -1277,7 +1281,7 @@ def find_offsets(binary_file, search_string):
             index = data.find(search_string, start_index)
             if index == -1:
                 break  # No more occurrences found
-            # Add the offset to the offsets
+            # Add the offset to the list
             offsets.append(index)
             # Move the starting index for the next search
             start_index = index + len(search_string)
@@ -1427,6 +1431,10 @@ def main():
 
             # Write conversion message to console
             print(f'Converted "{input_file}" to readable format: "{output_file}"')
+        
+        # Delete pickle file for reverse mapping
+        if os.path.exists(pickle_file):
+            os.remove(pickle_file)
 
 
     # Encode argument
