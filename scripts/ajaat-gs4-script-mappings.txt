@@ -2,7 +2,7 @@
 # \57488: possibly 'progress/variable/trigger marker' - to save/store what you achieved, so you can advance further in the game
 
 # These are all the 141 commands or opcodes that are being used in the scripts
-# The script references to their names a lot, so if you replace these here, you have to do it in the script as well (every instance)
+# You may change the text strings, e.g. "cmd001". But do not change the numeric value before it, or the argument number at the end.
 # Format:
 # \<command number>|=\<mapped name>|<argument number, used for ASCII symbol conversion>
 
@@ -135,8 +135,7 @@
 \57488|=\cmd121|2
 # \codeblock: 1-2
 \57489|=\codeblock|1
-# \cmd123: 0-1
-\57490|=\cmd123|1
+\57490|=\cmd123|0
 \57491|=\cmd124|0
 \57492|=\cmd125|0
 \57493|=\cmd126|0

@@ -18,8 +18,7 @@ Script to convert AJ:AA Trilogy's GS4 (Apollo Justice) script binary files
 https://raw.githubusercontent.com/niltwill/capcom-mods/main/scripts/ajaat-gs4-script-mappings.txt
 
 The "L" prefix before a decimal number means "Language", indicating that it's possibly a language character. This letter can be ignored.
-It is only an indicator letter to convert only these characters into unicode when using different helper scripts (to understand anything non-Latin):
-https://github.com/niltwill/capcom-mods/tree/main/scripts/ajaat-gs4-script-helpers
+It is only an indicator letter to convert only these characters into unicode.
 
 ---
 
@@ -72,6 +71,22 @@ def load_mappings(filename, separator):
         sys.exit(1)
 
     return replacement_mapping
+
+
+# Global variable
+reverse_mapping = None
+
+# Preprocess mappings, because it does not change, to have a static reverse mapping dictionary
+# This is necessary for faster speed, or it slows down to a crawl
+def preprocess_mappings(mappings_file, delimiter='|'):
+    replacement_mapping = load_mappings(mappings_file, delimiter)
+    reverse_mapping = {value[0]: key for key, value in replacement_mapping.items()}
+
+
+# Function to return the command number based on the text string
+def get_command_number(command_name):
+    if reverse_mapping is not None:
+        return reverse_mapping.get(command_name)
 
 
 # Function to convert the decimal ASCII to symbol representation
@@ -136,15 +151,93 @@ def replace_all_occurrences_backwards(string, expression, replacement, count=Non
     return string
 
 
+def get_range_parameter(replacement_string, ascii_part, num_parameters, mappings_file):
+    # Get command numeric value
+    test_cmd = get_command_number(replacement_string)
+
+    # Really barebones command range support here
+    # Cause I didn't want to make this super complicated
+    # As there are not that many commands with a range
+    current_cmds = ascii_part.count('\\')
+    base_param = current_cmds - num_parameters
+
+    if test_cmd == "\\57349|":  # \music
+        if base_param == 3:
+            num_parameters = 3
+    elif test_cmd == "\\57397|":  # \cmd051
+        if base_param == 1:
+            num_parameters = 1
+        elif base_param == 2:
+            num_parameters = 2
+        elif base_param == 3:
+            num_parameters = 3
+        elif base_param == 4:
+            num_parameters = 4
+    elif test_cmd == "\\57416|":  # \cmd066
+        if base_param == 1:
+            num_parameters = 1
+        elif base_param == 2:
+            num_parameters = 2
+    elif test_cmd == "\\57424|":  # \cmd073
+        if base_param == 3:
+            num_parameters = 3
+    elif test_cmd == "\\57451|":  # \cmd095
+        if base_param == 3:
+            num_parameters = 3
+    elif test_cmd == "\\57461|":  # \cmd104
+        if base_param == 4:
+            num_parameters = 4
+    elif test_cmd == "\\57489|":  # \codeblock
+        if base_param == 2:
+            num_parameters = 2
+    elif test_cmd == "\\57490|":  # \cmd123
+        if base_param == 1:
+            num_parameters = 1
+
+    return num_parameters
+
+
+def remove_l_prefix(replacement_string, ascii_part, num_parameters, mappings_file):
+    num_parameters = get_range_parameter(replacement_string, ascii_part, num_parameters, mappings_file)
+
+    def remove_first_x(regex, text, x):
+        count = 0
+
+        # Define a callback function to remove only the "L" letter from the first X occurrences
+        def remove_callback(match):
+            nonlocal count
+            if count < x:
+                count += 1
+                return "\\" + match.group(1) + "|"  # Keep the "\" and "|" characters
+            else:
+                return match.group(0)
+
+        # Perform the removal using the callback function
+        result = re.sub(regex, remove_callback, text)
+        return result
+
+    # Match only the "\L[numeric]" values
+    regex_numonly = r"\\L(\d+)\|"
+
+    # Remove L letter from string
+    removed_text = remove_first_x(regex_numonly, ascii_part, num_parameters)
+
+    if removed_text is not None:
+        return replacement_string + str(removed_text)
+    else:
+        return replacement_string + ascii_part
+
+
 # Function to convert certain ASCII symbols to their decimals (32-126)
-def convert_ascii_symbols(replacement_string, ascii_part, num_parameters):
+def convert_ascii_symbols(replacement_string, ascii_part, num_parameters, mappings_file):
     # Remove the "|" delimiter
     command_name = replacement_string[:-1]
 
-    # Do not process these commands with this method
-    # (they don't process properly)
-    cmd_support = {"\swoosh", "\person_face"}
-    if command_name in cmd_support:
+    # Get command numeric value (to prevent hardcoded texts)
+    test_cmd = get_command_number(replacement_string)
+
+    # Do not process these commands as they don't work with this function well
+    if test_cmd in {"\\57370|", "\\57462|"}:  # \swoosh, \person_face
         return replacement_string + ascii_part
 
     # Do not process if it contains {REF...}
@@ -175,49 +268,11 @@ def convert_ascii_symbols(replacement_string, ascii_part, num_parameters):
         else:
             return replacement_string + ascii_part
 
-    # Really barebones command range support here
-    # Cause I didn't want to make this super complicated
-    # As there are not that many commands with a range
+    # Get number of parameters for any range command
     current_cmds = ascii_part.count('\\', 0)
-    base_param = num_parameters - current_cmds
-    
-    if command_name == "\music":
-        if base_param == 3:
-            num_parameters = 3
+    num_parameters = get_range_parameter(replacement_string, ascii_part, num_parameters, mappings_file)
 
-    if command_name == "\cmd051":
-        if base_param == 1:
-            num_parameters = 1
-        elif base_param == 2:
-            num_parameters = 2
-        elif base_param == 3:
-            num_parameters = 3
-        elif base_param == 4:
-            num_parameters = 4
-
-    if command_name == "\cmd066":
-        if base_param == 1:
-            num_parameters = 1
-        elif base_param == 2:
-            num_parameters = 2
-
-    if command_name == "\cmd073":
-        if base_param == 3:
-            num_parameters = 3
-
-    if command_name == "\cmd095":
-        if base_param == 3:
-            num_parameters = 3
-
-    if command_name == "\cmd104":
-        if base_param == 4:
-            num_parameters = 4
-
-    if command_name == "\codeblock":
-        if base_param == 2:
-            num_parameters = 2
-
-    # Match only the "\L[numeric]" values (
+    # Match only the "\L[numeric]" values
     regex_numonly = r"\\L?(\d+)\|?"
     
     # Used to build the string to return
@@ -230,6 +285,10 @@ def convert_ascii_symbols(replacement_string, ascii_part, num_parameters):
     # If only the command name exists, but we have parameters defined, gracefully return
     #if full_cmd_count == 1 and num_parameters > 0:
     #    return replacement_string + ascii_part
+    
+    # Fix commands that end with a "\" ASCII sign
+    if num_parameters == 1 and ascii_part.endswith("\\"):
+        return replacement_string + "\\92|"
 
     if current_cmds < num_parameters:
         # Find all matches with their starting and ending positions
@@ -350,8 +409,8 @@ def convert_ascii_symbols(replacement_string, ascii_part, num_parameters):
                     converted = convert_ascii_to_decimal(str(c))
 
                     # Fix replacing the wrong (first) element if duplicate numbers exist
-                    # - Only for those commands where it causes issues -
-                    if command_name == "\cmd024":
+                    # - Only for this command where it causes issues -
+                    if test_cmd == "\\57369|":  # \cmd024
                         match_number_repetitions = r"(?<!\\)(\d)(?:\W|\||\d)*\1"
                         match_nums = re.search(match_number_repetitions, converted_text)
                         if match_nums:
@@ -752,27 +811,36 @@ def is_language_related(char):
         return False
 
 
-def process_replacement(replacement_string, line, start_index, ascii_part, num_parameters):
+def process_replacement(replacement_string, line, start_index, ascii_part, num_parameters, mappings_file):
     modified_line = None
     converted_cmd = None
 
-    # Replace some problematic commands
-    if replacement_string in ["\\swoosh|", "\\person|", "\\person_face|", "\\music|", "\\bganim|",
-    "\\cmd024|", "\\cmd095|"]:
-        converted_cmd = ascii_convert_command(ascii_part, num_parameters)
+    # Define a dictionary to map command numbers to conversion functions
+    conversion_functions = {
+        "\\57370|": ascii_convert_command,  # \swoosh
+        "\\57374|": ascii_convert_command,  # \person
+        "\\57462|": ascii_convert_command,  # \person_face
+        "\\57349|": ascii_convert_command,  # \music
+        "\\57449|": ascii_convert_command,  # \bganim
+        "\\57369|": ascii_convert_command,  # \cmd024
+        "\\57451|": ascii_convert_command,  # \cmd095
+        "\\57402|": ascii_convert_prevalues,  # \cmd055
+        "\\57424|": ascii_convert_prevalues,  # \cmd073
+        "\\57451|": ascii_convert_prevalues,  # \cmd095
+        "\\57461|": ascii_convert_prevalues,  # \cmd104
+        "\\57397|": ascii_convert_aftervalues,  # \cmd051
+        "\\57402|": ascii_convert_aftervalues,  # \cmd055
+        "\\57416|": ascii_convert_aftervalues,  # \cmd066
+        "\\57424|": ascii_convert_aftervalues,  # \cmd073
+        "\\57451|": ascii_convert_aftervalues  # \cmd095
+    }
 
-    # Replace chars before values (that remained)
-    if replacement_string in ["\\cmd055|", "\\cmd073|", "\\cmd095|", "\\cmd104|"]:
-        converted_cmd = ascii_convert_prevalues(ascii_part, num_parameters)
+    # Get command numeric value (to prevent hardcoded texts)
+    test_cmd = get_command_number(replacement_string)
 
-    # Apply the conversion if any
-    if converted_cmd is not None:
-        modified_line = replacement_string + converted_cmd
-        ascii_part = converted_cmd  # Update ascii_part with converted_cmd
-
-    # Replace chars after values
-    if replacement_string in ["\\cmd051|", "\\cmd055|", "\\cmd066|", "\\cmd073|", "\\cmd095|"]:
-        converted_cmd = ascii_convert_aftervalues(ascii_part, num_parameters)
+    # Perform the conversions
+    if test_cmd in conversion_functions:
+        converted_cmd = conversion_functions[test_cmd](ascii_part, num_parameters)
 
     # Apply the conversion if any
     if converted_cmd is not None:
@@ -800,7 +868,7 @@ def is_position_in_list(byte_position, position_list):
 
 
 # For decoding the GS4 scripts
-def decode_gs4_script(input_file, output_file, sections_zero, sections_one, mappings_file):
+def decode_gs4_script(input_file, output_file, sections_zero, sections_one, mappings_file, asciiconv=False, lparam=False):
   with open(input_file, "rb") as f_in, open(output_file, "w") as f_out:
     data = f_in.read()
 
@@ -812,6 +880,7 @@ def decode_gs4_script(input_file, output_file, sections_zero, sections_one, mapp
       sys.exit(1)
 
     output_lines = []
+    no_conv_lines = []
     byte_position = 0  # Initialize byte position to be able to find and mark sections
     section_num = 1  # Initialize section counter
     section2_num = 1 # Initialize section 2 counter
@@ -832,8 +901,11 @@ def decode_gs4_script(input_file, output_file, sections_zero, sections_one, mapp
         #output_lines.append("\\x{:02o}||".format(ord(char))) # convert control characters to octal values
         #output_lines.append("\\x{:02x}||".format(ord(char))) # convert control characters to hexadecimal values
         string = "{:d}||".format(ord(char))
-        if (string.startswith("5") or string.startswith("6")) and len(string) >= 6:
-            output_lines.append("\n\\{:d}|".format(ord(char))) # add newline for the command control characters
+        if (string.startswith("5") or string.startswith("6")) and len(string) >= 7:
+            if section_num == 1:
+                output_lines.append("\\{:d}|".format(ord(char))) # convert control characters to decimal values
+            else:
+                output_lines.append("\n\\{:d}|".format(ord(char))) # add newline for the command control characters
         else:
             output_lines.append("\\{:d}|".format(ord(char))) # convert control characters to decimal values
       else:
@@ -861,8 +933,26 @@ def decode_gs4_script(input_file, output_file, sections_zero, sections_one, mapp
 
     # Apply replacements
     for numeric_sequence, (replacement_string, argument_range) in replacement_mapping.items():
-        output_string = "".join(output_lines)
-        output_string = output_string.replace(numeric_sequence, replacement_string)
+        #output_string = "".join(output_lines)
+        #output_string = output_string.replace(numeric_sequence, replacement_string)
+
+        # Split the list based on first "{SECTION 1}"
+        split_index = None
+        for i, element in enumerate(output_lines):
+            if "{SECTION 1}" in element:
+                split_index = i
+                break
+
+        if split_index is not None:
+          lines_before = output_lines[:split_index]
+          lines_after = output_lines[split_index:]
+          before_string = "".join(lines_before)
+          after_string = "".join(lines_after).replace(numeric_sequence, replacement_string)
+          output_string = before_string + after_string
+        else:
+          # Handle the case where "{SECTION 1}" is not found
+          output_string = "".join(output_lines).replace(numeric_sequence, replacement_string)
+
         if argument_range:
             lines = output_string.split("\n")
             for i, line in enumerate(lines):
@@ -873,21 +963,29 @@ def decode_gs4_script(input_file, output_file, sections_zero, sections_one, mapp
                     start_index = line.find(replacement_string, start_index)
                     if start_index == -1:
                         break
+                    if section_num == 1:
+                        break
                     ascii_part = (line[start_index + len(replacement_string):])
                     line = replacement_string + ascii_part
                     num_parameters = argument_range[0]
 
-                    # Process the line with ASCII symbol conversion (through two methods)
-                    converted_line = convert_ascii_symbols(replacement_string, ascii_part, num_parameters)
-                    if converted_line:
-                        line = converted_line
-                        ascii_part = (converted_line[start_index + len(replacement_string):])
+                    if not asciiconv:
+                        # Process the line with ASCII symbol conversion (through two methods)
+                        converted_line = convert_ascii_symbols(replacement_string, ascii_part, num_parameters, mappings_file)
+                        if converted_line:
+                            line = converted_line
+                            ascii_part = (converted_line[start_index + len(replacement_string):])
 
-                    # Additional commands to convert from ASCII symbols to decimals
-                    modified_line, ascii_part = process_replacement(replacement_string, line, start_index, ascii_part, num_parameters)
-                    if modified_line is not None:
-                        line = modified_line
-                        ascii_part = (modified_line[start_index + len(replacement_string):])
+                        # Additional commands to convert from ASCII symbols to decimals
+                        modified_line, ascii_part = process_replacement(replacement_string, line, start_index, ascii_part, num_parameters, mappings_file)
+                        if modified_line is not None:
+                            line = modified_line
+                            ascii_part = (modified_line[start_index + len(replacement_string):])
+
+                    # Remove "L" prefix from parameter numbers (not working too well yet, experimental function)
+                    # This should not be used inside this loop though
+                    if lparam:
+                        line = remove_l_prefix(replacement_string, ascii_part, num_parameters, mappings_file)
 
                     start_index += len(replacement_string)
                 lines[i] = line
@@ -969,7 +1067,7 @@ def fix_first_line(annotated_file, output_file):
     except IndexError:
         print(f"Can't read first line of: {f_in}")
         sys.exit(1)
-
+  
 
 def remove_newlines_and_replace_inplace(filename, mappings_file):
     temp_filename = filename + ".temp"  # Create a temporary filename
@@ -1179,7 +1277,7 @@ def find_offsets(binary_file, search_string):
             index = data.find(search_string, start_index)
             if index == -1:
                 break  # No more occurrences found
-            # Add the offset to the dictionary of offsets
+            # Add the offset to the offsets
             offsets.append(index)
             # Move the starting index for the next search
             start_index = index + len(search_string)
@@ -1226,9 +1324,35 @@ def rename_decoded_file(output_file):
   os.rename(output_file, final_name)
 
 
+def convert_decimal_to_unicode(text):
+    def replace_unicode(match):
+        decimal_code = int(match.group(1))
+        hex_code = hex(decimal_code)[2:]
+        return chr(int(hex_code, 16))
+
+    unicode_pattern = r"\\L(\d+)\|"
+    result = re.sub(unicode_pattern, replace_unicode, text)
+    return result
+
+
+def convert_to_decimal(text):
+    result = ''
+    for char in text:
+        if ord(char) > 127:
+            # Character is non-ASCII, convert it to decimal representation
+            decimal_value = ord(char)
+            result += f"\\L{decimal_value}|"
+        else:
+            # Character is ASCII, keep it unchanged
+            result += char
+    return result
+
+
 def main():
     # Define the mappings text file
     mappings = "ajaat-gs4-script-mappings.txt"
+    # Call preprocess_mappings for command name lookup
+    preprocess_mappings(mappings)
 
     # Parse command-line arguments
     parser = argparse.ArgumentParser(description="Convert AJ:AA Trilogy's GS4 (Apollo Justice) scripts")
@@ -1238,11 +1362,15 @@ def main():
     decode_parser = subparsers.add_parser("decode", help="Decode GS4 scripts to readable format")
     decode_parser.add_argument("input_file", type=str, help="Path to the input binary file or wildcard pattern (mandatory)")
     decode_parser.add_argument("output_file", type=str, nargs='?', default=None, help="Path to the output text file (optional)")
+    decode_parser.add_argument("--unicode", action="store_true", help="Convert the \L numeric values to unicode (optional)")
+    decode_parser.add_argument("--noasciiconv", action="store_true", help="Do not convert the ASCII symbols to decimal values (optional)")
+    decode_parser.add_argument("--nolparam", action="store_true", help="Removes the L prefix from all command parameter values [experimental] (optional)")
 
     # Subparser for encoding
     encode_parser = subparsers.add_parser("encode", help="Encode readable GS4 scripts back to binary")
     encode_parser.add_argument("input_file", type=str, help="Path to the input text file or wildcard pattern (mandatory)")
     encode_parser.add_argument("output_file", type=str, nargs='?', default=None, help="Path to the output binary file (optional)")
+    encode_parser.add_argument("--unicode", action="store_true", help="Convert the unicode values back to decimal (optional)")
 
     args = parser.parse_args()
 
@@ -1259,10 +1387,27 @@ def main():
         for input_file in input_files:
             output_file = args.output_file if args.output_file else f"{os.path.splitext(input_file)[0]}.txt"
             sections_zero, sections_one = extract_position_values(input_file)
-            decode_gs4_script(input_file, output_file, sections_zero, sections_one, mappings)
+            decode_gs4_script(input_file, output_file, sections_zero, sections_one, mappings, asciiconv=args.noasciiconv, lparam=args.nolparam)
 
             # Fix the first line of the file (removing the L chars and converting ASCII symbols to decimals)
             fix_first_line(output_file, f"{output_file}.2")
+
+            # Decode into unicode with optional flag
+            if args.unicode:
+                try:
+                    with open(f"{output_file}.2", "r", encoding="utf-8") as f_in:
+                        input_text = f_in.read()
+
+                    output_text = convert_decimal_to_unicode(input_text)
+
+                    with open(f"{output_file}.3", "wb") as f_out:
+                        f_out.write(output_text.encode("utf-8", errors="ignore"))
+                except FileNotFoundError:
+                    print(f"Error: File not found: {output_file}.2")
+                    sys.exit(1)
+                except Exception as e:
+                    print(f"Error processing file {output_file}.2: {str(e)}")
+                    sys.exit(1)
 
             # Remove temporary output file if it exists
             try:
@@ -1271,16 +1416,50 @@ def main():
                 pass
 
             # Rename the final file to the original output file
-            rename_decoded_file(f"{output_file}.2")
+            if args.unicode:
+                rename_decoded_file(f"{output_file}.3")
+                try:
+                    os.remove(f"{output_file}.2")
+                except FileNotFoundError:
+                    pass
+            else:
+                rename_decoded_file(f"{output_file}.2")
 
             # Write conversion message to console
             print(f'Converted "{input_file}" to readable format: "{output_file}"')
+
 
     # Encode argument
     elif args.command == "encode":
         input_files = glob.glob(args.input_file)
         for input_file in input_files:
             output_file = args.output_file if args.output_file else f"{os.path.splitext(input_file)[0]}.encoded.bin"
+            
+            # Encode unicode back to decimal with optional flag
+            if args.unicode:
+                try:
+                    with open(input_file, "r", encoding="utf-8") as f_in:
+                        input_text = f_in.read()
+
+                    output_text = convert_to_decimal(input_text)
+
+                    with open(f"{input_file}.2", "w", encoding="utf-8") as f_out:
+                        f_out.write(output_text)
+                except FileNotFoundError:
+                    print(f"Error: File not found: {input_file}")
+                    sys.exit(1)
+                except Exception as e:
+                    print(f"Error processing file {input_file}: {str(e)}")
+                    sys.exit(1)
+
+            # Rename the final file to the original output file
+            if args.unicode:
+                try:
+                    os.remove(f"{input_file}")
+                except FileNotFoundError:
+                    pass
+                rename_decoded_file(f"{input_file}.2")
+
             remove_newlines_and_replace_inplace(input_file, mappings)
             encode_gs4_script(input_file, output_file)
 
@@ -1291,8 +1470,8 @@ def main():
             #
             # Write the new position offsets
             #
-            str_sec = 18  # |SECTION| = 18
-            str_ref = 10  # |REF| = 10            
+            str_sec = 18  # |SECTION| = 18 (9*2)
+            str_ref = 10  # |REF| = 10 (5*2)
             string_value1 = b'|\x00S\x00E\x00C\x00T\x00I\x00O\x00N\x00|\x00'
             string_value2 = b'|\x00R\x00E\x00F\x00|\x00'
             sections = []
