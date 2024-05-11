@@ -4,7 +4,6 @@ import argparse
 import glob
 import re
 import os
-import pickle
 import sys
 import unicodedata
 
@@ -28,6 +27,16 @@ ajaat-gs4-script.py decode *.bin
 
 * To convert back to binary:
 ajaat-gs4-script.py encode *.txt
+
+---
+
+* If you're not going for English (en), where non-Latin characters are rare, you should always use this:
+ajaat-gs4-script.py decode --unicode --nolparam *.bin
+
+Remove "--nolparam" if it causes issues, however it helps to not confuse text strings with command parameter values.
+
+* And to convert these files back, include "--unicode" as well:
+ajaat-gs4-script.py encode --unicode *.txt
 
 """
 
@@ -74,23 +83,21 @@ def load_mappings(filename, separator):
     return replacement_mapping
 
 
-# Preprocess mappings, because it does not change, to have a static reverse mapping dictionary
-# This should be faster, and it only seems to work with a pickle file, so here it is
-pickle_file = "reverse_mapping.pickle"
+# Preprocess mappings to have a static reverse mapping dictionary
+reverse_mapping = {}
+
 
 def preprocess_mappings(mappings_file, delimiter='|'):
+    global reverse_mapping
     replacement_mapping = load_mappings(mappings_file, delimiter)
     reverse_mapping = {value[0]: key for key, value in replacement_mapping.items()}
-    with open(pickle_file, 'wb') as f:
-        pickle.dump(reverse_mapping, f)
 
 
 # Function to return the command number based on the text string
 def get_command_number(command_name):
-    # Load the pre-processed dictionary from the file
-    with open(pickle_file, 'rb') as f:
-        reverse_mapping = pickle.load(f)
-    return reverse_mapping.get(command_name)
+    global reverse_mapping
+    if reverse_mapping is not None:
+        return reverse_mapping.get(command_name)
 
 
 # Function to convert the decimal ASCII to symbol representation
@@ -203,31 +210,78 @@ def get_range_parameter(replacement_string, ascii_part, num_parameters, mappings
 
 def remove_l_prefix(replacement_string, ascii_part, num_parameters, mappings_file):
     num_parameters = get_range_parameter(replacement_string, ascii_part, num_parameters, mappings_file)
+    test_cmd = get_command_number(replacement_string)
 
     def remove_first_x(regex, text, x):
-        count = 0
+        result = text
+        count = x
+        for match in re.finditer(regex, text):
+            if count != 0:
+                count -= 1
+                result = result.replace(match.group(0), "\\" + match.group(1) + "|\\")
+        return result
 
-        # Define a callback function to remove only the "L" letter from the first X occurrences
-        def remove_callback(match):
-            nonlocal count
-            if count < x:
-                count += 1
-                return "\\" + match.group(1) + "|"  # Keep the "\" and "|" characters
-            else:
-                return match.group(0)
-
-        # Perform the removal using the callback function
-        result = re.sub(regex, remove_callback, text)
+    def remove_first_x2(regex, text, x):
+        result = text
+        count = x
+        for match in re.finditer(regex, text):
+            if count != 0:
+                count -= 1
+                result = result.replace(match.group(0), "\\" + match.group(1) + "|")
         return result
 
     # Match only the "\L[numeric]" values
-    regex_numonly = r"\\L(\d+)\|"
+    regex_numonly = r"\\L(\d+)\|\\L?"
+    regex_numonly2 = r"\\L(\d+)\|$"
+    regex_numonly3 = r"\\L(\d+)\|"
+    regex_numonly4 = r"\\L?(\d+)\|"
 
     # Remove L letter from string
-    removed_text = remove_first_x(regex_numonly, ascii_part, num_parameters)
+    if not test_cmd in {"\\57489|", "\\57355|", "\\57356|", "\\57362|", "\\57383|", "\\57471|",
+    "\\57350|", "\\57374|", "\\57347|", "\\57349|", "\\57363|", "\\57462|", "\\57378|", "\\57404|"}:
+        # not \codeblock, \speed, \wait, \bgcolor, \shake, \cmd109, \sound, \person, \music, \showphoto, \person_face, \fademusic, \cmd057
+        removed_text = remove_first_x(regex_numonly, ascii_part, num_parameters)
+        removed_text2 = remove_first_x2(regex_numonly2, removed_text, num_parameters)
+    else:
+        removed_text2 = ascii_part
 
-    if removed_text is not None:
-        return replacement_string + str(removed_text)
+    # Fix some commands that wouldn't work right
+    # TODO (lines like...):
+    # \music|\16|dピアノがヘタなパパがいるし。 - ending.user.2.ja.txt
+    if test_cmd in {"\\57489|", "\\57355|", "\\57356|", "\\57362|", "\\57471|", "\\57347|", "\\57363|",  "\\57378|", "\\57404|"}:
+        # \codeblock, \speed, \wait, \bgcolor, \cmd109, \color, \showphoto, \fademusic, \cmd057
+        if removed_text2.startswith("\\L"):
+            temp_text = remove_first_x2(regex_numonly3, removed_text2, 1)
+            removed_text2 = temp_text
+    elif test_cmd in {"\\57383|", "\\57350|", "\\57349|",  "\\57462|"}:  # \shake, \sound, \music, \person_face
+        if removed_text2.startswith("\\L"):
+            temp_text = remove_first_x2(regex_numonly3, removed_text2, 2)
+            removed_text2 = temp_text
+    elif test_cmd in {"\\57374|"}:  # \person
+    # TODO: only convert if there are not three parameters...
+        num_param = 3
+        split_cmd = removed_text2.split("|", num_param)
+        if len(split_cmd) > 2:
+            analyze_string = "\\" + split_cmd[0] + "|" + "\\" + split_cmd[1] + "|" + "\\" + split_cmd[2] + "|"
+        else:
+            analyze_string = "\\" + split_cmd[0] + "|" + "\\" + split_cmd[1] + "|"
+        current_cmds = analyze_string.count('\\\\')
+        if current_cmds == num_param:
+            # This can be safely converted
+            temp_text = remove_first_x2(regex_numonly4, removed_text2, num_param)
+            removed_text2 = temp_text
+
+    # Convert first char, if necessary
+    if num_parameters > 0 and not removed_text2.startswith("\\") and not removed_text2.startswith("{REF "):
+        processed_text = ""
+        process_text = removed_text2
+        converted = convert_ascii_to_decimal(process_text[0])
+        processed_text += "\\" + str(converted) + "|"
+        processed_text += removed_text2[1:]
+        removed_text2 = processed_text
+    
+    if removed_text2 is not None:
+        return replacement_string + str(removed_text2)
     else:
         return replacement_string + ascii_part
 
@@ -831,12 +885,7 @@ def process_replacement(replacement_string, line, start_index, ascii_part, num_p
         "\\57402|": ascii_convert_prevalues,  # \cmd055
         "\\57424|": ascii_convert_prevalues,  # \cmd073
         "\\57451|": ascii_convert_prevalues,  # \cmd095
-        "\\57461|": ascii_convert_prevalues,  # \cmd104
-        "\\57397|": ascii_convert_aftervalues,  # \cmd051
-        "\\57402|": ascii_convert_aftervalues,  # \cmd055
-        "\\57416|": ascii_convert_aftervalues,  # \cmd066
-        "\\57424|": ascii_convert_aftervalues,  # \cmd073
-        "\\57451|": ascii_convert_aftervalues  # \cmd095
+        "\\57461|": ascii_convert_prevalues  # \cmd104
     }
 
     # Get command numeric value (to prevent hardcoded texts)
@@ -845,6 +894,23 @@ def process_replacement(replacement_string, line, start_index, ascii_part, num_p
     # Perform the conversions
     if test_cmd in conversion_functions:
         converted_cmd = conversion_functions[test_cmd](ascii_part, num_parameters)
+
+    # Apply the conversion if any
+    if converted_cmd is not None:
+        modified_line = replacement_string + converted_cmd
+        ascii_part = converted_cmd  # Update ascii_part with converted_cmd
+
+    # Clear dictionary
+    conversion_functions.clear()
+
+    # Add functions to do after (second phase)
+    conversion_functions = {
+        "\\57397|": ascii_convert_aftervalues,  # \cmd051
+        "\\57402|": ascii_convert_aftervalues,  # \cmd055
+        "\\57416|": ascii_convert_aftervalues,  # \cmd066
+        "\\57424|": ascii_convert_aftervalues,  # \cmd073
+        "\\57451|": ascii_convert_aftervalues  # \cmd095
+    }
 
     # Apply the conversion if any
     if converted_cmd is not None:
@@ -1431,10 +1497,6 @@ def main():
 
             # Write conversion message to console
             print(f'Converted "{input_file}" to readable format: "{output_file}"')
-        
-        # Delete pickle file for reverse mapping
-        if os.path.exists(pickle_file):
-            os.remove(pickle_file)
 
 
     # Encode argument
