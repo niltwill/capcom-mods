@@ -14,6 +14,11 @@ Script to convert AJ:AA Trilogy's GS4 (Apollo Justice) script binary files
 
 ---
 
+Don't forget that you need to use the "gs456scr.py" script first and use those decoded ".bin" files:
+https://gist.github.com/osyu/5bb86d49153edef5415a7aba09a48ca1
+
+---
+
 ***IMPORTANT: For the mappings to work, also download this file and place it in the same directory to the script:
 https://raw.githubusercontent.com/niltwill/capcom-mods/main/scripts/ajaat-gs4-script-mappings.txt
 
