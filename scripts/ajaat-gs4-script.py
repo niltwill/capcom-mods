@@ -208,7 +208,7 @@ def get_range_parameter(replacement_string, ascii_part, num_parameters, mappings
     return num_parameters
 
 
-def remove_l_prefix(replacement_string, ascii_part, num_parameters, mappings_file):
+def remove_l_prefix(replacement_string, ascii_part, num_parameters, mappings_file, asciiconv):
     num_parameters = get_range_parameter(replacement_string, ascii_part, num_parameters, mappings_file)
     test_cmd = get_command_number(replacement_string)
 
@@ -238,8 +238,8 @@ def remove_l_prefix(replacement_string, ascii_part, num_parameters, mappings_fil
 
     # Remove L letter from string
     if not test_cmd in {"\\57489|", "\\57355|", "\\57356|", "\\57362|", "\\57383|", "\\57471|",
-    "\\57350|", "\\57374|", "\\57347|", "\\57349|", "\\57363|", "\\57462|", "\\57378|", "\\57404|"}:
-        # not \codeblock, \speed, \wait, \bgcolor, \shake, \cmd109, \sound, \person, \music, \showphoto, \person_face, \fademusic, \cmd057
+    "\\57350|", "\\57374|", "\\57347|", "\\57349|", "\\57363|", "\\57462|", "\\57378|", "\\57404|", "\\57470|"}:
+        # not \codeblock, \speed, \wait, \bgcolor, \shake, \cmd109, \sound, \person, \music, \showphoto, \person_face, \fademusic, \cmd057, \cmd108
         removed_text = remove_first_x(regex_numonly, ascii_part, num_parameters)
         removed_text2 = remove_first_x2(regex_numonly2, removed_text, num_parameters)
     else:
@@ -248,8 +248,8 @@ def remove_l_prefix(replacement_string, ascii_part, num_parameters, mappings_fil
     # Fix some commands that wouldn't work right
     # TODO (lines like...):
     # \music|\16|dピアノがヘタなパパがいるし。 - ending.user.2.ja.txt
-    if test_cmd in {"\\57489|", "\\57355|", "\\57356|", "\\57362|", "\\57471|", "\\57347|", "\\57363|",  "\\57378|", "\\57404|"}:
-        # \codeblock, \speed, \wait, \bgcolor, \cmd109, \color, \showphoto, \fademusic, \cmd057
+    if test_cmd in {"\\57489|", "\\57355|", "\\57356|", "\\57362|", "\\57471|", "\\57347|", "\\57363|",  "\\57378|", "\\57404|", "\\57470|"}:
+        # \codeblock, \speed, \wait, \bgcolor, \cmd109, \color, \showphoto, \fademusic, \cmd057, \cmd108
         if removed_text2.startswith("\\L"):
             temp_text = remove_first_x2(regex_numonly3, removed_text2, 1)
             removed_text2 = temp_text
@@ -258,7 +258,6 @@ def remove_l_prefix(replacement_string, ascii_part, num_parameters, mappings_fil
             temp_text = remove_first_x2(regex_numonly3, removed_text2, 2)
             removed_text2 = temp_text
     elif test_cmd in {"\\57374|"}:  # \person
-    # TODO: only convert if there are not three parameters...
         num_param = 3
         split_cmd = removed_text2.split("|", num_param)
         if len(split_cmd) > 2:
@@ -272,14 +271,14 @@ def remove_l_prefix(replacement_string, ascii_part, num_parameters, mappings_fil
             removed_text2 = temp_text
 
     # Convert first char, if necessary
-    if num_parameters > 0 and not removed_text2.startswith("\\") and not removed_text2.startswith("{REF "):
+    if num_parameters > 0 and not removed_text2.startswith("\\") and not removed_text2.startswith("{REF ") and not asciiconv:
         processed_text = ""
         process_text = removed_text2
         converted = convert_ascii_to_decimal(process_text[0])
         processed_text += "\\" + str(converted) + "|"
         processed_text += removed_text2[1:]
         removed_text2 = processed_text
-    
+
     if removed_text2 is not None:
         return replacement_string + str(removed_text2)
     else:
@@ -1052,10 +1051,9 @@ def decode_gs4_script(input_file, output_file, sections_zero, sections_one, mapp
                             line = modified_line
                             ascii_part = (modified_line[start_index + len(replacement_string):])
 
-                    # Remove "L" prefix from parameter numbers (not working too well yet, experimental function)
-                    # This should not be used inside this loop though
+                    # Remove "L" prefix from parameter numbers
                     if lparam:
-                        line = remove_l_prefix(replacement_string, ascii_part, num_parameters, mappings_file)
+                        line = remove_l_prefix(replacement_string, ascii_part, num_parameters, mappings_file, asciiconv)
 
                     start_index += len(replacement_string)
                 lines[i] = line
