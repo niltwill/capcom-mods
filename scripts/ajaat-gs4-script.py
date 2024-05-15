@@ -1463,7 +1463,10 @@ def main():
             decode_gs4_script(input_file, output_file, sections_zero, sections_one, mappings, asciiconv=args.noasciiconv, lparam=args.nolparam)
 
             # Fix the first line of the file (removing the L chars and converting ASCII symbols to decimals)
-            fix_first_line(output_file, f"{output_file}.2")
+            if not args.noasciiconv:
+                fix_first_line(output_file, f"{output_file}.2")
+            else:
+                copy_file(output_file, f"{output_file}.2")
 
             # Decode into unicode with optional flag
             if args.unicode:
