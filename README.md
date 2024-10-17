@@ -87,7 +87,7 @@
 [Mega.nz](https://mega.nz/file/Ne8hDSwK#g7gK2xMKL3iWJE_hLbls4gEMSALc0aS0YbInUOyvxT8)
    - **Nintendo Switch** music mod<br>
 [IceDrive](https://icedrive.net/s/4WazvfANjPxTA97B1zy7YS93thXN)<br>
-[Mega.nz](https://mega.nz/file/Fe1HiRQa#0l8oMpPlfajOoApMM0HW2dSCHXm4QnSTIgAkMmUooCY)
+[Mega.nz](https://mega.nz/file/YOdkSbKb#h065rwosvRjKpMYI2D5uWDFfRqN2utlEOARyp6fZMLY)
 
 ## JTPaper's Remastered OST
    - **PC (Steam)** music mod<br>
