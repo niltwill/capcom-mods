@@ -1,3 +1,29 @@
+# ![Ace Attorney Investigations Collection icon](/aaic.ico) Ace Attorney Investigations Collection
+
+## PC mods
+   - **AAIC - JTPaper's Music Mod** (installer)<br>
+[IceDrive](https://icedrive.net/s/61N7Qv14R2wwywBxCNV4x383N58v)<br>
+[Mega.nz](https://mega.nz/file/tPVERYDR#qeUH2Wf8KBNuBJR3691uiVzfioxqhz2tYqU0Ajiyu5g)
+   - **AAIC - JTPaper's Music Mod** (ZIP)<br>
+[IceDrive](https://icedrive.net/s/Xwj31kvbt3akZwP8Zix77FbVQt7S)<br>
+[Mega.nz](https://mega.nz/file/kX8xFZiY#3tEoI4RMAlQMUn-HqrB3ZOODV1OL4gF0yONZFcvvSpE)
+   - **AAIC - Android SE Music Mod** (installer)<br>
+[IceDrive](https://icedrive.net/s/xZjYVj7fSDQPZhuxWYtBDyf3a3Wg)<br>
+[Mega.nz](https://mega.nz/file/AKtxVTzI#DAMYCj6cCOb4qIPKLfES_ljdB4o1yDGvaciuoMfEt2s)
+   - **AAIC - Android SE Music Mod** (ZIP)<br>
+[IceDrive](https://icedrive.net/s/ff31QS7f3hzZ1jy8PkwkwvXBb6vQ)<br>
+[Mega.nz](https://mega.nz/file/kfdmxLIY#CoxFxhyARIXkIJAtMEa-G0xfkcX45gBsrjM16YLfKiw)
+
+## Nintendo Switch mods
+   - **AAIC - JTPaper's Music Mod**<br>
+[IceDrive](https://icedrive.net/s/a6Nx7bjyVaPZaRbYGk2ZXRVhZkPa)<br>
+[Mega.nz](https://mega.nz/file/haFgxZIT#hoUFy1NREi7jdF__qnhns2SbLHopwuXbIuqfeyXBrQw)
+   - **AAIC - Android SE Music Mod**<br>
+[IceDrive](https://icedrive.net/s/FAv6fQuYT46YDa6Swa1WVwSiz3CB)<br>
+[Mega.nz](https://mega.nz/file/5HNnxJSS#nGBY6v5SmjMrggrjVyGvHTvy3ggJgUWJJg5CV1RJIjU)
+
+- - - -
+
 # ![Apollo Justice: Ace Attorney Trilogy icon](/ajaa-trilogy.ico) Apollo Justice: Ace Attorney Trilogy
 
 ## PC mods
