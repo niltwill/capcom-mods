@@ -5,7 +5,7 @@ These scripts can help you create FSB .resource files, with the potential to add
 
 ## Generate .resource files
 
-Put all your .ogg audio files into the `Input` directory then run the `01generate-ogg-fsb-resource.bat` (for OGG audio files) or `01generate-wav-fsb-resource.bat` (for WAV audio files) script. Before execution, you should take a look inside the batch file and change the Unity Editor's version (folder) for what the game used (if possible). The generated ".resource" file should be the same as if you'd do it from Unity, byte to byte equivalent.
+Put all your audio files into the `Input` directory then run the `01generate-ogg-fsb-resource.bat` (for OGG audio files) or `01generate-wav-fsb-resource.bat` (for WAV audio files) script. Before execution, you should take a look inside the batch file and change the Unity Editor's version (folder) for what the game used (if possible). The generated ".resource" file should be the same as if you'd do it from Unity, byte to byte equivalent.
 
 At first, I tried to use the [FMOD Studio API](https://www.fmod.com/download) which includes `fsbankcl.exe` to generate FSB5 files from the command-line. Then I quickly realized that that's not going to work, as the file size was notably different from what Unity generated (due to compression and possibly other tweaks). You must use what's bundled with the Unity editor. To do this, you can simply install Unity, then remove/uninstall it after you get the `FSBTool`, which is located at: `<path to Unity folder>\Editor\Data\Tools\FSBTool\x64\`
 
@@ -42,9 +42,7 @@ If you want to know if a .resource file has a loop, you can use the script:
 
 ### To remove the loop
 
-You are not going to have a problem with files that don't loop (this is the default behaviour), but if you want to get rid of the looping, this script does that:
-
-`python remove_fsb_loop.py sharedassets0.resource`
+You are not going to have a problem with files that don't loop (this is the default behaviour), but if you want to get rid of the existing looping, regenerate the .resource file.
 
 ## To convert the FSB into an OGG file
 
