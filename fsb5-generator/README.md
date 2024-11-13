@@ -46,9 +46,9 @@ You are not going to have a problem with files that don't loop (this is the defa
 
 ## To convert the FSB into an OGG file
 
-The folder `python-fsb5` is an included GitHub repo, taken from the [python-fsb5](https://github.com/HearthSim/python-fsb5) (I also merged all the proposed fixes or pull requests).
+The folder `python-fsb5` is an included GitHub repo, taken from: [python-fsb5](https://github.com/HearthSim/python-fsb5) (I also merged all the proposed fixes or pull requests).
 
-For checking FSB info and simple extracting, you can mess around with the `test.py` file in there. The main point of interest is a script called: `convert_fsb_to_ogg.py`, which can extract the FSB .resource files into OGG audio files. If a loop point exists, the OGG file will also make use of it with "LoopStart" and "LoopEnd". If the quality level for the OGG is not given, it will default to 10 (highest), so you can simply omit "9" in the following:
+For checking FSB info and simple extracting, you can mess around with the `test.py` file in there. The main point of interest is a script called: `convert_fsb_to_ogg.py`, which can extract the FSB .resource files into OGG audio files. If a loop point exists, the OGG file will also make use of it with "LoopStart" and "LoopEnd". If the quality level for the OGG is not given, it will default to "10" (highest), so you can simply omit "9" in the following:
 
 `python convert_fsb_to_ogg.py .\in .\out 9 --quiet`
 
