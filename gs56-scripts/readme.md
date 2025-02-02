@@ -25,20 +25,20 @@ You can also experiment with the labels... But I recommend not to delete or add 
 
 For example, from `_sce00_c000_0000_eng` (DD):
 
-> {0:688390896:LABEL_0000}
-> {1:688390907:L_OPEND}
+> {0:688390896:LABEL_0000}\
+> {1:688390907:L_OPEND}\
 > {2:688390915:L_OPEND_sub}
 
 If you change it like this (shorten "L_OPEND" to "L_OP"):
 
-> {0:688390896:LABEL_0000}
-> {1:688390907:L_OP}
+> {0:688390896:LABEL_0000}\
+> {1:688390907:L_OP}\
 > {2:688390915:L_OPEND_sub}
 
  Then also change the pointers, where applicable:
 
-> {0:688390896:LABEL_0000} <- unchanged pointer
-> {1:688390907:L_OP} <- unchanged again, because we did not edit "LABEL_0000" (size: 10 + 1, 907 - 896 = 11)
+> {0:688390896:LABEL_0000} <- unchanged pointer\
+> {1:688390907:L_OP} <- unchanged again, because we did not edit "LABEL_0000" (size: 10 + 1, 907 - 896 = 11)\
 > {2:688390912:L_OPEND_sub} <- shorter pointer (size of "L_OP" is 4 + 1 = 5, 907 + 5 = 912)
 
 # gs56-script-converter.py
