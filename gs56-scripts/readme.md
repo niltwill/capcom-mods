@@ -2,7 +2,9 @@
 
 This script can be used to convert the GMD (script-related) files from the Nintendo 3DS port for GS5 and GS6 (Dual Destinies and Spirit of Justice) to editable text files and also convert them back to GMD. This Python script be can easily changed to suit other GMD files for different games, with slight adjustments depending on how the header is constructed. There's also support for big-endian with `--be` (default is little-endian), although I did not test that.
 
-Examples for usage, 'd' for decode, 'e' for encode:
+### Usage
+
+Here are some examples, 'd' for decode, 'e' for encode:
 
 ```
 python gs56-gmd-converter.py d GS6_GMD\*.gmd
@@ -20,6 +22,8 @@ To get the raw data that is not very formatted:
 python gs56-gmd-converter.py i --out GS6_GMD\*.gmd
 python gs56-gmd-converter.py i --out GS5_GMD\*.gmd
 ```
+
+### Labels
 
 You can also experiment with the labels... But I recommend not to delete or add new labels. Best to change only the text sections within the labels. As for editing the label names: it's better not to edit these either. If you want to try, I can explain my assumption as to how to do it. PW:AA - SoJ (GS6) may take this more dynamically regarding the labels, so the following info may only apply for PW:AA - DD (GS5): While the label names can be edited, and they can be longer or shorter, but you have to make sure that the first and last pointer offset remains unchanged. This means do not edit the first and last label. For others, you have to change the pointer offsets manually to accomodate the new size.
 
@@ -41,18 +45,20 @@ If you change it like this (shorten "L_OPEND" to "L_OP"):
 > {1:688390907:L_OP} <- unchanged again, because we did not edit "LABEL_0000" (size: 10 + 1, 907 - 896 = 11)\
 > {2:688390912:L_OPEND_sub} <- shorter pointer (size of "L_OP" is 4 + 1 = 5, 907 + 5 = 912)
 
+---
+
 # gs56-script-converter.py
 
 This script can be used to to convert the structured text (script) files to JSON files and back, which is what [gs456scr](https://gist.github.com/osyu/5bb86d49153edef5415a7aba09a48ca1) needs to convert it back for the PC port. So this script can handle both the PC port's files with *gs456scr* or the GMD text files you got with the other script.
 
-Here is a little help for usage:
+### Usage
 
 **1.** Convert the GMD text files you got from my other script (GMD -> txt) via the command:
 
-### A. SoJ
+*A. SoJ*
 `python gs56-script-converter.py -j -s SoJ_Text\*.txt`
 
-### B. DD
+*B. DD*
 `python gs56-script-converter.py -j DD_Text\*.txt`
 
 This converts the files to JSON.
@@ -61,25 +67,27 @@ This converts the files to JSON.
 
 **2.** If the JSON is cumbersome to edit, you can convert them to txt:
 
-### A. SoJ
+*A. SoJ*
 `python gs56-script-converter.py -t -s -p -k SoJ_JSON\*.json`
 
-### B. DD
+*B. DD*
 `python gs56-script-converter.py -t -p -k DD_JSON\*.json`
 
 Use `-p` to keep the command names, and `-k` to keep the 3DS tags (which would be otherwise removed for the PC port). Also, make sure to always use `-s` if you handle files related to SoJ, due to how it has different command names at the same event numbers as DD. If you do not use that flag, you will not get the correct command names.
 
 **3.** If you want to reuse these txt files for PC port's JSON (with *gs456scr*):
 
-### A. SoJ
+*A. SoJ*
 `python gs56-script-converter.py -j -s -p SoJ_JSON\*.txt`
 
-### B. DD
+*B. DD*
 `python gs56-script-converter.py -j -p DD_JSON\*.txt`
+
+### Remarks
 
 The icons were remapped according to the PC port's ICN numbers (for the control scheme), but this may not be correct. Edit that as needed. From what I saw when comparing the 3DS and the PC port's script files, you should not reuse them 1-to-1, but only with careful editing and merging. For example, the 3DS port does not actually close the opened `<CENTER>` tags, which may cause text formatting issues. You would need to remedy this manually according to the PC port's scripts. There are also a couple of tags that only seem to appear in the 3DS version, and re-using these in the PC port may not be wise (and vice versa). Besides that, you can observe missing commands that exist in the PC version, but not in the 3DS port.
 
-I will list all of these:
+I will list all of these below:
 
 ### GS6 (SoJ) - commands not in the 3DS scripts:
 ```
