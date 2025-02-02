@@ -55,11 +55,8 @@ This script can be used to to convert the structured text (script) files to JSON
 
 **1.** Convert the GMD text files you got from my other script (GMD -> txt) via the command:
 
-*A. SoJ*
-`python gs56-script-converter.py -j -s SoJ_Text\*.txt`
-
-*B. DD*
-`python gs56-script-converter.py -j DD_Text\*.txt`
+*A. SoJ*: `python gs56-script-converter.py -j -s SoJ_Text\*.txt`\
+*B. DD*: `python gs56-script-converter.py -j DD_Text\*.txt`
 
 This converts the files to JSON.
 
@@ -67,21 +64,15 @@ This converts the files to JSON.
 
 **2.** If the JSON is cumbersome to edit, you can convert them to txt:
 
-*A. SoJ*
-`python gs56-script-converter.py -t -s -p -k SoJ_JSON\*.json`
-
-*B. DD*
-`python gs56-script-converter.py -t -p -k DD_JSON\*.json`
+*A. SoJ*: `python gs56-script-converter.py -t -s -p -k SoJ_JSON\*.json`\
+*B. DD*: `python gs56-script-converter.py -t -p -k DD_JSON\*.json`
 
 Use `-p` to keep the command names, and `-k` to keep the 3DS tags (which would be otherwise removed for the PC port). Also, make sure to always use `-s` if you handle files related to SoJ, due to how it has different command names at the same event numbers as DD. If you do not use that flag, you will not get the correct command names.
 
 **3.** If you want to reuse these txt files for PC port's JSON (with *gs456scr*):
 
-*A. SoJ*
-`python gs56-script-converter.py -j -s -p SoJ_JSON\*.txt`
-
-*B. DD*
-`python gs56-script-converter.py -j -p DD_JSON\*.txt`
+*A. SoJ*: `python gs56-script-converter.py -j -s -p SoJ_JSON\*.txt`\
+*B. DD*: `python gs56-script-converter.py -j -p DD_JSON\*.txt`
 
 ### Remarks
 
@@ -89,7 +80,7 @@ The icons were remapped according to the PC port's ICN numbers (for the control 
 
 I will list all of these below:
 
-### GS6 (SoJ) - commands not in the 3DS scripts:
+#### GS6 (SoJ) - commands not in the 3DS scripts:
 ```
 ACHIEVEMENT
 ACT_JUMP
@@ -110,7 +101,7 @@ SYSTEM_PANEL_IOS
 TELOP
 ```
 
-### GS5 (DD) - commands not in the 3DS scripts:
+#### GS5 (DD) - commands not in the 3DS scripts:
 ```
 ACHIEVEMENT
 ACT_JUMP
