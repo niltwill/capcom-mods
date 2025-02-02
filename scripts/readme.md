@@ -1,3 +1,5 @@
+I will add info for other scripts too soon.
+
 # gs56-gmd-converter.py
 
 This script can be used to convert the GMD (script-related) files from the Nintendo 3DS port for GS5 and GS6 (Dual Destinies and Spirit of Justice) to editable text files and also convert them back to GMD. This Python script be can easily changed to suit other GMD files for different games, with slight adjustments depending on how the header is constructed. There's also support for big-endian with `--be` (default is little-endian), although I did not test that.
