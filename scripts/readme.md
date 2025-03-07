@@ -1,8 +1,22 @@
 I will add info for other scripts too soon.
 
+---
+
+# GS4 scripts (for Nintendo 3DS/DS)
+
+To get the script texts from the Nintendo 3DS port of Apollo Justice, you can use [dlgTool](https://github.com/onepiecefreak3/dlgTool). For the NDS or 3DS, there's also [phoenixtools](https://github.com/Missingmew/phoenixtools).
+
 # gs56-gmd-converter.py
 
-This script can be used to convert the GMD (script-related) files from the Nintendo 3DS port for GS5 and GS6 (Dual Destinies and Spirit of Justice) to editable text files and also convert them back to GMD. This Python script be can easily changed to suit other GMD files for different games, with slight adjustments depending on how the header is constructed. There's also support for big-endian with `--be` (default is little-endian), although I did not test that.
+This script can be used to convert the GMD (script-related) files from the Nintendo 3DS port for GS5 and GS6 (Dual Destinies and Spirit of Justice) to editable text files and also convert them back to GMD. The understanding and reimplementation here is mostly thanks to the [Kuriimu's source code](https://github.com/IcySon55/Kuriimu/tree/master/src/text/text_gmd). Without it, this would have taken a lot more time. There's also support for big-endian with `--be` (default is little-endian), although I did not test that.
+
+This Python script be can easily changed to suit other GMD files for different games, with slight adjustments depending on how the header is constructed. GMD V1 should be universal, so you only need to consider changes if the game has GMD V2. For that, according to the source code in Kuriimu, GMD V2 can have two structures: one has 20 bytes per label entry and the other 14 bytes per label entry. The bucket size also changes, one is 1024, the other is 2048. With 1024, that means 4 sections, and with 2048, it's 8 sections. Each bucket stores the offset or index of the first matching label entry.
+
+As for bucket entries:
+* Mobile/Switch: Each bucket entry is 64 bits (8 bytes). There may be explicit padding for the Switch, which is 0xCDCDCDCD.
+* CTR: Each bucket entry is 32 bits (4 bytes) without padding.
+
+However, this could differ based on the actual game. There's no way to know for sure without a hex editor.
 
 ### Usage
 

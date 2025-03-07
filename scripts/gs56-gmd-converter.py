@@ -1,5 +1,7 @@
 # Script to convert the GMD (script) files to readable text files and back
 # For PW:AA - Dual Destinies (GS5) and PW:AA - Spirit of Justice (GS6)
+# The GMD processing code was mostly reimplemented from Kuriimu's source code:
+# https://github.com/IcySon55/Kuriimu/tree/master/src/text/text_gmd
 
 import argparse
 import ast
@@ -230,7 +232,7 @@ def parse_gmd_file(file_path, is_le=True, label_sep='<SEC_END>', hash_table_size
             magic, version, language, unknown1, unknown2, label_count, section_count, label_size, section_size, name_size = read_data(file, is_le=is_le, fmt_types='4sIIIIIIIII')
 
             # Check for magic word
-            if magic != b'GMD\x00':
+            if magic != b'GMD\x00' or magic != b'\x00DMG':
                 raise ValueError("Invalid GMD file: Magic word mismatch")
 
             # Read the filename
