@@ -15,10 +15,10 @@
 [Mega.nz](https://mega.nz/file/kfdmxLIY#CoxFxhyARIXkIJAtMEa-G0xfkcX45gBsrjM16YLfKiw)
    - **AAIC - AAI2 Fan-Translation SE (Voice Mod)** (installer)<br>
 [IceDrive](https://icedrive.net/s/YVwvF637B8XR9Xuk3QVfag73hY22)<br>
-[Mega.nz](https://mega.nz/file/ofUwxYTb#-qHZG3hT2_rQn0QJx7cxeZ48eG1y-OWblvjga9dYkFU)
+[Mega.nz](https://mega.nz/file/pG8xTb7B#Z_HZlHFJ0NTaUpDJ9Twfa1JkJl8Of5u5kNzeSUZ84M4)
    - **AAIC - AAI2 Fan-Translation SE (Voice Mod)** (ZIP)<br>
 [IceDrive](https://icedrive.net/s/AfA7QiGNW5PCZPC3iV2Bu91BQ5bV)<br>
-[Mega.nz](https://mega.nz/file/RbEAGBSZ#eD0VKpKKokKXGgyYJaBBR9_Bx3scoAXNEE687IcckzY)
+[Mega.nz](https://mega.nz/file/UHE0ET4Y#EG8rCmBPUh6_LpWJZasyA8hx9vPDxsjxtIiem2c5JBA)
 
 ## Nintendo Switch mods
    - **AAIC - JTPaper's Music Mod**<br>
@@ -29,7 +29,12 @@
 [Mega.nz](https://mega.nz/file/5HNnxJSS#nGBY6v5SmjMrggrjVyGvHTvy3ggJgUWJJg5CV1RJIjU)
    - **AAIC - AAI2 Fan-Translation SE (Voice Mod)**<br>
 [IceDrive](https://icedrive.net/s/9Rg1V7jTNb9zZ2Dx1z7R5VjBbCT7)<br>
-[Mega.nz](https://mega.nz/file/saNWgCIY#jAUnXtd-Co5dCCZ-5OyQ2oo8ybs17rjDPytGG_4DkdA)
+[Mega.nz](https://mega.nz/file/wXNTGb6K#nue8THYYbPXUuJEFVYJjGc6h7zsBPhnZuaDzVqt_qfY)
+
+## Others
+   - Music modding helper files<br>
+[IceDrive](https://icedrive.net/s/h7B876GXgzSvQvGZRkvgQSZDDYbw)<br>
+[Mega.nz](https://mega.nz/file/dWUEmIwb#WNNgbujO3sjdL9Bd6kYm71V6lW2VHOKHgwQxatIqxz4)
 
 - - - -
 
