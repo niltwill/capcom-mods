@@ -3,33 +3,33 @@
 ## PC mods
    - **AAIC - JTPaper's Music Mod** (installer)<br>
 [IceDrive](https://icedrive.net/s/61N7Qv14R2wwywBxCNV4x383N58v)<br>
-[Mega.nz](https://mega.nz/file/ULlFVYSI#bNkKlENm78gJHg2bXX56QmuvqbKA406zxA9ph9xN5LQ)
+[Mega.nz](https://mega.nz/file/1aFnBaCa#CneQdDZlC6_QcVKLLkIcZjo0UFTVQb6kknmhBUfHtqs)
    - **AAIC - JTPaper's Music Mod** (ZIP)<br>
 [IceDrive](https://icedrive.net/s/Xwj31kvbt3akZwP8Zix77FbVQt7S)<br>
-[Mega.nz](https://mega.nz/file/lPdCRLKb#k9Cd-y6BvPFvo-zpuL4cbaaZIrNK8pJkegWx8z8TcCE)
+[Mega.nz](https://mega.nz/file/lG1UibZA#jsvxE07k9vJgDOS9MKUfNEJcLkRMOXl7fmH7p5s7KjY)
    - **AAIC - Android SE Music Mod** (installer)<br>
 [IceDrive](https://icedrive.net/s/xZjYVj7fSDQPZhuxWYtBDyf3a3Wg)<br>
-[Mega.nz](https://mega.nz/file/AKtxVTzI#DAMYCj6cCOb4qIPKLfES_ljdB4o1yDGvaciuoMfEt2s)
+[Mega.nz](https://mega.nz/file/peUygara#qip5hr2Dt52Vu1Mkzh8DHi9in-ZhNXdJOkePjfMZGt4)
    - **AAIC - Android SE Music Mod** (ZIP)<br>
 [IceDrive](https://icedrive.net/s/ff31QS7f3hzZ1jy8PkwkwvXBb6vQ)<br>
-[Mega.nz](https://mega.nz/file/kfdmxLIY#CoxFxhyARIXkIJAtMEa-G0xfkcX45gBsrjM16YLfKiw)
+[Mega.nz](https://mega.nz/file/JO0lTLCY#0LwPJxAeZ5CLFjNLZ5MsBqIGXvBlRlBQATFMVRRV8qs)
    - **AAIC - AAI2 Fan-Translation SE (Voice Mod)** (installer)<br>
 [IceDrive](https://icedrive.net/s/YVwvF637B8XR9Xuk3QVfag73hY22)<br>
-[Mega.nz](https://mega.nz/file/pG8xTb7B#Z_HZlHFJ0NTaUpDJ9Twfa1JkJl8Of5u5kNzeSUZ84M4)
+[Mega.nz](https://mega.nz/file/gWMUgbYa#DDM28qH_c9OY-VF2Y0vWLfaKylNZPnCjE02gWQ1mrCw)
    - **AAIC - AAI2 Fan-Translation SE (Voice Mod)** (ZIP)<br>
 [IceDrive](https://icedrive.net/s/AfA7QiGNW5PCZPC3iV2Bu91BQ5bV)<br>
-[Mega.nz](https://mega.nz/file/UHE0ET4Y#EG8rCmBPUh6_LpWJZasyA8hx9vPDxsjxtIiem2c5JBA)
+[Mega.nz](https://mega.nz/file/5GlECa4A#vX1YK46Q3zNDEmtMsckvN0uV7GP24jcfeP0SJYSZxpg)
 
 ## Nintendo Switch mods
    - **AAIC - JTPaper's Music Mod**<br>
 [IceDrive](https://icedrive.net/s/a6Nx7bjyVaPZaRbYGk2ZXRVhZkPa)<br>
-[Mega.nz](https://mega.nz/file/kDd12DxS#P7gP5T_YhikbmD5Mq91ZQmzKw0Hi3LKeU_6doCBoyjM)
+[Mega.nz](https://mega.nz/file/1KtylbIa#KbHQzsgfyD49FvgSEPXacPMXC0SYPVjMjEEPkJkn5AE)
    - **AAIC - Android SE Music Mod**<br>
 [IceDrive](https://icedrive.net/s/FAv6fQuYT46YDa6Swa1WVwSiz3CB)<br>
-[Mega.nz](https://mega.nz/file/5HNnxJSS#nGBY6v5SmjMrggrjVyGvHTvy3ggJgUWJJg5CV1RJIjU)
+[Mega.nz](https://mega.nz/file/Zb0GwCST#w0yWG6RTIsjj8ndUaDN1jWjs8XVU9HfwMnowo_NwEIw)
    - **AAIC - AAI2 Fan-Translation SE (Voice Mod)**<br>
 [IceDrive](https://icedrive.net/s/9Rg1V7jTNb9zZ2Dx1z7R5VjBbCT7)<br>
-[Mega.nz](https://mega.nz/file/wXNTGb6K#nue8THYYbPXUuJEFVYJjGc6h7zsBPhnZuaDzVqt_qfY)
+[Mega.nz](https://mega.nz/file/cWFTjCLB#zrqg-dtCG2AOlsWvBn_SybYTOKc1kXJCGROgRWHcThE)
 
 ## Others
    - Music modding helper files<br>
