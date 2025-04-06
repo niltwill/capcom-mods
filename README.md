@@ -34,7 +34,7 @@
 ## Others
    - Music modding helper files<br>
 [IceDrive](https://icedrive.net/s/h7B876GXgzSvQvGZRkvgQSZDDYbw)<br>
-[Mega.nz](https://mega.nz/file/dWUEmIwb#WNNgbujO3sjdL9Bd6kYm71V6lW2VHOKHgwQxatIqxz4)
+[Mega.nz](https://mega.nz/file/UecmEZTJ#JlStGNFC3HLgzwcP95kvmfx-4jzRi7V3j37Jhro1e4k)
 
 - - - -
 
