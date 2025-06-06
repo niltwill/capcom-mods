@@ -13,7 +13,7 @@ At first, I tried to use the [FMOD Studio API](https://www.fmod.com/download) wh
 
 You can use the Python scripts `02generate-ogg-fsb-assetinfo.py` or `02generate-wav-fsb-assetinfo.py` to generate the asset info text dump for the .resource files. (Use the "wav" if your source files are WAV, or the other for OGGs). Do note that this script requires `ffprobe` to be available in your PATH (environment variables), or you can also put it into this directory, next to the script, if you don't want that. Also don't change or remove the `asset-dump.txt` file, which is used to replace the needed fields.
 
-*Note:* The `m_Length` may not always be the same as what Unity would generate there, as sometimes it can have additional decimal places, while the script will keep it to 4. This is the only minor difference that can happen.
+*Note:* The `m_Length` may not always be the same as what Unity would generate there. This is the only minor difference that can happen.
 
 If that's not good enough, you can keep using the Unity editor to individually export the ".resource" and its ".assets" file (though this is a bit more tedious and time-consuming) and just add the loop to it manually, later.
 

@@ -209,8 +209,7 @@
 [OneDrive](https://1drv.ms/u/s!AioBpGMgtsWRad1Ym6nWdT3_fYc?e=8lAoTg)
    - Music / sound modding tutorial<br>
 [Google Drive](https://drive.google.com/file/d/1wdr5Hk9LxmNGa1-V1putStDrFQdxiqnM/view?usp=sharing)<br>
-[MediaFire](https://www.mediafire.com/file/unlm3sa03v732jx/PWAAT_MusicEditingTutorial.pdf/file)<br>
-[OneDrive](https://1drv.ms/b/s!AioBpGMgtsWRfqGofHrLOnLiJ_o?e=ebsIXy)
+[IceDrive](https://icedrive.net/s/W7NxbY2RfbgBC7fS5Sw6BhiQGgAj)<br>
    - Original loop point data (for BGM)<br>
 [Google Drive](https://docs.google.com/spreadsheets/d/1fdtvHS3fViDN7g2pol180Wf8LlTDvna9/edit?usp=sharing&ouid=117728294047388639238&rtpof=true&sd=true)<br>
 [MediaFire](https://www.mediafire.com/file/pbdz41x23g7rao9/PWAAT_OST_LoopPoints.xlsx/file)<br>

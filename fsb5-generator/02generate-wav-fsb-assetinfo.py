@@ -40,7 +40,7 @@ def get_audio_info(file_path):
         duration = float(info['format']['duration'])
 
         # Round the duration to 4 decimal places
-        duration = round(duration, 4)
+        #duration = round(duration, 4)
 
         return channels, frequency, duration
     except subprocess.CalledProcessError as e:
@@ -79,7 +79,8 @@ def process_file(input_file, output_dir):
     content = content.replace('m_Name = ""', f'm_Name = "{file_base_name}"')
     content = content.replace('m_Channels = 2', f'm_Channels = {channels}')
     content = content.replace('m_Frequency = 44100', f'm_Frequency = {frequency}')
-    content = content.replace('m_Length = 1', f'm_Length = {duration}')
+    duration_with_comma = str(duration).replace('.', ',')
+    content = content.replace('m_Length = 1', f'm_Length = {duration_with_comma}')
     content = content.replace('m_Source = "sharedassets0.resource"', f'm_Source = "{file_base_name}.resource"')
     content = content.replace('m_Size = 1000', f'm_Size = {resource_size}')
 
