@@ -3,10 +3,10 @@
 ## PC mods
    - **AAIC - JTPaper's Music Mod** (installer)<br>
 [IceDrive](https://icedrive.net/s/61N7Qv14R2wwywBxCNV4x383N58v)<br>
-[Mega.nz](https://mega.nz/file/1aFnBaCa#CneQdDZlC6_QcVKLLkIcZjo0UFTVQb6kknmhBUfHtqs)
+[Mega.nz](https://mega.nz/file/dHUTRSqD#vQizI7oRLGRn7SqlTdwBq0XBoPYVrRSZiAgblmYHUOo)
    - **AAIC - JTPaper's Music Mod** (ZIP)<br>
 [IceDrive](https://icedrive.net/s/Xwj31kvbt3akZwP8Zix77FbVQt7S)<br>
-[Mega.nz](https://mega.nz/file/lG1UibZA#jsvxE07k9vJgDOS9MKUfNEJcLkRMOXl7fmH7p5s7KjY)
+[Mega.nz](https://mega.nz/file/tWNhlCaY#YKPaFuLZXIR-RomodTUJ8KUUHrekA28zC2MtrFaTuu0)
    - **AAIC - Android SE Music Mod** (installer)<br>
 [IceDrive](https://icedrive.net/s/xZjYVj7fSDQPZhuxWYtBDyf3a3Wg)<br>
 [Mega.nz](https://mega.nz/file/peUygara#qip5hr2Dt52Vu1Mkzh8DHi9in-ZhNXdJOkePjfMZGt4)
@@ -23,7 +23,7 @@
 ## Nintendo Switch mods
    - **AAIC - JTPaper's Music Mod**<br>
 [IceDrive](https://icedrive.net/s/a6Nx7bjyVaPZaRbYGk2ZXRVhZkPa)<br>
-[Mega.nz](https://mega.nz/file/1KtylbIa#KbHQzsgfyD49FvgSEPXacPMXC0SYPVjMjEEPkJkn5AE)
+[Mega.nz](https://mega.nz/file/lXd2SRaL#_YJmOlMuT2zltpGYGw45_HuKRRAXwR3a-YwZjTSnApY)
    - **AAIC - Android SE Music Mod**<br>
 [IceDrive](https://icedrive.net/s/FAv6fQuYT46YDa6Swa1WVwSiz3CB)<br>
 [Mega.nz](https://mega.nz/file/Zb0GwCST#w0yWG6RTIsjj8ndUaDN1jWjs8XVU9HfwMnowo_NwEIw)
@@ -55,7 +55,7 @@
 [Mega.nz](https://mega.nz/file/QC1SQYKT#t-d4z_ZdHAgr5AQBLFSuJdiHHvo7L0yViwulgeTsPGY)
    - **AJ:AA - JTPaper's Music Mod (PW:AA)** (for remastered PW:AA tracks in AJ:AA)<br>
 [IceDrive](https://icedrive.net/s/Bt2VTZZz1tajPFA2vt1Qk8xg2VxC)<br>
-[Mega.nz](https://mega.nz/file/BOdmBZAB#QZolPnujvsBPm_STyMBEzzPowO5n3NT6466RVv-9CNM)
+[Mega.nz](https://mega.nz/file/5KlBhBYa#2tqXzR72s3OgYT5-OfieHChqaAqELjHQ5bUT8NjKuSQ)
    - **AJ:AA - Phoenix Wright Original (English) Voice** SE mod (to use the original three court voice lines for Phoenix Wright in AJ:AA)<br>
 [IceDrive](https://icedrive.net/s/wx5kTGziNYhYYZv5kiu92Cu4f313)<br>
 [Mega.nz](https://mega.nz/file/oHkWSaDL#gdikN7AKLubmYmPjLSyu_Xk4ckMkt_YyjlJDhfhTkDA)
@@ -80,7 +80,7 @@
 [Mega.nz](https://mega.nz/file/haM10Lia#4dwEK3iYvDlGLf4sA82dqwoOB71ySRT-dSG8jXtbeJ4)
    - **AJ:AA - JTPaper's Music Mod (PW:AA)** (for remastered PW:AA tracks in AJ:AA)<br>
 [IceDrive](https://icedrive.net/s/SBRaTy31yvvkzZGY8XtRX7kjChfT)<br>
-[Mega.nz](https://mega.nz/file/oLNxEArQ#BuEvHeFK4MrVYsumc1fncTL5LBBqIQmE5biAYKGVY30)
+[Mega.nz](https://mega.nz/file/xK9lASAC#bV6HN-hP7Qt6WJVKV9NJlY3qW9T8a4slEGAMRT3Pvy0)
    - **AJ:AA - Phoenix Wright Original (English) Voice** SE mod (to use the original three court voice lines for Phoenix Wright in AJ:AA)<br>
 [IceDrive](https://icedrive.net/s/P52Q4fuY48g57ihSb1QaB7Xb7xwf)<br>
 [Mega.nz](https://mega.nz/file/gTNWxaib#ewS06C-D3C1eUJM7w58TCma6REGVVC2DkV_H2se6Nlw)
@@ -140,7 +140,7 @@
 
    - **Nintendo Switch** music mod<br>
 [Google Drive](https://drive.google.com/file/d/18BMEctI00h-KzDdoQt3Kr_8oCQus-fal/view?usp=sharing)<br>
-[MediaFire](https://www.mediafire.com/file/7vrwc6qtgkv038w/PWAAT_JTPaper_MusicMod_NintendoSwitch.zip/file)
+[MediaFire](https://www.mediafire.com/file/7vrwc6qtgkv038w/PWAAT_JTPaper_MusicMod_NintendoSwitch.zip/file)<br>
 [IceDrive](https://icedrive.net/s/jZT91SxGCT9j9ZNk1v62vV1vW58h)<br>
 
 ## Benlinlin's Remastered OST
@@ -212,10 +212,10 @@
 # ![Apollo Justice: Ace Attorney icon](/ajaa.ico) Apollo Justice: Ace Attorney
 ## JTPaper's Remastered OST
    - **Android** music mod<br>
-[Mega.nz](https://mega.nz/file/RfdnQQhb#N1pbQbptcdGigu57d6K36xhdIow7yuaTBsTNkHSPWGM)<br>
+[Mega.nz](https://mega.nz/file/tHUgFZCJ#KfW13kdQIZ5E-MBbfOUuUhlKOLhHfLIzIObeflsPWTM)<br>
 [IceDrive](https://icedrive.net/s/FbjxwFh85StP7vbYik8PQtQZY8tX)
    - **Nintendo 3DS** music mod<br>
-[Mega.nz](https://mega.nz/file/BbMjiBaT#RbfATFfwD8I-z4Ja3gXN153LSp1tbaaUWKAVVLURAbo)<br>
+[Mega.nz](https://mega.nz/file/ZP10kIaC#6JIGps9vJI4MsANkEhrAWXQuyf-ik4Uqs2-FH-H9Y9s)<br>
 [IceDrive](https://icedrive.net/s/zfgYDR6xG8Dh8Saa2SQ33tggzbBb)
 
 - - - -
