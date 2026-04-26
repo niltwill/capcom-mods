@@ -3,10 +3,10 @@
 ## PC mods
    - **AAIC - JTPaper's Music Mod** (installer)<br>
 [IceDrive](https://icedrive.net/s/61N7Qv14R2wwywBxCNV4x383N58v)<br>
-[Mega.nz](https://mega.nz/file/dHUTRSqD#vQizI7oRLGRn7SqlTdwBq0XBoPYVrRSZiAgblmYHUOo)
+[Mega.nz](https://mega.nz/file/FfNyyZDR#dQrTNCc8kbftql7-__ZKybFUxMMCdOkgsnZsFjR2EfQ)
    - **AAIC - JTPaper's Music Mod** (ZIP)<br>
 [IceDrive](https://icedrive.net/s/Xwj31kvbt3akZwP8Zix77FbVQt7S)<br>
-[Mega.nz](https://mega.nz/file/tWNhlCaY#YKPaFuLZXIR-RomodTUJ8KUUHrekA28zC2MtrFaTuu0)
+[Mega.nz](https://mega.nz/file/8OtAAKwa#6xgayLiMt5gIttDJNAvGwoBCU9cTVfs6qFfa9j5N9fs)
    - **AAIC - Android SE Music Mod** (installer)<br>
 [IceDrive](https://icedrive.net/s/xZjYVj7fSDQPZhuxWYtBDyf3a3Wg)<br>
 [Mega.nz](https://mega.nz/file/peUygara#qip5hr2Dt52Vu1Mkzh8DHi9in-ZhNXdJOkePjfMZGt4)
@@ -23,7 +23,7 @@
 ## Nintendo Switch mods
    - **AAIC - JTPaper's Music Mod**<br>
 [IceDrive](https://icedrive.net/s/a6Nx7bjyVaPZaRbYGk2ZXRVhZkPa)<br>
-[Mega.nz](https://mega.nz/file/lXd2SRaL#_YJmOlMuT2zltpGYGw45_HuKRRAXwR3a-YwZjTSnApY)
+[Mega.nz](https://mega.nz/file/FP1RmTRR#XvyV69pK84-ZpvwQZKpl3_rFNtnOuTS5gDiHj-cQ_og)
    - **AAIC - Android SE Music Mod**<br>
 [IceDrive](https://icedrive.net/s/FAv6fQuYT46YDa6Swa1WVwSiz3CB)<br>
 [Mega.nz](https://mega.nz/file/Zb0GwCST#w0yWG6RTIsjj8ndUaDN1jWjs8XVU9HfwMnowo_NwEIw)
