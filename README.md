@@ -1,12 +1,22 @@
 # ![Ace Attorney Investigations Collection icon](/aaic.ico) Ace Attorney Investigations Collection
 
 ## PC mods
+
+### Kiup's Music Mod
+   - **AAIC - Kiup's Music Mod** (installer)<br>
+[pCloud](https://e.pcloud.link/publink/show?code=XZvt4rZs53GwdnwsTJmESAaLS3p7Q2APjnX)
+   - **AAIC - Kiup's Music Mod** (ZIP)<br>
+[pCloud](https://e.pcloud.link/publink/show?code=XZat4rZY94d5tfKT905uhLVt7EH87ia7nX0)
+
+### JTPaper's Music Mod
    - **AAIC - JTPaper's Music Mod** (installer)<br>
 [IceDrive](https://icedrive.net/s/61N7Qv14R2wwywBxCNV4x383N58v)<br>
 [Mega.nz](https://mega.nz/file/FfNyyZDR#dQrTNCc8kbftql7-__ZKybFUxMMCdOkgsnZsFjR2EfQ)
    - **AAIC - JTPaper's Music Mod** (ZIP)<br>
-[IceDrive](https://icedrive.net/s/Xwj31kvbt3akZwP8Zix77FbVQt7S)<br>
+[pCloud](https://e.pcloud.link/publink/show?code=XZW64rZEanv3UKKLryjkEYKtg2XX8J9DFH7)<br>
 [Mega.nz](https://mega.nz/file/8OtAAKwa#6xgayLiMt5gIttDJNAvGwoBCU9cTVfs6qFfa9j5N9fs)
+
+### Other music mods
    - **AAIC - Android SE Music Mod** (installer)<br>
 [IceDrive](https://icedrive.net/s/xZjYVj7fSDQPZhuxWYtBDyf3a3Wg)<br>
 [Mega.nz](https://mega.nz/file/peUygara#qip5hr2Dt52Vu1Mkzh8DHi9in-ZhNXdJOkePjfMZGt4)
@@ -21,9 +31,17 @@
 [Mega.nz](https://mega.nz/file/5GlECa4A#vX1YK46Q3zNDEmtMsckvN0uV7GP24jcfeP0SJYSZxpg)
 
 ## Nintendo Switch mods
+
+### Kiup's Music Mod
+   - **AAIC - Kiup's Music Mod**<br>
+[pCloud](https://e.pcloud.link/publink/show?code=XZ464rZTk1HAVE6kgjOG9XHHecQsVRqj1qV)
+
+### JTPaper's Music Mod
    - **AAIC - JTPaper's Music Mod**<br>
 [IceDrive](https://icedrive.net/s/a6Nx7bjyVaPZaRbYGk2ZXRVhZkPa)<br>
 [Mega.nz](https://mega.nz/file/FP1RmTRR#XvyV69pK84-ZpvwQZKpl3_rFNtnOuTS5gDiHj-cQ_og)
+
+### Other music mods
    - **AAIC - Android SE Music Mod**<br>
 [IceDrive](https://icedrive.net/s/FAv6fQuYT46YDa6Swa1WVwSiz3CB)<br>
 [Mega.nz](https://mega.nz/file/Zb0GwCST#w0yWG6RTIsjj8ndUaDN1jWjs8XVU9HfwMnowo_NwEIw)
@@ -126,22 +144,27 @@
 [IceDrive](https://icedrive.net/s/gyST6ZWXFvSY7266zFF1Ph4axwwS)<br>
 [Mega.nz](https://mega.nz/file/Ne8hDSwK#g7gK2xMKL3iWJE_hLbls4gEMSALc0aS0YbInUOyvxT8)
    - **Nintendo Switch** music mod<br>
-[IceDrive](https://icedrive.net/s/4WazvfANjPxTA97B1zy7YS93thXN)<br>
+[pCloud](https://e.pcloud.link/publink/show?code=XZ9E4rZ02VNppztguReLGpr7LoGFfPrHHNy)<br>
 [Mega.nz](https://mega.nz/file/YOdkSbKb#h065rwosvRjKpMYI2D5uWDFfRqN2utlEOARyp6fZMLY)
+
+## Kiup's Remastered OST
+   - **PC (Steam)** music mod<br>
+[pCloud](https://e.pcloud.link/publink/show?code=XZrI4rZupNQ8BntCULqPPcFQEmXyLTJnU1X)
+   - **Nintendo 3DS** music mod<br>
+[pCloud](https://e.pcloud.link/publink/show?code=XZnl4rZjJa5I9DFn8XGlObAhzDsF0G9wahV)
+   - **Nintendo Switch** music mod<br>
+[pCloud](https://e.pcloud.link/publink/show?code=XZ7A4rZjm9JMQubH8fnuVuBKrkvUzhniGQX)
 
 ## JTPaper's Remastered OST
    - **PC (Steam)** music mod<br>
 [Google Drive](https://drive.google.com/file/d/1fo0W7YuWbfkBedBq41sRWUAw0SXvc4wi/view?usp=sharing)<br>
 [MediaFire](https://www.mediafire.com/file/lxeho950lri23na/PWAAT_JTPaper_MusicMod.exe/file)<br>
-
    - **Nintendo 3DS** music mod<br>
 [Google Drive](https://drive.google.com/file/d/1ljzJ6gPfOEBqljka7OverlHkCW_xSFpY/view?usp=sharing)<br>
 [MediaFire](https://www.mediafire.com/file/eshpr4ntbp5axph/PWAAT_JTPaper%2527s_MusicMod_%2528Nintendo3DS%2529.zip/file)<br>
-
    - **Nintendo Switch** music mod<br>
-[Google Drive](https://drive.google.com/file/d/18BMEctI00h-KzDdoQt3Kr_8oCQus-fal/view?usp=sharing)<br>
-[MediaFire](https://www.mediafire.com/file/7vrwc6qtgkv038w/PWAAT_JTPaper_MusicMod_NintendoSwitch.zip/file)<br>
-[IceDrive](https://icedrive.net/s/jZT91SxGCT9j9ZNk1v62vV1vW58h)<br>
+[pCloud](https://e.pcloud.link/publink/show?code=XZiO4rZhyuJurK6boLniwRqYlcoFm50Ss67)<br>
+[MediaFire](https://www.mediafire.com/file/7vrwc6qtgkv038w/PWAAT_JTPaper_MusicMod_NintendoSwitch.zip/file)
 
 ## Benlinlin's Remastered OST
    - **PC (Steam)** music mod<br>
@@ -151,7 +174,7 @@
 [Google Drive](https://drive.google.com/file/d/1eyACHrSfsB2S6Krter-8l0toeaoTVtfl/view?usp=sharing)<br>
 [MediaFire](https://www.mediafire.com/file/ny47ic94u4r2w6f/PWAAT_Benlinlin_MusicMod_%2528Nintendo_3DS%2529.zip/file)<br>
    - **Nintendo Switch** music mod<br>
-[IceDrive](https://icedrive.net/s/T3Tu9GCS5iaFDNgYXZuxk58fNwhb)<br>
+[pCloud](https://e.pcloud.link/publink/show?code=XZOI4rZyyg1Ny5p3J0O12xXqhaRCun35A3V)<br>
 [MediaFire](https://www.mediafire.com/file/tb2r1s2vao28a14/PWAAT_Benlinlin_MusicMod_NintendoSwitch.zip/file)
 
 ## jattello's Remastered OST
@@ -162,7 +185,7 @@
 [Google Drive](https://drive.google.com/file/d/1ECHz3dbJGQ5FGer8Zwg-dWkRYdXO_n_T/view?usp=sharing)<br>
 [MediaFire](https://www.mediafire.com/file/oolk1l3sct1pxnb/PWAAT_jattello%2527s_MusicMod_%2528Nintendo3DS%2529.zip/file)<br>
    - **Nintendo Switch** music mod<br>
-[IceDrive](https://icedrive.net/s/YYT7T1VjPtGCWNgCaQQv3a3zjBTk)<br>
+[pCloud](https://e.pcloud.link/publink/show?code=XZ6I4rZ3wYKHTPxzXQrp7iE3iwDau21PCpy)<br>
 [MediaFire](https://www.mediafire.com/file/9dyvg1m47ha3x8d/PWAAT_jattello_MusicMod_NintendoSwitch.zip/file)
 
 ## Zinle's Remastered OST
@@ -173,7 +196,7 @@
 [Google Drive](https://drive.google.com/file/d/15Elb5C4tU4iO9sptJDTiVe9QWUpKm-Oz/view?usp=sharing)<br>
 [MediaFire](https://www.mediafire.com/file/5lsd69gv7k9w7x4/PWAAT_Zinle%2527s_MusicMod_%2528Nintendo3DS%2529.zip/file)<br>
    - **Nintendo Switch** music mod<br>
-[IceDrive](https://icedrive.net/s/6TaAaSNNGaDibP25aSj7zzNgTaTz)<br>
+[pCloud](https://e.pcloud.link/publink/show?code=XZdI4rZ8IrG3e0GYVLEbkXPHOm1pQdpg7aX)<br>
 [MediaFire](https://www.mediafire.com/file/1nccbqtvxk4mvuw/PWAAT_Zinle_MusicMod_NintendoSwitch.zip/file)
 
 ## niltwill's resources
@@ -184,7 +207,7 @@
 [Google Drive](https://drive.google.com/file/d/1me3D8qP96KZ6fky6zO0XG970jp_UYaqt/view?usp=sharing)<br>
 [MediaFire](https://www.mediafire.com/file/k3bd57llj4c31dj/PWAAT_Nokia_Ringtones_%2528Nintendo3DS%2529.zip/file)<br>
    - **Nintendo Switch** Nokia Ringtones (music mod)<br>
-[IceDrive](https://icedrive.net/s/B3ZZC33zG3bf5CVNZxttwj5vii53)<br>
+[pCloud](https://e.pcloud.link/publink/show?code=XZjU4rZYGefD7PCCFyMNUjYGTR2tSzEv4zV)<br>
 [MediaFire](https://www.mediafire.com/file/pqusk0htckp7rj0/PWAAT_Nokia_Ringtones_NintendoSwitch.zip/file)
    - **PC (Steam, Windows)** Save Editor (only tested on PC version)<br>
 [Google Drive](https://drive.google.com/file/d/10THldkydMM9AZ13LyP_TS7ttHC1pQSDS/view?usp=sharing)<br>
@@ -223,14 +246,14 @@
 # ![Ace Attorney Investigations icon](/aai.ico) Ace Attorney Investigations
 ## JTPaper's Remastered OST
    - **Android** music mod<br>
-[IceDrive](https://icedrive.net/s/5tv4SRCbXRQSyGC6uPuywv9PvfFP)<br>
+[pCloud](https://e.pcloud.link/publink/show?code=XZMI4rZh68sagNzc3JochATunwO9yQQbhIV)<br>
 [MediaFire](https://www.mediafire.com/file/aufygi8dskp55wx/AAI_JTPaper_MusicMod_%2528Android%2529.zip/file)<br>
 - - - -
 
 # ![Ace Attorney Investigations 2 icon](/aai2.ico) Ace Attorney Investigations 2
 ## JTPaper's Remastered OST
    - **Android** music mod<br>
-[IceDrive](https://icedrive.net/s/NXuFXk72thTBtvBtN13Y5ZZSjG4t)<br>
+[pCloud](https://e.pcloud.link/publink/show?code=XZCI4rZswlhqzSWiuL0Vj7YFrblUHytuPRX)<br>
 [MediaFire](https://www.mediafire.com/file/ifot2zk8gj62kf3/AAI2_JTPaper%2527s_Music_Mod_%2528Android%2529.zip/file)<br>
 
 [^1]: Higher quality Japanese voice clips (audio), sounds such as "Objection!", "Hold it!", "Take that!", as the game uses GBA quality for these.
