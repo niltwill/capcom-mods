@@ -68,6 +68,10 @@
    - **AJ:AA - Gyakuten Saiban Sound BOX** music mod (to replace the reused PW:AA tracks in AJ:AA)<br>
 [IceDrive](https://icedrive.net/s/tT5yXj6xBZ9DbAC16WaR34yuYNBa)<br>
 [Mega.nz](https://mega.nz/file/1HVhgTwA#jIg7F0ItHcKI00lX5LAfqNPVhV9igqhkoAjRERkXTh8)
+   - **AJ:AA - Kiup's Music Mod (AJ:AA)** (for remastered AJ:AA tracks)<br>
+[pCloud](https://e.pcloud.link/publink/show?code=XZ1lPrZ9XpEIiilWALtcdoS5B0hCQGGiG57)
+   - **AJ:AA - Kiup's Music Mod (PW:AA)** (for remastered PW:AA tracks in AJ:AA)<br>
+[pCloud](https://e.pcloud.link/publink/show?code=XZelPrZvAak3Cid3hSCfAEk9DEvAXu0N7ry)
    - **AJ:AA - JTPaper's Music Mod (AJ:AA)** (for remastered AJ:AA tracks)<br>
 [IceDrive](https://icedrive.net/s/FthS6P4bD7R8fkZjCwz9TTBw2haT)<br>
 [Mega.nz](https://mega.nz/file/QC1SQYKT#t-d4z_ZdHAgr5AQBLFSuJdiHHvo7L0yViwulgeTsPGY)
@@ -93,6 +97,10 @@
    - **AJ:AA - Gyakuten Saiban Sound BOX** music mod (to replace the reused PW:AA tracks in AJ:AA)<br>
 [IceDrive](https://icedrive.net/s/2PwC6GgQF3vTWtX8Z3DGz58D1A1C)<br>
 [Mega.nz](https://mega.nz/file/9HFClCZY#HiK0qAH7LqBYEALla2x2tFGuTHJGS964wl3C9PFy1vk)
+   - **AJ:AA - Kiup's Music Mod (AJ:AA)** (for remastered AJ:AA tracks)<br>
+[pCloud](https://e.pcloud.link/publink/show?code=XZClPrZhMtnmYvYEFLrhIu63oXKQ5923WUX)
+   - **AJ:AA - Kiup's Music Mod (PW:AA)** (for remastered PW:AA tracks in AJ:AA)<br>
+[pCloud](https://e.pcloud.link/publink/show?code=XZwlPrZBAf65cEn8DXivVLi70OFUXKVFAK7)
    - **AJ:AA - JTPaper's Music Mod (AJ:AA)** (for remastered AJ:AA tracks)<br>
 [IceDrive](https://icedrive.net/s/yyaDxZ6SAY4k2263QAF6vh2F2SWk)<br>
 [Mega.nz](https://mega.nz/file/haM10Lia#4dwEK3iYvDlGLf4sA82dqwoOB71ySRT-dSG8jXtbeJ4)
