@@ -252,6 +252,10 @@
 - - - -
 
 # ![Ace Attorney Investigations icon](/aai.ico) Ace Attorney Investigations
+## Kiup's Remastered OST
+   - **Android** music mod<br>
+[pCloud](https://e.pcloud.link/publink/show?code=XZlGqrZz4twEwRohNjdGxnAa06ca8N29JB7)
+
 ## JTPaper's Remastered OST
    - **Android** music mod<br>
 [pCloud](https://e.pcloud.link/publink/show?code=XZMI4rZh68sagNzc3JochATunwO9yQQbhIV)<br>
@@ -259,6 +263,10 @@
 - - - -
 
 # ![Ace Attorney Investigations 2 icon](/aai2.ico) Ace Attorney Investigations 2
+## Kiup's Remastered OST
+   - **Android** music mod<br>
+[pCloud](https://e.pcloud.link/publink/show?code=XZUGqrZaRDQlCTXItzTttxgRelGu7mc4VWV)
+
 ## JTPaper's Remastered OST
    - **Android** music mod<br>
 [pCloud](https://e.pcloud.link/publink/show?code=XZCI4rZswlhqzSWiuL0Vj7YFrblUHytuPRX)<br>
