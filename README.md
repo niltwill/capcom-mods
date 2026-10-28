@@ -241,6 +241,12 @@
 - - - -
 
 # ![Apollo Justice: Ace Attorney icon](/ajaa.ico) Apollo Justice: Ace Attorney
+## Kiup's Remastered OST
+   - **Android** music mod<br>
+[pCloud](https://e.pcloud.link/publink/show?code=XZdjBrZOgI4OR3UeVbTGHgrkQRmL46oUJI7)
+   - **Nintendo 3DS** music mod<br>
+[pCloud](https://e.pcloud.link/publink/show?code=XZtjBrZ3VpeA2w53bfwLJ6FROyhUHYLktGy)
+
 ## JTPaper's Remastered OST
    - **Android** music mod<br>
 [Mega.nz](https://mega.nz/file/tHUgFZCJ#KfW13kdQIZ5E-MBbfOUuUhlKOLhHfLIzIObeflsPWTM)<br>
